@@ -1,0 +1,108 @@
+{
+  "status": "Passed",
+  "root_cause": "Old renderer emitted worker charts in the local-data directory and a data-size chart in the worker directory, despite complete relevant runs",
+  "benchmark_runs": 21,
+  "complete_configurations": 7,
+  "repetitions_per_configuration": 3,
+  "spark_measurements_rerun": false,
+  "action": "Redrew applicable charts from the original recorded runs; removed inapplicable placeholders; dashboard now uses separated interactive benchmark views",
+  "csv_integrity": [
+    {
+      "path": "artifacts/benchmark/local/runs.csv",
+      "sha256": "56a278a8a0fbd554fa6de96df5f4f6a3afdef66cb672bd8b93456d3adacdbd64",
+      "after_sha256": "56a278a8a0fbd554fa6de96df5f4f6a3afdef66cb672bd8b93456d3adacdbd64",
+      "unchanged": true
+    },
+    {
+      "path": "artifacts/benchmark/workers/runs.csv",
+      "sha256": "75a6f1cca19194cfb0729e21010fe5830de0317232d33201ee5b65905cb8bfda",
+      "after_sha256": "75a6f1cca19194cfb0729e21010fe5830de0317232d33201ee5b65905cb8bfda",
+      "unchanged": true
+    }
+  ],
+  "removed_inapplicable_figures": [
+    "artifacts/benchmark/local/runtime_vs_workers.png",
+    "artifacts/benchmark/local/speedup_efficiency.png",
+    "artifacts/benchmark/local/throughput_vs_workers.png",
+    "artifacts/benchmark/workers/runtime_vs_data_size.png"
+  ],
+  "generated_figures": [
+    "artifacts/benchmark/local/runtime_vs_data_size.png",
+    "artifacts/benchmark/local/throughput_vs_data_size.png",
+    "artifacts/benchmark/workers/runtime_vs_workers.png",
+    "artifacts/benchmark/workers/speedup_efficiency.png",
+    "artifacts/benchmark/workers/throughput_vs_workers.png"
+  ],
+  "plot_statuses": [
+    {
+      "source": "artifacts/benchmark/local/runs.csv",
+      "charts": [
+        {
+          "filename": "runtime_vs_workers.png",
+          "experiment": "worker_scaling",
+          "status": "NotApplicable",
+          "reason": "This directory contains local_data_scale; worker_scaling belongs to a different experiment family"
+        },
+        {
+          "filename": "throughput_vs_workers.png",
+          "experiment": "worker_scaling",
+          "status": "NotApplicable",
+          "reason": "This directory contains local_data_scale; worker_scaling belongs to a different experiment family"
+        },
+        {
+          "filename": "speedup_efficiency.png",
+          "experiment": "worker_scaling",
+          "status": "NotApplicable",
+          "reason": "This directory contains local_data_scale; worker_scaling belongs to a different experiment family"
+        },
+        {
+          "filename": "runtime_vs_data_size.png",
+          "experiment": "local_data_scale",
+          "status": "Generated",
+          "reason": "Only complete, matching configurations shown; small dots are individual measured runs and lines are medians"
+        },
+        {
+          "filename": "throughput_vs_data_size.png",
+          "experiment": "local_data_scale",
+          "status": "Generated",
+          "reason": "Only complete, matching configurations shown; small dots are individual measured runs and lines are medians"
+        }
+      ]
+    },
+    {
+      "source": "artifacts/benchmark/workers/runs.csv",
+      "charts": [
+        {
+          "filename": "runtime_vs_workers.png",
+          "experiment": "worker_scaling",
+          "status": "Generated",
+          "reason": "Only complete, matching configurations shown; small dots are individual measured runs and lines are medians"
+        },
+        {
+          "filename": "throughput_vs_workers.png",
+          "experiment": "worker_scaling",
+          "status": "Generated",
+          "reason": "Only complete, matching configurations shown; small dots are individual measured runs and lines are medians"
+        },
+        {
+          "filename": "speedup_efficiency.png",
+          "experiment": "worker_scaling",
+          "status": "Generated",
+          "reason": "Only complete, matching configurations shown; small dots are individual measured runs and lines are medians"
+        },
+        {
+          "filename": "runtime_vs_data_size.png",
+          "experiment": "local_data_scale",
+          "status": "NotApplicable",
+          "reason": "This directory contains worker_scaling; local_data_scale belongs to a different experiment family"
+        },
+        {
+          "filename": "throughput_vs_data_size.png",
+          "experiment": "local_data_scale",
+          "status": "NotApplicable",
+          "reason": "This directory contains worker_scaling; local_data_scale belongs to a different experiment family"
+        }
+      ]
+    }
+  ]
+}

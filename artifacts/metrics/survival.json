@@ -1,0 +1,26 @@
+{
+  "as_of": "2025-07-01T00:00:00+00:00",
+  "input_rows": 8813,
+  "accepted_rows": 8813,
+  "rejected_rows": 0,
+  "invalid_created_rows": 0,
+  "invalid_closed_rows": 0,
+  "negative_duration_rows": 0,
+  "future_created_rows": 0,
+  "closed_observed_rows": 8543,
+  "censored_rows": 270,
+  "censoring_fraction": 0.030636559627822534,
+  "zero_duration_floored_rows": 112,
+  "duration_floor_days": 0.0006944444444444445,
+  "closed_status_without_closed_date": 41,
+  "closed_date_with_nonclosed_status": 1,
+  "known_status_rows": 8813,
+  "filter_count_note": "Rejection reasons may overlap; rejected_rows is the union.",
+  "status": "Passed",
+  "source_kinds": [
+    "official_snapshot"
+  ],
+  "elapsed_seconds": 3.357323500007624,
+  "confidence_level": 0.95,
+  "group_rows": 146
+}

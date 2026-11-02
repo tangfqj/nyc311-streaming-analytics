@@ -1,0 +1,1291 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-02T21:06:18.915142+00:00",
+  "source_csv": "artifacts/benchmark/workers/runs.csv",
+  "source_csv_sha256": "75a6f1cca19194cfb0729e21010fe5830de0317232d33201ee5b65905cb8bfda",
+  "source_run_counts": {
+    "total": 12,
+    "Succeeded": 12,
+    "Failed": 0,
+    "Not Run": 0
+  },
+  "rendering_code_sha256": "cc2fad5819b3847544a739e584aecc92045bfc4faeaa4f73fdadc8766474fa7a",
+  "measurement_note": "Existing persisted measurements; rendering launches no Spark workloads and modifies no runs.csv values.",
+  "minimum_distinct_successful_repetitions": 3,
+  "configuration_statuses": [
+    {
+      "x": 1,
+      "input_rows": 1000,
+      "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+      "run_count": 3,
+      "distinct_repetitions": 3,
+      "run_ids": [
+        "26a12430-5460-4757-b0b1-764a29b78d3a",
+        "3eaa27c9-40ab-4b7a-9670-baffff27e585",
+        "fba09d41-fccf-473f-a808-e5e16bd2eaa0"
+      ],
+      "repetitions": [
+        "1",
+        "2",
+        "3"
+      ],
+      "raw_elapsed_seconds": [
+        12.09030924999388,
+        8.152613708007266,
+        8.695464874996105
+      ],
+      "raw_throughput_rows_per_sec": [
+        82.71087027823596,
+        122.66004937997104,
+        115.0024770815313
+      ],
+      "median_elapsed_seconds": 8.695464874996105,
+      "median_throughput_rows_per_sec": 115.0024770815313,
+      "complete": true,
+      "reason": "At least three distinct successful repetitions",
+      "experiment": "worker_scaling",
+      "config": {
+        "master": "spark://127.0.0.1:17077",
+        "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+        "partitions": "8",
+        "executor_memory": "512m",
+        "executor_cores": "1",
+        "driver_memory": "512m",
+        "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+        "cluster_id": "local-jvm-single-host-1core512m",
+        "base_rows": "1000",
+        "base_sample_method": "first valid unique key rows in sorted source-file order",
+        "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+        "seed": "2026",
+        "spark_version": "3.5.3",
+        "python_version": "3.11.15",
+        "host_cpu_count": "10",
+        "host_ram_bytes": "17179869184",
+        "platform": "macOS-15.6-arm64-arm-64bit",
+        "single_physical_host": "True"
+      },
+      "attempted_runs": 3,
+      "successful_runs": 3,
+      "failed_runs": 0,
+      "not_run": 0,
+      "status": "Complete",
+      "median_speedup": 1.0,
+      "median_parallel_efficiency": 1.0,
+      "raw_speedups": [
+        0.7192094672847601,
+        1.066586150948826,
+        1.0
+      ],
+      "raw_parallel_efficiencies": [
+        0.7192094672847601,
+        1.066586150948826,
+        1.0
+      ]
+    },
+    {
+      "x": 2,
+      "input_rows": 1000,
+      "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+      "run_count": 3,
+      "distinct_repetitions": 3,
+      "run_ids": [
+        "8d92095c-ddb2-4689-8c26-d5d16ced4ffa",
+        "13036380-78e0-49d1-ad0d-43771789e7aa",
+        "af15432d-36a2-4a4d-8ea3-b75c7f5f4aba"
+      ],
+      "repetitions": [
+        "1",
+        "2",
+        "3"
+      ],
+      "raw_elapsed_seconds": [
+        10.039817416996812,
+        10.276980958005879,
+        7.158666292001726
+      ],
+      "raw_throughput_rows_per_sec": [
+        99.60340496900469,
+        97.30484118694307,
+        139.69082496795323
+      ],
+      "median_elapsed_seconds": 10.039817416996812,
+      "median_throughput_rows_per_sec": 99.60340496900469,
+      "complete": true,
+      "reason": "At least three distinct successful repetitions",
+      "experiment": "worker_scaling",
+      "config": {
+        "master": "spark://127.0.0.1:17077",
+        "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+        "partitions": "8",
+        "executor_memory": "512m",
+        "executor_cores": "1",
+        "driver_memory": "512m",
+        "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+        "cluster_id": "local-jvm-single-host-1core512m",
+        "base_rows": "1000",
+        "base_sample_method": "first valid unique key rows in sorted source-file order",
+        "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+        "seed": "2026",
+        "spark_version": "3.5.3",
+        "python_version": "3.11.15",
+        "host_cpu_count": "10",
+        "host_ram_bytes": "17179869184",
+        "platform": "macOS-15.6-arm64-arm-64bit",
+        "single_physical_host": "True"
+      },
+      "attempted_runs": 3,
+      "successful_runs": 3,
+      "failed_runs": 0,
+      "not_run": 0,
+      "status": "Complete",
+      "median_speedup": 0.8660979093379928,
+      "median_parallel_efficiency": 0.4330489546689964,
+      "raw_speedups": [
+        0.8660979093379928,
+        0.8461108287081377,
+        1.2146766618680664
+      ],
+      "raw_parallel_efficiencies": [
+        0.4330489546689964,
+        0.42305541435406885,
+        0.6073383309340332
+      ]
+    },
+    {
+      "x": 4,
+      "input_rows": 1000,
+      "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+      "run_count": 3,
+      "distinct_repetitions": 3,
+      "run_ids": [
+        "ab085689-e88d-4052-ac5f-9e57f0fdb194",
+        "bb3d6daa-82d6-4044-be39-bc122d44917c",
+        "2eb67e93-567f-4804-9c6a-0b39823d6459"
+      ],
+      "repetitions": [
+        "1",
+        "2",
+        "3"
+      ],
+      "raw_elapsed_seconds": [
+        11.9254772500135,
+        9.672448500001337,
+        8.984703000009176
+      ],
+      "raw_throughput_rows_per_sec": [
+        83.85408642650908,
+        103.38643829428109,
+        111.30028449454352
+      ],
+      "median_elapsed_seconds": 9.672448500001337,
+      "median_throughput_rows_per_sec": 103.38643829428109,
+      "complete": true,
+      "reason": "At least three distinct successful repetitions",
+      "experiment": "worker_scaling",
+      "config": {
+        "master": "spark://127.0.0.1:17077",
+        "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+        "partitions": "8",
+        "executor_memory": "512m",
+        "executor_cores": "1",
+        "driver_memory": "512m",
+        "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+        "cluster_id": "local-jvm-single-host-1core512m",
+        "base_rows": "1000",
+        "base_sample_method": "first valid unique key rows in sorted source-file order",
+        "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+        "seed": "2026",
+        "spark_version": "3.5.3",
+        "python_version": "3.11.15",
+        "host_cpu_count": "10",
+        "host_ram_bytes": "17179869184",
+        "platform": "macOS-15.6-arm64-arm-64bit",
+        "single_physical_host": "True"
+      },
+      "attempted_runs": 3,
+      "successful_runs": 3,
+      "failed_runs": 0,
+      "not_run": 0,
+      "status": "Complete",
+      "median_speedup": 0.8989931427388735,
+      "median_parallel_efficiency": 0.22474828568471839,
+      "raw_speedups": [
+        0.7291502631465975,
+        0.8989931427388735,
+        0.9678077143993769
+      ],
+      "raw_parallel_efficiencies": [
+        0.18228756578664937,
+        0.22474828568471839,
+        0.2419519285998442
+      ]
+    },
+    {
+      "x": 8,
+      "input_rows": 1000,
+      "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+      "run_count": 3,
+      "distinct_repetitions": 3,
+      "run_ids": [
+        "7f319fae-90cc-4fb2-ade3-890e0f3684a6",
+        "78df9219-078c-4558-a535-16e6db5387bd",
+        "cdeaba04-446f-45d0-aaf5-5461bc0af0f1"
+      ],
+      "repetitions": [
+        "1",
+        "2",
+        "3"
+      ],
+      "raw_elapsed_seconds": [
+        24.936929292001878,
+        22.23499625000113,
+        15.338152915996034
+      ],
+      "raw_throughput_rows_per_sec": [
+        40.10116836320878,
+        44.9741474545987,
+        65.19689857551937
+      ],
+      "median_elapsed_seconds": 22.23499625000113,
+      "median_throughput_rows_per_sec": 44.9741474545987,
+      "complete": true,
+      "reason": "At least three distinct successful repetitions",
+      "experiment": "worker_scaling",
+      "config": {
+        "master": "spark://127.0.0.1:17077",
+        "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+        "partitions": "8",
+        "executor_memory": "512m",
+        "executor_cores": "1",
+        "driver_memory": "512m",
+        "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+        "cluster_id": "local-jvm-single-host-1core512m",
+        "base_rows": "1000",
+        "base_sample_method": "first valid unique key rows in sorted source-file order",
+        "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+        "seed": "2026",
+        "spark_version": "3.5.3",
+        "python_version": "3.11.15",
+        "host_cpu_count": "10",
+        "host_ram_bytes": "17179869184",
+        "platform": "macOS-15.6-arm64-arm-64bit",
+        "single_physical_host": "True"
+      },
+      "attempted_runs": 3,
+      "successful_runs": 3,
+      "failed_runs": 0,
+      "not_run": 0,
+      "status": "Complete",
+      "median_speedup": 0.39107111947435846,
+      "median_parallel_efficiency": 0.04888388993429481,
+      "raw_speedups": [
+        0.348698300948587,
+        0.39107111947435846,
+        0.5669173415221123
+      ],
+      "raw_parallel_efficiencies": [
+        0.043587287618573375,
+        0.04888388993429481,
+        0.07086466769026403
+      ]
+    }
+  ],
+  "invalid_successful_rows": [],
+  "charts": [
+    {
+      "filename": "runtime_vs_workers.png",
+      "relative_path": "runtime_vs_workers.png",
+      "path": "artifacts/benchmark/workers/runtime_vs_workers.png",
+      "experiment": "worker_scaling",
+      "run_count": 12,
+      "complete_configurations": 4,
+      "available_successful_runs": 12,
+      "source_run_counts": {
+        "total": 12,
+        "Succeeded": 12,
+        "Failed": 0,
+        "Not Run": 0
+      },
+      "series": [
+        {
+          "config": {
+            "master": "spark://127.0.0.1:17077",
+            "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+            "partitions": "8",
+            "executor_memory": "512m",
+            "executor_cores": "1",
+            "driver_memory": "512m",
+            "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+            "cluster_id": "local-jvm-single-host-1core512m",
+            "base_rows": "1000",
+            "base_sample_method": "first valid unique key rows in sorted source-file order",
+            "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+            "seed": "2026",
+            "spark_version": "3.5.3",
+            "python_version": "3.11.15",
+            "host_cpu_count": "10",
+            "host_ram_bytes": "17179869184",
+            "platform": "macOS-15.6-arm64-arm-64bit",
+            "single_physical_host": "True"
+          },
+          "points": [
+            {
+              "x": 1,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "26a12430-5460-4757-b0b1-764a29b78d3a",
+                "3eaa27c9-40ab-4b7a-9670-baffff27e585",
+                "fba09d41-fccf-473f-a808-e5e16bd2eaa0"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                12.09030924999388,
+                8.152613708007266,
+                8.695464874996105
+              ],
+              "raw_throughput_rows_per_sec": [
+                82.71087027823596,
+                122.66004937997104,
+                115.0024770815313
+              ],
+              "median_elapsed_seconds": 8.695464874996105,
+              "median_throughput_rows_per_sec": 115.0024770815313,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 1.0,
+              "median_parallel_efficiency": 1.0,
+              "raw_speedups": [
+                0.7192094672847601,
+                1.066586150948826,
+                1.0
+              ],
+              "raw_parallel_efficiencies": [
+                0.7192094672847601,
+                1.066586150948826,
+                1.0
+              ]
+            },
+            {
+              "x": 2,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "8d92095c-ddb2-4689-8c26-d5d16ced4ffa",
+                "13036380-78e0-49d1-ad0d-43771789e7aa",
+                "af15432d-36a2-4a4d-8ea3-b75c7f5f4aba"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                10.039817416996812,
+                10.276980958005879,
+                7.158666292001726
+              ],
+              "raw_throughput_rows_per_sec": [
+                99.60340496900469,
+                97.30484118694307,
+                139.69082496795323
+              ],
+              "median_elapsed_seconds": 10.039817416996812,
+              "median_throughput_rows_per_sec": 99.60340496900469,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 0.8660979093379928,
+              "median_parallel_efficiency": 0.4330489546689964,
+              "raw_speedups": [
+                0.8660979093379928,
+                0.8461108287081377,
+                1.2146766618680664
+              ],
+              "raw_parallel_efficiencies": [
+                0.4330489546689964,
+                0.42305541435406885,
+                0.6073383309340332
+              ]
+            },
+            {
+              "x": 4,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "ab085689-e88d-4052-ac5f-9e57f0fdb194",
+                "bb3d6daa-82d6-4044-be39-bc122d44917c",
+                "2eb67e93-567f-4804-9c6a-0b39823d6459"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                11.9254772500135,
+                9.672448500001337,
+                8.984703000009176
+              ],
+              "raw_throughput_rows_per_sec": [
+                83.85408642650908,
+                103.38643829428109,
+                111.30028449454352
+              ],
+              "median_elapsed_seconds": 9.672448500001337,
+              "median_throughput_rows_per_sec": 103.38643829428109,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 0.8989931427388735,
+              "median_parallel_efficiency": 0.22474828568471839,
+              "raw_speedups": [
+                0.7291502631465975,
+                0.8989931427388735,
+                0.9678077143993769
+              ],
+              "raw_parallel_efficiencies": [
+                0.18228756578664937,
+                0.22474828568471839,
+                0.2419519285998442
+              ]
+            },
+            {
+              "x": 8,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "7f319fae-90cc-4fb2-ade3-890e0f3684a6",
+                "78df9219-078c-4558-a535-16e6db5387bd",
+                "cdeaba04-446f-45d0-aaf5-5461bc0af0f1"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                24.936929292001878,
+                22.23499625000113,
+                15.338152915996034
+              ],
+              "raw_throughput_rows_per_sec": [
+                40.10116836320878,
+                44.9741474545987,
+                65.19689857551937
+              ],
+              "median_elapsed_seconds": 22.23499625000113,
+              "median_throughput_rows_per_sec": 44.9741474545987,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 0.39107111947435846,
+              "median_parallel_efficiency": 0.04888388993429481,
+              "raw_speedups": [
+                0.348698300948587,
+                0.39107111947435846,
+                0.5669173415221123
+              ],
+              "raw_parallel_efficiencies": [
+                0.043587287618573375,
+                0.04888388993429481,
+                0.07086466769026403
+              ]
+            }
+          ]
+        }
+      ],
+      "status": "Generated",
+      "reason": "Only complete, matching configurations shown; small dots are individual measured runs and lines are medians"
+    },
+    {
+      "filename": "throughput_vs_workers.png",
+      "relative_path": "throughput_vs_workers.png",
+      "path": "artifacts/benchmark/workers/throughput_vs_workers.png",
+      "experiment": "worker_scaling",
+      "run_count": 12,
+      "complete_configurations": 4,
+      "available_successful_runs": 12,
+      "source_run_counts": {
+        "total": 12,
+        "Succeeded": 12,
+        "Failed": 0,
+        "Not Run": 0
+      },
+      "series": [
+        {
+          "config": {
+            "master": "spark://127.0.0.1:17077",
+            "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+            "partitions": "8",
+            "executor_memory": "512m",
+            "executor_cores": "1",
+            "driver_memory": "512m",
+            "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+            "cluster_id": "local-jvm-single-host-1core512m",
+            "base_rows": "1000",
+            "base_sample_method": "first valid unique key rows in sorted source-file order",
+            "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+            "seed": "2026",
+            "spark_version": "3.5.3",
+            "python_version": "3.11.15",
+            "host_cpu_count": "10",
+            "host_ram_bytes": "17179869184",
+            "platform": "macOS-15.6-arm64-arm-64bit",
+            "single_physical_host": "True"
+          },
+          "points": [
+            {
+              "x": 1,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "26a12430-5460-4757-b0b1-764a29b78d3a",
+                "3eaa27c9-40ab-4b7a-9670-baffff27e585",
+                "fba09d41-fccf-473f-a808-e5e16bd2eaa0"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                12.09030924999388,
+                8.152613708007266,
+                8.695464874996105
+              ],
+              "raw_throughput_rows_per_sec": [
+                82.71087027823596,
+                122.66004937997104,
+                115.0024770815313
+              ],
+              "median_elapsed_seconds": 8.695464874996105,
+              "median_throughput_rows_per_sec": 115.0024770815313,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 1.0,
+              "median_parallel_efficiency": 1.0,
+              "raw_speedups": [
+                0.7192094672847601,
+                1.066586150948826,
+                1.0
+              ],
+              "raw_parallel_efficiencies": [
+                0.7192094672847601,
+                1.066586150948826,
+                1.0
+              ]
+            },
+            {
+              "x": 2,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "8d92095c-ddb2-4689-8c26-d5d16ced4ffa",
+                "13036380-78e0-49d1-ad0d-43771789e7aa",
+                "af15432d-36a2-4a4d-8ea3-b75c7f5f4aba"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                10.039817416996812,
+                10.276980958005879,
+                7.158666292001726
+              ],
+              "raw_throughput_rows_per_sec": [
+                99.60340496900469,
+                97.30484118694307,
+                139.69082496795323
+              ],
+              "median_elapsed_seconds": 10.039817416996812,
+              "median_throughput_rows_per_sec": 99.60340496900469,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 0.8660979093379928,
+              "median_parallel_efficiency": 0.4330489546689964,
+              "raw_speedups": [
+                0.8660979093379928,
+                0.8461108287081377,
+                1.2146766618680664
+              ],
+              "raw_parallel_efficiencies": [
+                0.4330489546689964,
+                0.42305541435406885,
+                0.6073383309340332
+              ]
+            },
+            {
+              "x": 4,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "ab085689-e88d-4052-ac5f-9e57f0fdb194",
+                "bb3d6daa-82d6-4044-be39-bc122d44917c",
+                "2eb67e93-567f-4804-9c6a-0b39823d6459"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                11.9254772500135,
+                9.672448500001337,
+                8.984703000009176
+              ],
+              "raw_throughput_rows_per_sec": [
+                83.85408642650908,
+                103.38643829428109,
+                111.30028449454352
+              ],
+              "median_elapsed_seconds": 9.672448500001337,
+              "median_throughput_rows_per_sec": 103.38643829428109,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 0.8989931427388735,
+              "median_parallel_efficiency": 0.22474828568471839,
+              "raw_speedups": [
+                0.7291502631465975,
+                0.8989931427388735,
+                0.9678077143993769
+              ],
+              "raw_parallel_efficiencies": [
+                0.18228756578664937,
+                0.22474828568471839,
+                0.2419519285998442
+              ]
+            },
+            {
+              "x": 8,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "7f319fae-90cc-4fb2-ade3-890e0f3684a6",
+                "78df9219-078c-4558-a535-16e6db5387bd",
+                "cdeaba04-446f-45d0-aaf5-5461bc0af0f1"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                24.936929292001878,
+                22.23499625000113,
+                15.338152915996034
+              ],
+              "raw_throughput_rows_per_sec": [
+                40.10116836320878,
+                44.9741474545987,
+                65.19689857551937
+              ],
+              "median_elapsed_seconds": 22.23499625000113,
+              "median_throughput_rows_per_sec": 44.9741474545987,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 0.39107111947435846,
+              "median_parallel_efficiency": 0.04888388993429481,
+              "raw_speedups": [
+                0.348698300948587,
+                0.39107111947435846,
+                0.5669173415221123
+              ],
+              "raw_parallel_efficiencies": [
+                0.043587287618573375,
+                0.04888388993429481,
+                0.07086466769026403
+              ]
+            }
+          ]
+        }
+      ],
+      "status": "Generated",
+      "reason": "Only complete, matching configurations shown; small dots are individual measured runs and lines are medians"
+    },
+    {
+      "filename": "speedup_efficiency.png",
+      "relative_path": "speedup_efficiency.png",
+      "path": "artifacts/benchmark/workers/speedup_efficiency.png",
+      "experiment": "worker_scaling",
+      "run_count": 12,
+      "complete_configurations": 4,
+      "available_successful_runs": 12,
+      "source_run_counts": {
+        "total": 12,
+        "Succeeded": 12,
+        "Failed": 0,
+        "Not Run": 0
+      },
+      "series": [
+        {
+          "config": {
+            "master": "spark://127.0.0.1:17077",
+            "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+            "partitions": "8",
+            "executor_memory": "512m",
+            "executor_cores": "1",
+            "driver_memory": "512m",
+            "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+            "cluster_id": "local-jvm-single-host-1core512m",
+            "base_rows": "1000",
+            "base_sample_method": "first valid unique key rows in sorted source-file order",
+            "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+            "seed": "2026",
+            "spark_version": "3.5.3",
+            "python_version": "3.11.15",
+            "host_cpu_count": "10",
+            "host_ram_bytes": "17179869184",
+            "platform": "macOS-15.6-arm64-arm-64bit",
+            "single_physical_host": "True"
+          },
+          "points": [
+            {
+              "x": 1,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "26a12430-5460-4757-b0b1-764a29b78d3a",
+                "3eaa27c9-40ab-4b7a-9670-baffff27e585",
+                "fba09d41-fccf-473f-a808-e5e16bd2eaa0"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                12.09030924999388,
+                8.152613708007266,
+                8.695464874996105
+              ],
+              "raw_throughput_rows_per_sec": [
+                82.71087027823596,
+                122.66004937997104,
+                115.0024770815313
+              ],
+              "median_elapsed_seconds": 8.695464874996105,
+              "median_throughput_rows_per_sec": 115.0024770815313,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 1.0,
+              "median_parallel_efficiency": 1.0,
+              "raw_speedups": [
+                0.7192094672847601,
+                1.066586150948826,
+                1.0
+              ],
+              "raw_parallel_efficiencies": [
+                0.7192094672847601,
+                1.066586150948826,
+                1.0
+              ]
+            },
+            {
+              "x": 2,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "8d92095c-ddb2-4689-8c26-d5d16ced4ffa",
+                "13036380-78e0-49d1-ad0d-43771789e7aa",
+                "af15432d-36a2-4a4d-8ea3-b75c7f5f4aba"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                10.039817416996812,
+                10.276980958005879,
+                7.158666292001726
+              ],
+              "raw_throughput_rows_per_sec": [
+                99.60340496900469,
+                97.30484118694307,
+                139.69082496795323
+              ],
+              "median_elapsed_seconds": 10.039817416996812,
+              "median_throughput_rows_per_sec": 99.60340496900469,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 0.8660979093379928,
+              "median_parallel_efficiency": 0.4330489546689964,
+              "raw_speedups": [
+                0.8660979093379928,
+                0.8461108287081377,
+                1.2146766618680664
+              ],
+              "raw_parallel_efficiencies": [
+                0.4330489546689964,
+                0.42305541435406885,
+                0.6073383309340332
+              ]
+            },
+            {
+              "x": 4,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "ab085689-e88d-4052-ac5f-9e57f0fdb194",
+                "bb3d6daa-82d6-4044-be39-bc122d44917c",
+                "2eb67e93-567f-4804-9c6a-0b39823d6459"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                11.9254772500135,
+                9.672448500001337,
+                8.984703000009176
+              ],
+              "raw_throughput_rows_per_sec": [
+                83.85408642650908,
+                103.38643829428109,
+                111.30028449454352
+              ],
+              "median_elapsed_seconds": 9.672448500001337,
+              "median_throughput_rows_per_sec": 103.38643829428109,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 0.8989931427388735,
+              "median_parallel_efficiency": 0.22474828568471839,
+              "raw_speedups": [
+                0.7291502631465975,
+                0.8989931427388735,
+                0.9678077143993769
+              ],
+              "raw_parallel_efficiencies": [
+                0.18228756578664937,
+                0.22474828568471839,
+                0.2419519285998442
+              ]
+            },
+            {
+              "x": 8,
+              "input_rows": 1000,
+              "input_sha256": "e326e320cf16068839d78391d3cc8fe469691469e5bab19e3ad771cfe848cfe8",
+              "run_count": 3,
+              "distinct_repetitions": 3,
+              "run_ids": [
+                "7f319fae-90cc-4fb2-ade3-890e0f3684a6",
+                "78df9219-078c-4558-a535-16e6db5387bd",
+                "cdeaba04-446f-45d0-aaf5-5461bc0af0f1"
+              ],
+              "repetitions": [
+                "1",
+                "2",
+                "3"
+              ],
+              "raw_elapsed_seconds": [
+                24.936929292001878,
+                22.23499625000113,
+                15.338152915996034
+              ],
+              "raw_throughput_rows_per_sec": [
+                40.10116836320878,
+                44.9741474545987,
+                65.19689857551937
+              ],
+              "median_elapsed_seconds": 22.23499625000113,
+              "median_throughput_rows_per_sec": 44.9741474545987,
+              "complete": true,
+              "reason": "At least three distinct successful repetitions",
+              "experiment": "worker_scaling",
+              "config": {
+                "master": "spark://127.0.0.1:17077",
+                "source_sha256": "6e3e032c17c4fd3ffe0f5a9247070df8f9a15a6524819af8d6b8520bf4d4ce5a",
+                "partitions": "8",
+                "executor_memory": "512m",
+                "executor_cores": "1",
+                "driver_memory": "512m",
+                "workload": "build_silver_v1_clean_deduplicate_partitioned_parquet_group_aggregates",
+                "cluster_id": "local-jvm-single-host-1core512m",
+                "base_rows": "1000",
+                "base_sample_method": "first valid unique key rows in sorted source-file order",
+                "base_source_kinds": "{\"official_nyc311_snapshot\": 1000}",
+                "seed": "2026",
+                "spark_version": "3.5.3",
+                "python_version": "3.11.15",
+                "host_cpu_count": "10",
+                "host_ram_bytes": "17179869184",
+                "platform": "macOS-15.6-arm64-arm-64bit",
+                "single_physical_host": "True"
+              },
+              "attempted_runs": 3,
+              "successful_runs": 3,
+              "failed_runs": 0,
+              "not_run": 0,
+              "status": "Complete",
+              "median_speedup": 0.39107111947435846,
+              "median_parallel_efficiency": 0.04888388993429481,
+              "raw_speedups": [
+                0.348698300948587,
+                0.39107111947435846,
+                0.5669173415221123
+              ],
+              "raw_parallel_efficiencies": [
+                0.043587287618573375,
+                0.04888388993429481,
+                0.07086466769026403
+              ]
+            }
+          ]
+        }
+      ],
+      "status": "Generated",
+      "reason": "Only complete, matching configurations shown; small dots are individual measured runs and lines are medians"
+    },
+    {
+      "filename": "runtime_vs_data_size.png",
+      "relative_path": "runtime_vs_data_size.png",
+      "path": null,
+      "experiment": "local_data_scale",
+      "run_count": 0,
+      "complete_configurations": 0,
+      "available_successful_runs": 0,
+      "source_run_counts": {
+        "total": 0,
+        "Succeeded": 0,
+        "Failed": 0,
+        "Not Run": 0
+      },
+      "series": [],
+      "status": "NotApplicable",
+      "reason": "This directory contains worker_scaling; local_data_scale belongs to a different experiment family"
+    },
+    {
+      "filename": "throughput_vs_data_size.png",
+      "relative_path": "throughput_vs_data_size.png",
+      "path": null,
+      "experiment": "local_data_scale",
+      "run_count": 0,
+      "complete_configurations": 0,
+      "available_successful_runs": 0,
+      "source_run_counts": {
+        "total": 0,
+        "Succeeded": 0,
+        "Failed": 0,
+        "Not Run": 0
+      },
+      "series": [],
+      "status": "NotApplicable",
+      "reason": "This directory contains worker_scaling; local_data_scale belongs to a different experiment family"
+    }
+  ],
+  "removed_stale_files": [],
+  "source_csv_unchanged": true
+}

@@ -1,0 +1,7 @@
+{
+  "status": "Passed",
+  "url": "http://127.0.0.1:8501",
+  "http_status": 200,
+  "health_body": "ok",
+  "execution": "make dashboard, real Streamlit server"
+}

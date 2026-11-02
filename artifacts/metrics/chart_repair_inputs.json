@@ -1,0 +1,25 @@
+{
+  "reason": "Inapplicable plot categories were emitted in both benchmark directories",
+  "input_csv_before": [
+    {
+      "path": "artifacts/benchmark/local/runs.csv",
+      "sha256": "56a278a8a0fbd554fa6de96df5f4f6a3afdef66cb672bd8b93456d3adacdbd64"
+    },
+    {
+      "path": "artifacts/benchmark/workers/runs.csv",
+      "sha256": "75a6f1cca19194cfb0729e21010fe5830de0317232d33201ee5b65905cb8bfda"
+    }
+  ],
+  "original_png_paths": [
+    "artifacts/benchmark/local/runtime_vs_data_size.png",
+    "artifacts/benchmark/local/runtime_vs_workers.png",
+    "artifacts/benchmark/local/speedup_efficiency.png",
+    "artifacts/benchmark/local/throughput_vs_workers.png",
+    "artifacts/benchmark/workers/runtime_vs_data_size.png",
+    "artifacts/benchmark/workers/runtime_vs_workers.png",
+    "artifacts/benchmark/workers/speedup_efficiency.png",
+    "artifacts/benchmark/workers/throughput_vs_workers.png"
+  ],
+  "rerun_spark_required": false,
+  "basis": "All21rawattemptsSucceeded;3repetitions for each relevant configuration"
+}

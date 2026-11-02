@@ -1,0 +1,23 @@
+What this view tells us
+Creation cohort: 2025-02-01 through 2025-02-28
+Fixed as_of: 2025-07-01T00:00:00+00:00
+
+Category filters (null means all): {"agencies": ["HPD"], "boroughs": ["BRONX"], "complaint_types": null}
+
+Selected cohort
+253 downloaded systematic sample requests were created from 2025-02-01 through 2025-02-28 (NYC local dates). Mean = 9.0 requests per covered day (28/28 days covered). The selected calendar is fully covered for this sample.
+
+Change versus previous window
+Sample arrivals changed -31.1% (367 → 253) versus 2025-01-04–2025-01-31. Both windows contain 28 local calendar days and use the same category filters. Each window contains at least 20 sampled requests. This describes request arrivals in the sample; it does not establish a cause or citywide change.
+
+Busiest covered day
+2025-02-03 recorded 18 selected sample arrivals (1 day(s) tied for this maximum). This can identify periods to investigate; it is not an anomaly test or a measure of service capacity.
+
+Agency mix
+HPD accounts for 253 requests (100.0%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings.
+
+Resolution follow-up
+8/253 requests (3.2%) have no observed closure by the fixed cutoff 2025-07-01T00:00:00+00:00. They are right-censored at that cutoff. This is follow-up for the selected creation cohort, not the city's current backlog.
+
+How to use this view
+Use date and category filters to inspect the same sample consistently. Counts are not city totals; systematic ID-suffix sampling may be biased. Missing days are gaps, edge weeks/months are labelled partial, and snapshot category fields may have been updated after creation. A short available history cannot establish year-round seasonality or staffing effects.

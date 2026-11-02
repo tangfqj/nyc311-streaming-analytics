@@ -1,0 +1,155 @@
+{
+  "source_url": "https://data.cityofnewyork.us/resource/erm2-nwe9.json",
+  "dataset_id": "erm2-nwe9",
+  "fixture_kind": "official_snapshot_excerpt",
+  "rows": 12,
+  "source_kind": "official_nyc311_snapshot",
+  "sha256": "015eb40aa39a17910f522807a82cc7d2c68d8cb23897639b5749e3c3a2884295",
+  "selection": "First downloaded sampled ID from each of the first12 successful daily windows; engineering boundary fixture only, not representative scientific sample",
+  "source_windows": [
+    {
+      "start_date": "2025-01-01",
+      "file": "311_2025-01-01_2025-01-02.jsonl",
+      "sha256": "57d961ccef20879baae6f96de79e48a648ff31b3965f6f40128835efca2bb00c",
+      "downloaded_at": "2026-11-02T20:15:20.707973+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-01T00:00:00' AND created_date < '2025-01-02T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-02",
+      "file": "311_2025-01-02_2025-01-03.jsonl",
+      "sha256": "501fe94d53154fb5ff9f037c76ec6da53a67e6ec17c499eb11a31ce9ad8881a2",
+      "downloaded_at": "2026-11-02T20:15:21.096752+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-02T00:00:00' AND created_date < '2025-01-03T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-03",
+      "file": "311_2025-01-03_2025-01-04.jsonl",
+      "sha256": "b01915fd765ac04908432b20bd45b98d67e9265b326a612a35efd15b31a59e1c",
+      "downloaded_at": "2026-11-02T20:15:40.443103+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-03T00:00:00' AND created_date < '2025-01-04T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-04",
+      "file": "311_2025-01-04_2025-01-05.jsonl",
+      "sha256": "9503ee14ad47502b70ada86001651f280709f3b9ae837ff9cb6b4aef1a50c2a0",
+      "downloaded_at": "2026-11-02T20:15:53.481450+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-04T00:00:00' AND created_date < '2025-01-05T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-05",
+      "file": "311_2025-01-05_2025-01-06.jsonl",
+      "sha256": "a8eaf5ea70738ffec2c02129a6aea6ac4dd549937b10de5270d80f9023ab9c31",
+      "downloaded_at": "2026-11-02T20:15:53.834939+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-05T00:00:00' AND created_date < '2025-01-06T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-06",
+      "file": "311_2025-01-06_2025-01-07.jsonl",
+      "sha256": "f9a16b1569eff838b51e76fae8adf88657ab03f3e91953499002395c3ceb98d2",
+      "downloaded_at": "2026-11-02T20:15:54.196922+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-06T00:00:00' AND created_date < '2025-01-07T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-07",
+      "file": "311_2025-01-07_2025-01-08.jsonl",
+      "sha256": "a24eb19ce92ad52d81e5ada86e0dd4208b07e696178e56bc41b41977e3ae42a2",
+      "downloaded_at": "2026-11-02T20:15:54.445512+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-07T00:00:00' AND created_date < '2025-01-08T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-08",
+      "file": "311_2025-01-08_2025-01-09.jsonl",
+      "sha256": "ec6e0e6d8e090ea2891601b3508195029e8e99b0b8a8b7ab294c4b3a4011f3ab",
+      "downloaded_at": "2026-11-02T20:15:59.275966+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-08T00:00:00' AND created_date < '2025-01-09T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-09",
+      "file": "311_2025-01-09_2025-01-10.jsonl",
+      "sha256": "335645bdcb2679fa61ff74dbcb14560d2a5002787c28a479ccdfb13555a61b48",
+      "downloaded_at": "2026-11-02T20:16:05.616397+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-09T00:00:00' AND created_date < '2025-01-10T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-10",
+      "file": "311_2025-01-10_2025-01-11.jsonl",
+      "sha256": "bc5f64b458fad4734fe344e07c9c9c9e2597d04b7ccd705f76ccf5e02211df86",
+      "downloaded_at": "2026-11-02T20:16:13.861481+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-10T00:00:00' AND created_date < '2025-01-11T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-11",
+      "file": "311_2025-01-11_2025-01-12.jsonl",
+      "sha256": "f9a8cb6ebb05e985045e03e5b2ca36b9fc09275bd9825161556e43b5a035da80",
+      "downloaded_at": "2026-11-02T20:16:14.220515+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-11T00:00:00' AND created_date < '2025-01-12T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    },
+    {
+      "start_date": "2025-01-12",
+      "file": "311_2025-01-12_2025-01-13.jsonl",
+      "sha256": "17ba59f3f609db0ed9fb15514b74c55f530045a8b3478a8c7fe2c7913df51da8",
+      "downloaded_at": "2026-11-02T20:16:17.998431+00:00",
+      "request": {
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
+        "$where": "created_date >= '2025-01-12T00:00:00' AND created_date < '2025-01-13T00:00:00' AND unique_key like '%17'",
+        "$order": "unique_key ASC",
+        "$limit": 1000
+      }
+    }
+  ]
+}

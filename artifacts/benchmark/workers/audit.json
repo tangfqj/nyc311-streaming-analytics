@@ -1,0 +1,115 @@
+{
+  "status": "Passed",
+  "audited_runs": 12,
+  "checks": [
+    {
+      "run_id": "26a12430-5460-4757-b0b1-764a29b78d3a",
+      "worker_count": 1,
+      "registered_workers": 1,
+      "active_executors": 1,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "3eaa27c9-40ab-4b7a-9670-baffff27e585",
+      "worker_count": 1,
+      "registered_workers": 1,
+      "active_executors": 1,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "fba09d41-fccf-473f-a808-e5e16bd2eaa0",
+      "worker_count": 1,
+      "registered_workers": 1,
+      "active_executors": 1,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "8d92095c-ddb2-4689-8c26-d5d16ced4ffa",
+      "worker_count": 2,
+      "registered_workers": 2,
+      "active_executors": 2,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "13036380-78e0-49d1-ad0d-43771789e7aa",
+      "worker_count": 2,
+      "registered_workers": 2,
+      "active_executors": 2,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "af15432d-36a2-4a4d-8ea3-b75c7f5f4aba",
+      "worker_count": 2,
+      "registered_workers": 2,
+      "active_executors": 2,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "ab085689-e88d-4052-ac5f-9e57f0fdb194",
+      "worker_count": 4,
+      "registered_workers": 4,
+      "active_executors": 4,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "bb3d6daa-82d6-4044-be39-bc122d44917c",
+      "worker_count": 4,
+      "registered_workers": 4,
+      "active_executors": 4,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "2eb67e93-567f-4804-9c6a-0b39823d6459",
+      "worker_count": 4,
+      "registered_workers": 4,
+      "active_executors": 4,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "7f319fae-90cc-4fb2-ade3-890e0f3684a6",
+      "worker_count": 8,
+      "registered_workers": 8,
+      "active_executors": 8,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "78df9219-078c-4558-a535-16e6db5387bd",
+      "worker_count": 8,
+      "registered_workers": 8,
+      "active_executors": 8,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "cdeaba04-446f-45d0-aaf5-5461bc0af0f1",
+      "worker_count": 8,
+      "registered_workers": 8,
+      "active_executors": 8,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    }
+  ],
+  "source_fingerprints_unchanged": true,
+  "checked_invariants": [
+    "Same identical benchmark input SHA256 for every Worker run",
+    "Exactly3 repetitions at each1/2/4/8 workers",
+    "Parquet physical footer rows = CSV rows = ETL accepted rows =1000",
+    "DQ reconciliation and no duplicate silver keys",
+    "Throughput formula",
+    "Distinct actual Worker IDs and active non-driver executor counts equal configured workers",
+    "Each Worker1core512MiB and each executor1core",
+    "Spark3.5.3 and success statuses",
+    "Medians/speedup/efficiency recomputed from raw successful runs",
+    "Source SHA manifest unchanged since capture"
+  ]
+}

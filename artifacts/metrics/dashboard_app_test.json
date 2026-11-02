@@ -1,0 +1,150 @@
+{
+  "status": "Passed",
+  "checks": [
+    {
+      "page": "Overview",
+      "exceptions": [],
+      "chart_count": 2,
+      "metrics": [
+        {
+          "label": "Accepted sample records",
+          "value": "8,813"
+        },
+        {
+          "label": "Observed resolved",
+          "value": "8,543"
+        },
+        {
+          "label": "Right-censored",
+          "value": "270"
+        },
+        {
+          "label": "Holdout concordance",
+          "value": "0.746"
+        },
+        {
+          "label": "Replayed tickets",
+          "value": "100"
+        },
+        {
+          "label": "Stored predictions",
+          "value": "100"
+        },
+        {
+          "label": "Committed batches",
+          "value": "14"
+        }
+      ],
+      "dataframe_count": 1
+    },
+    {
+      "page": "Survival & Prediction",
+      "exceptions": [],
+      "chart_count": 2,
+      "metrics": [
+        {
+          "label": "Survival cohort",
+          "value": "8,813"
+        },
+        {
+          "label": "Censoring rate",
+          "value": "3.1%"
+        },
+        {
+          "label": "Training requests",
+          "value": "6,003"
+        },
+        {
+          "label": "Holdout requests",
+          "value": "2,800"
+        },
+        {
+          "label": "Estimated median",
+          "value": "1.50 days"
+        },
+        {
+          "label": "Resolved within 7 days",
+          "value": "89.3%"
+        },
+        {
+          "label": "Resolved within 30 days",
+          "value": "96.8%"
+        }
+      ],
+      "dataframe_count": 2
+    },
+    {
+      "page": "Seasonality & Capacity",
+      "exceptions": [],
+      "chart_count": 3,
+      "metrics": [
+        {
+          "label": "Days with verified coverage",
+          "value": "90"
+        },
+        {
+          "label": "Daily sample arrivals",
+          "value": "97.9"
+        },
+        {
+          "label": "Detected surge days",
+          "value": "0"
+        },
+        {
+          "label": "Calibrated capacity groups",
+          "value": "0 / 5"
+        },
+        {
+          "label": "Heat requests vs. minimum temperature",
+          "value": "-0.805"
+        }
+      ],
+      "dataframe_count": 4
+    },
+    {
+      "page": "Scalability",
+      "exceptions": [],
+      "chart_count": 6,
+      "metrics": [
+        {
+          "label": "Successful measured runs",
+          "value": "21"
+        },
+        {
+          "label": "Failed runs",
+          "value": "0"
+        },
+        {
+          "label": "Largest measured input",
+          "value": "100,000"
+        },
+        {
+          "label": "Largest worker configuration",
+          "value": "8"
+        }
+      ],
+      "dataframe_count": 6
+    }
+  ],
+  "actual_actions": [
+    "Four populated pages rendered",
+    "Actual PostgreSQL refresh",
+    "Saved-model form submit",
+    "Matching NYC local and explicit offset predictions",
+    "Invalid DST gap rejected"
+  ],
+  "prediction_timezone_check": {
+    "naive_nyc": {
+      "Estimated median": "1.50 days",
+      "Resolved within 7 days": "89.3%",
+      "Resolved within 30 days": "96.8%"
+    },
+    "explicit_offset": {
+      "Estimated median": "1.50 days",
+      "Resolved within 7 days": "89.3%",
+      "Resolved within 30 days": "96.8%"
+    },
+    "dst_gap_rejected": true
+  },
+  "method": "Streamlit1.40 AppTest actual execution; separate Playwright desktop/mobile screenshots and checks"
+}

@@ -1,0 +1,7 @@
+month,cold_day,mean_heat_sample_count,n_days
+1,False,14.0,2
+1,True,22.79310344827586,29
+2,False,8.5,6
+2,True,16.045454545454547,22
+3,False,8.076923076923077,26
+3,True,11.8,5

@@ -1,0 +1,77 @@
+{
+  "captured_at": "2026-11-02T20:29:04.457599+00:00",
+  "commit_hash": "uncommitted",
+  "capture_context": "After local9runs; during nativeWorker matrix. Relevant ETL and benchmark business code was not edited during measurements. This does not retroactively assert a Git commit.",
+  "files": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "a3b37da31d3b38a1b02aab79283dbce75c5c87fbf52f9910760d45b9bc9c8610",
+      "bytes": 759
+    },
+    {
+      "path": "requirements.lock",
+      "sha256": "4fa0f11ece42567e45b8715482057b58538c8d1b8f9a87f554f46de142510d6e",
+      "bytes": 1127
+    },
+    {
+      "path": "scripts/cluster_bench.sh",
+      "sha256": "1a206c1c9e2064b7ee7128ece666af82507aee0680966ab41ec116abb1dd5acc",
+      "bytes": 3381
+    },
+    {
+      "path": "scripts/env.sh",
+      "sha256": "9884a19f10b984e6bcaf839ed976fe0a290a3e69a9d1712ddebc7c48cf310373",
+      "bytes": 590
+    },
+    {
+      "path": "src/nyc311/benchmark/__init__.py",
+      "sha256": "7625701727bf459e9a395dda434943b7023084a24a1b341cd56ccce7c790aee7",
+      "bytes": 80
+    },
+    {
+      "path": "src/nyc311/benchmark/expand_data.py",
+      "sha256": "bc939034e71f008d3c712bda5863fc985447c0bb03fe1efde7975e7f4b2e27b2",
+      "bytes": 5548
+    },
+    {
+      "path": "src/nyc311/benchmark/plot_scaling.py",
+      "sha256": "c57ef15be0964aaa3deeb1830207b5d4175221be51b562573a31547d621f0768",
+      "bytes": 3877
+    },
+    {
+      "path": "src/nyc311/benchmark/run_benchmark.py",
+      "sha256": "9e5c6c8896b05758654cfc4c2a02742fcda9d5eab69e44c2026f60ebf7f95915",
+      "bytes": 18025
+    },
+    {
+      "path": "src/nyc311/config.py",
+      "sha256": "308ae504ed574122dbea0b74f05706b121c9b048deea115c2591c1a94c722d3e",
+      "bytes": 1304
+    },
+    {
+      "path": "src/nyc311/etl/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/nyc311/etl/build_silver.py",
+      "sha256": "f47dfc5ca951ddfc03039533f40dfc44855b2386dafe15e79c0dc8a973e2ef4b",
+      "bytes": 7053
+    },
+    {
+      "path": "src/nyc311/etl/clean.py",
+      "sha256": "e32e2e2be7c3361a72b453fb18052bb67313adffe4185201625e45cf4b9e99e5",
+      "bytes": 3679
+    },
+    {
+      "path": "src/nyc311/etl/quality.py",
+      "sha256": "95c6af411908f7b06a66c5a4c441960f94b446f7ff49ce0de6ba4a79bf90e803",
+      "bytes": 457
+    },
+    {
+      "path": "src/nyc311/etl/schema.py",
+      "sha256": "dbac944999eb0b742e09eda31ee313b957309fd2118a07c064a8fc93e93b13b5",
+      "bytes": 528
+    }
+  ]
+}

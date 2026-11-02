@@ -1,0 +1,183 @@
+{
+  "status": "Passed",
+  "command": ".venv/bin/python dashboard/verify_interactions.py",
+  "script": "dashboard/verify_interactions.py",
+  "source": "persisted official silver and source manifest",
+  "timezone": "America/New_York creation-calendar dates; chart calendar encoded on UTC scale",
+  "as_of": "2025-07-01T00:00:00Z",
+  "checks": [
+    {
+      "name": "Overview initial official cohort",
+      "status": "Passed",
+      "metrics": {
+        "Selected sample requests": "8,813",
+        "Mean daily arrivals": "97.9",
+        "Observed resolved": "8,543",
+        "Right-censored": "270",
+        "Replayed tickets": "100",
+        "Stored predictions": "100",
+        "Committed batches": "14"
+      }
+    },
+    {
+      "name": "Inclusive February creation window",
+      "status": "Passed",
+      "metrics": {
+        "Selected sample requests": "2,544",
+        "Mean daily arrivals": "90.9",
+        "Observed resolved": "2,458",
+        "Right-censored": "86",
+        "Replayed tickets": "100",
+        "Stored predictions": "100",
+        "Committed batches": "14"
+      }
+    },
+    {
+      "name": "Dynamic narrative includes filtered February cohort",
+      "status": "Passed",
+      "selected_rows": 2544
+    },
+    {
+      "name": "Monthly aggregation preserves cohort",
+      "status": "Passed",
+      "metrics": {
+        "Selected sample requests": "2,544",
+        "Mean daily arrivals": "90.9",
+        "Observed resolved": "2,458",
+        "Right-censored": "86",
+        "Replayed tickets": "100",
+        "Stored predictions": "100",
+        "Committed batches": "14"
+      }
+    },
+    {
+      "name": "Previous-period comparison enabled",
+      "status": "Passed",
+      "metrics": {
+        "Selected sample requests": "2,544",
+        "Mean daily arrivals": "90.9",
+        "Observed resolved": "2,458",
+        "Right-censored": "86",
+        "Replayed tickets": "100",
+        "Stored predictions": "100",
+        "Committed batches": "14"
+      }
+    },
+    {
+      "name": "Explicit empty category selection means no requests",
+      "status": "Passed",
+      "metrics": {
+        "Selected sample requests": "0",
+        "Mean daily arrivals": "0.0",
+        "Observed resolved": "0",
+        "Right-censored": "0",
+        "Replayed tickets": "100",
+        "Stored predictions": "100",
+        "Committed batches": "14"
+      }
+    },
+    {
+      "name": "Agency selection intersects date cohort",
+      "status": "Passed",
+      "metrics": {
+        "Selected sample requests": "717",
+        "Mean daily arrivals": "25.6",
+        "Observed resolved": "695",
+        "Right-censored": "22",
+        "Replayed tickets": "100",
+        "Stored predictions": "100",
+        "Committed batches": "14"
+      }
+    },
+    {
+      "name": "Filtered Kaplan\u2013Meier with confidence interval",
+      "status": "Passed",
+      "metrics": {
+        "Selected survival cohort": "717",
+        "Selected censoring rate": "3.1%",
+        "Observed resolved": "695",
+        "Right-censored": "22",
+        "Saved training requests": "6,003",
+        "Saved holdout requests": "2,800",
+        "Holdout Cox concordance": "0.746"
+      }
+    },
+    {
+      "name": "Filtered Kaplan\u2013Meier borough grouping",
+      "status": "Passed",
+      "metrics": {
+        "Selected survival cohort": "717",
+        "Selected censoring rate": "3.1%",
+        "Observed resolved": "695",
+        "Right-censored": "22",
+        "Saved training requests": "6,003",
+        "Saved holdout requests": "2,800",
+        "Holdout Cox concordance": "0.746"
+      }
+    },
+    {
+      "name": "Filtered weather and selected weather variable",
+      "status": "Passed",
+      "metrics": {
+        "Selected sample requests": "717",
+        "Mean daily arrivals": "25.6",
+        "Covered extraction days": "28 / 28",
+        "Paired weather days": "28",
+        "Filtered arrivals / weather \u00b7 Spearman \u03c1": "-0.247",
+        "Saved capacity groups": "5",
+        "Calibrated groups": "0"
+      }
+    },
+    {
+      "name": "Inclusive before-date mode",
+      "status": "Passed",
+      "metrics": {
+        "Selected sample requests": "540",
+        "Mean daily arrivals": "36.0",
+        "Observed resolved": "522",
+        "Right-censored": "18",
+        "Replayed tickets": "100",
+        "Stored predictions": "100",
+        "Committed batches": "14"
+      }
+    },
+    {
+      "name": "Available-year selection remains valid",
+      "status": "Passed",
+      "metrics": {
+        "Selected sample requests": "2,440",
+        "Mean daily arrivals": "27.1",
+        "Observed resolved": "2,363",
+        "Right-censored": "77",
+        "Replayed tickets": "100",
+        "Stored predictions": "100",
+        "Committed batches": "14"
+      }
+    },
+    {
+      "name": "Persisted benchmark page independent of cohort filters",
+      "status": "Passed",
+      "metrics": {
+        "Successful measured runs": "21",
+        "Failed runs": "0",
+        "Largest measured input": "100,000",
+        "Largest worker configuration": "8"
+      }
+    },
+    {
+      "name": "UTC-midnight brush values preserve calendar day",
+      "status": "Passed",
+      "epoch_ms": 1735689600000,
+      "expected_calendar_date": "2025-01-01"
+    }
+  ],
+  "scope": "Streamlit AppTest control and data assertions; not a browser screenshot or pointer test",
+  "browser_brush": "Not Run by this script; requires actual browser pointer verification",
+  "source_rows": 8813,
+  "downloaded_dates": [
+    "2025-01-01",
+    "2025-04-01"
+  ],
+  "duration_seconds": 2.160994040998048,
+  "passed_checks": 14
+}

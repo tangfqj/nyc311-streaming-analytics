@@ -1,0 +1,39 @@
+{
+  "status": "Success",
+  "reason": null,
+  "as_of": "2025-07-01T00:00:00+00:00",
+  "input_rows": 8813,
+  "source_kinds": [
+    "official_snapshot"
+  ],
+  "excluded_synthetic": 0,
+  "invalid_or_future_created": 0,
+  "invalid_closed_removed": 0,
+  "groups_considered": 65,
+  "groups_selected": 5,
+  "groups_calibrated": 0,
+  "groups_failed_calibration": 5,
+  "scenario_rows": 20,
+  "published_nonbaseline_deltas": 0,
+  "censoring_rate": 0.030636559627822524,
+  "assumptions": "Retrospective downloaded-cohort FIFO queue only; initial cohort backlog=0 by cohort definition; pre-window and unsampled agency backlog unknown, not assumed zero. Observed closures in this cohort proxy daily service opportunities, not staffing or agency capacity. Homogeneous ticket difficulty; end-of-day service; fractional uplift accumulates while unused integer daily opportunities expire. No outside-cohort arrivals or resource competition. Fixed as_of; unfinished tickets right-censored. Retrospective sensitivity, not causal staffing effects or a forecast.",
+  "calibration_parameters": {
+    "min_group_n": 100,
+    "top_n": 5,
+    "calibration_ratio_min": 0.5,
+    "calibration_ratio_max": 2.0,
+    "uplifts": [
+      0.0,
+      0.1,
+      0.2,
+      0.3
+    ]
+  },
+  "limitations": [
+    "Calibration reuses the cohort closure process and is not independent validation.",
+    "Incomplete window or systematic-sample coverage can distort cohort composition and service proxy.",
+    "Only downloaded cohort demand is queued; outside-cohort arrivals and historical backlog are unknown.",
+    "Ranking prioritizes investigation and complaint-mix context, not agency performance or hiring decisions."
+  ],
+  "elapsed_seconds": 2.949684332998004
+}

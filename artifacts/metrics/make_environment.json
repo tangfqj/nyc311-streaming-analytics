@@ -1,0 +1,5 @@
+{
+  "status": "Passed",
+  "version": "GNU Make 4.4.1",
+  "invocation": "PATH=/opt/homebrew/opt/make/libexec/gnubin:$PATH make <target>"
+}

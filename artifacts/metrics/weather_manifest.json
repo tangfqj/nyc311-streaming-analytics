@@ -1,0 +1,42 @@
+{
+  "source": "https://archive-api.open-meteo.com/v1/archive",
+  "documentation": "https://open-meteo.com/en/docs/historical-weather-api",
+  "source_kind": "official_open_meteo_historical_reanalysis",
+  "weather_semantics": "Historical ERA5 gridded reanalysis, not a direct station observation or forecast",
+  "spatial_assumption": "One NYC representative point; not borough-specific weather",
+  "parameters": {
+    "latitude": 40.7128,
+    "longitude": -74.006,
+    "start_date": "2025-01-01",
+    "end_date": "2025-03-31",
+    "daily": "temperature_2m_min,temperature_2m_max,precipitation_sum",
+    "timezone": "America/New_York",
+    "temperature_unit": "celsius",
+    "precipitation_unit": "mm",
+    "models": "era5"
+  },
+  "downloaded_at": "2026-11-02T20:20:27.085035+00:00",
+  "requested_end_inclusive": true,
+  "status": "Success",
+  "attempts": [
+    {
+      "attempt": 1,
+      "http_status": 200
+    }
+  ],
+  "rows": 90,
+  "complete_weather_days": 90,
+  "missing_value_days": 0,
+  "file": "data/weather/weather.csv",
+  "raw_file": "data/weather/weather_response.json",
+  "sha256": "a17dc62ba2a9b7b36871e47b2918eb568376230a548ba420e2af0d6be3ba71de",
+  "daily_units": {
+    "time": "iso8601",
+    "temperature_2m_min": "\u00b0C",
+    "temperature_2m_max": "\u00b0C",
+    "precipitation_sum": "mm"
+  },
+  "returned_latitude": 40.75,
+  "returned_longitude": -74.0,
+  "elapsed_seconds": 0.8198890839994419
+}

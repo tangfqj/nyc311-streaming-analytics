@@ -1,0 +1,35 @@
+{
+  "record_kind": "observed_setup_attempt_summary",
+  "attempts": [
+    {
+      "component": "sandbox_network",
+      "status": "Failed",
+      "reason": "Initial curl DNS resolution blocked in sandbox",
+      "resolution": "Authorized host execution reached official API"
+    },
+    {
+      "component": "sandbox_docker_socket",
+      "status": "Failed",
+      "reason": "Initial operation not permitted; then host daemon not running",
+      "resolution": "Started Docker Desktop; real PostgreSQL16.4 healthy"
+    },
+    {
+      "component": "default_java",
+      "status": "Unsupported",
+      "version": "Oracle18.0.2.1 x86_64",
+      "resolution": "Project-local Temurin17.0.13+11 ARM JRE"
+    },
+    {
+      "component": "postgres_initial_connection",
+      "status": "Failed",
+      "reason": "Initial compose file used5433; later initialized password differed after config alignment",
+      "resolution": "Reconciled project service55432 and demo password; successful SELECT version persisted"
+    },
+    {
+      "component": "apple_make_stub",
+      "status": "Failed",
+      "reason": "/usr/bin/make required unavailable Apple developer tools",
+      "resolution": "Installed GNU Make; exact Makefile targets passed with project invocation PATH override"
+    }
+  ]
+}

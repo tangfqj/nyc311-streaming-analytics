@@ -1,0 +1,120 @@
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/02 20:29:26 INFO Master: Started daemon with process name: 96841@MacBook-Air.local
+26/11/02 20:29:26 INFO SignalUtils: Registering signal handler for TERM
+26/11/02 20:29:26 INFO SignalUtils: Registering signal handler for HUP
+26/11/02 20:29:26 INFO SignalUtils: Registering signal handler for INT
+26/11/02 20:29:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/11/02 20:29:26 INFO SecurityManager: Changing view acls to: guerqian77
+26/11/02 20:29:26 INFO SecurityManager: Changing modify acls to: guerqian77
+26/11/02 20:29:26 INFO SecurityManager: Changing view acls groups to: 
+26/11/02 20:29:26 INFO SecurityManager: Changing modify acls groups to: 
+26/11/02 20:29:26 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: guerqian77; groups with view permissions: EMPTY; users with modify permissions: guerqian77; groups with modify permissions: EMPTY
+26/11/02 20:29:26 INFO Utils: Successfully started service 'sparkMaster' on port 17077.
+26/11/02 20:29:26 INFO Master: Starting Spark master at spark://127.0.0.1:17077
+26/11/02 20:29:26 INFO Master: Running Spark version 3.5.3
+26/11/02 20:29:26 INFO JettyUtils: Start Jetty 127.0.0.1:18080 for MasterUI
+26/11/02 20:29:26 INFO Utils: Successfully started service 'MasterUI' on port 18080.
+26/11/02 20:29:26 INFO MasterWebUI: Bound MasterWebUI to 127.0.0.1, and started at http://localhost:18080
+26/11/02 20:29:26 INFO Master: I have been elected leader! New state: ALIVE
+26/11/02 20:29:32 INFO Master: Registering worker 127.0.0.1:52043 with 1 cores, 512.0 MiB RAM
+26/11/02 20:29:32 INFO Master: Registering worker 127.0.0.1:52041 with 1 cores, 512.0 MiB RAM
+26/11/02 20:29:32 INFO Master: Registering worker 127.0.0.1:52042 with 1 cores, 512.0 MiB RAM
+26/11/02 20:29:32 INFO Master: Registering worker 127.0.0.1:52045 with 1 cores, 512.0 MiB RAM
+26/11/02 20:29:32 INFO Master: Registering worker 127.0.0.1:52044 with 1 cores, 512.0 MiB RAM
+26/11/02 20:29:32 INFO Master: Registering worker 127.0.0.1:52046 with 1 cores, 512.0 MiB RAM
+26/11/02 20:29:32 INFO Master: Registering worker 127.0.0.1:52048 with 1 cores, 512.0 MiB RAM
+26/11/02 20:29:32 INFO Master: Registering worker 127.0.0.1:52047 with 1 cores, 512.0 MiB RAM
+26/11/02 20:29:33 INFO Master: Registering app nyc311-benchmark
+26/11/02 20:29:33 INFO Master: Registered app nyc311-benchmark with ID app-20261102202933-0000
+26/11/02 20:29:33 INFO Master: Start scheduling for app app-20261102202933-0000 with rpId: 0
+26/11/02 20:29:33 INFO Master: Launching executor app-20261102202933-0000/0 on worker worker-20261102202931-127.0.0.1-52041
+26/11/02 20:29:33 INFO Master: Launching executor app-20261102202933-0000/1 on worker worker-20261102202931-127.0.0.1-52043
+26/11/02 20:29:33 INFO Master: Launching executor app-20261102202933-0000/2 on worker worker-20261102202931-127.0.0.1-52046
+26/11/02 20:29:33 INFO Master: Launching executor app-20261102202933-0000/3 on worker worker-20261102202931-127.0.0.1-52048
+26/11/02 20:29:33 INFO Master: Launching executor app-20261102202933-0000/4 on worker worker-20261102202931-127.0.0.1-52045
+26/11/02 20:29:33 INFO Master: Launching executor app-20261102202933-0000/5 on worker worker-20261102202931-127.0.0.1-52047
+26/11/02 20:29:33 INFO Master: Launching executor app-20261102202933-0000/6 on worker worker-20261102202931-127.0.0.1-52042
+26/11/02 20:29:33 INFO Master: Launching executor app-20261102202933-0000/7 on worker worker-20261102202931-127.0.0.1-52044
+26/11/02 20:29:33 INFO Master: Start scheduling for app app-20261102202933-0000 with rpId: 0
+26/11/02 20:29:33 INFO Master: Start scheduling for app app-20261102202933-0000 with rpId: 0
+26/11/02 20:29:33 INFO Master: Start scheduling for app app-20261102202933-0000 with rpId: 0
+26/11/02 20:29:33 INFO Master: Start scheduling for app app-20261102202933-0000 with rpId: 0
+26/11/02 20:29:33 INFO Master: Start scheduling for app app-20261102202933-0000 with rpId: 0
+26/11/02 20:29:33 INFO Master: Start scheduling for app app-20261102202933-0000 with rpId: 0
+26/11/02 20:29:33 INFO Master: Start scheduling for app app-20261102202933-0000 with rpId: 0
+26/11/02 20:29:33 INFO Master: Start scheduling for app app-20261102202933-0000 with rpId: 0
+26/11/02 20:30:14 INFO Master: Received unregister request from application app-20261102202933-0000
+26/11/02 20:30:14 INFO Master: Removing app app-20261102202933-0000
+26/11/02 20:30:14 INFO Master: 127.0.0.1:52062 got disassociated, removing it.
+26/11/02 20:30:14 INFO Master: 127.0.0.1:52060 got disassociated, removing it.
+26/11/02 20:30:14 WARN Master: Got status update for unknown executor app-20261102202933-0000/5
+26/11/02 20:30:14 WARN Master: Got status update for unknown executor app-20261102202933-0000/3
+26/11/02 20:30:14 WARN Master: Got status update for unknown executor app-20261102202933-0000/4
+26/11/02 20:30:14 WARN Master: Got status update for unknown executor app-20261102202933-0000/0
+26/11/02 20:30:14 WARN Master: Got status update for unknown executor app-20261102202933-0000/1
+26/11/02 20:30:14 WARN Master: Got status update for unknown executor app-20261102202933-0000/2
+26/11/02 20:30:14 WARN Master: Got status update for unknown executor app-20261102202933-0000/6
+26/11/02 20:30:14 WARN Master: Got status update for unknown executor app-20261102202933-0000/7
+26/11/02 20:30:16 INFO Master: Registering app nyc311-benchmark
+26/11/02 20:30:16 INFO Master: Registered app nyc311-benchmark with ID app-20261102203016-0001
+26/11/02 20:30:16 INFO Master: Start scheduling for app app-20261102203016-0001 with rpId: 0
+26/11/02 20:30:16 INFO Master: Launching executor app-20261102203016-0001/0 on worker worker-20261102202931-127.0.0.1-52041
+26/11/02 20:30:16 INFO Master: Launching executor app-20261102203016-0001/1 on worker worker-20261102202931-127.0.0.1-52043
+26/11/02 20:30:16 INFO Master: Launching executor app-20261102203016-0001/2 on worker worker-20261102202931-127.0.0.1-52046
+26/11/02 20:30:16 INFO Master: Launching executor app-20261102203016-0001/3 on worker worker-20261102202931-127.0.0.1-52048
+26/11/02 20:30:16 INFO Master: Launching executor app-20261102203016-0001/4 on worker worker-20261102202931-127.0.0.1-52045
+26/11/02 20:30:16 INFO Master: Launching executor app-20261102203016-0001/5 on worker worker-20261102202931-127.0.0.1-52047
+26/11/02 20:30:16 INFO Master: Launching executor app-20261102203016-0001/6 on worker worker-20261102202931-127.0.0.1-52042
+26/11/02 20:30:16 INFO Master: Launching executor app-20261102203016-0001/7 on worker worker-20261102202931-127.0.0.1-52044
+26/11/02 20:30:16 INFO Master: Start scheduling for app app-20261102203016-0001 with rpId: 0
+26/11/02 20:30:16 INFO Master: Start scheduling for app app-20261102203016-0001 with rpId: 0
+26/11/02 20:30:16 INFO Master: Start scheduling for app app-20261102203016-0001 with rpId: 0
+26/11/02 20:30:16 INFO Master: Start scheduling for app app-20261102203016-0001 with rpId: 0
+26/11/02 20:30:16 INFO Master: Start scheduling for app app-20261102203016-0001 with rpId: 0
+26/11/02 20:30:16 INFO Master: Start scheduling for app app-20261102203016-0001 with rpId: 0
+26/11/02 20:30:16 INFO Master: Start scheduling for app app-20261102203016-0001 with rpId: 0
+26/11/02 20:30:16 INFO Master: Start scheduling for app app-20261102203016-0001 with rpId: 0
+26/11/02 20:30:53 INFO Master: Received unregister request from application app-20261102203016-0001
+26/11/02 20:30:53 INFO Master: Removing app app-20261102203016-0001
+26/11/02 20:30:53 INFO Master: 127.0.0.1:52229 got disassociated, removing it.
+26/11/02 20:30:53 INFO Master: 127.0.0.1:52228 got disassociated, removing it.
+26/11/02 20:30:53 WARN Master: Got status update for unknown executor app-20261102203016-0001/5
+26/11/02 20:30:53 WARN Master: Got status update for unknown executor app-20261102203016-0001/2
+26/11/02 20:30:53 WARN Master: Got status update for unknown executor app-20261102203016-0001/4
+26/11/02 20:30:53 WARN Master: Got status update for unknown executor app-20261102203016-0001/0
+26/11/02 20:30:53 WARN Master: Got status update for unknown executor app-20261102203016-0001/7
+26/11/02 20:30:53 WARN Master: Got status update for unknown executor app-20261102203016-0001/6
+26/11/02 20:30:53 WARN Master: Got status update for unknown executor app-20261102203016-0001/1
+26/11/02 20:30:53 WARN Master: Got status update for unknown executor app-20261102203016-0001/3
+26/11/02 20:30:56 INFO Master: Registering app nyc311-benchmark
+26/11/02 20:30:56 INFO Master: Registered app nyc311-benchmark with ID app-20261102203056-0002
+26/11/02 20:30:56 INFO Master: Start scheduling for app app-20261102203056-0002 with rpId: 0
+26/11/02 20:30:56 INFO Master: Launching executor app-20261102203056-0002/0 on worker worker-20261102202931-127.0.0.1-52041
+26/11/02 20:30:56 INFO Master: Launching executor app-20261102203056-0002/1 on worker worker-20261102202931-127.0.0.1-52043
+26/11/02 20:30:56 INFO Master: Launching executor app-20261102203056-0002/2 on worker worker-20261102202931-127.0.0.1-52046
+26/11/02 20:30:56 INFO Master: Launching executor app-20261102203056-0002/3 on worker worker-20261102202931-127.0.0.1-52048
+26/11/02 20:30:56 INFO Master: Launching executor app-20261102203056-0002/4 on worker worker-20261102202931-127.0.0.1-52045
+26/11/02 20:30:56 INFO Master: Launching executor app-20261102203056-0002/5 on worker worker-20261102202931-127.0.0.1-52047
+26/11/02 20:30:56 INFO Master: Launching executor app-20261102203056-0002/6 on worker worker-20261102202931-127.0.0.1-52042
+26/11/02 20:30:56 INFO Master: Launching executor app-20261102203056-0002/7 on worker worker-20261102202931-127.0.0.1-52044
+26/11/02 20:30:56 INFO Master: Start scheduling for app app-20261102203056-0002 with rpId: 0
+26/11/02 20:30:56 INFO Master: Start scheduling for app app-20261102203056-0002 with rpId: 0
+26/11/02 20:30:56 INFO Master: Start scheduling for app app-20261102203056-0002 with rpId: 0
+26/11/02 20:30:56 INFO Master: Start scheduling for app app-20261102203056-0002 with rpId: 0
+26/11/02 20:30:56 INFO Master: Start scheduling for app app-20261102203056-0002 with rpId: 0
+26/11/02 20:30:56 INFO Master: Start scheduling for app app-20261102203056-0002 with rpId: 0
+26/11/02 20:30:56 INFO Master: Start scheduling for app app-20261102203056-0002 with rpId: 0
+26/11/02 20:30:56 INFO Master: Start scheduling for app app-20261102203056-0002 with rpId: 0
+26/11/02 20:31:25 INFO Master: Received unregister request from application app-20261102203056-0002
+26/11/02 20:31:25 INFO Master: Removing app app-20261102203056-0002
+26/11/02 20:31:26 INFO Master: 127.0.0.1:52371 got disassociated, removing it.
+26/11/02 20:31:26 INFO Master: 127.0.0.1:52370 got disassociated, removing it.
+26/11/02 20:31:26 WARN Master: Got status update for unknown executor app-20261102203056-0002/5
+26/11/02 20:31:26 WARN Master: Got status update for unknown executor app-20261102203056-0002/1
+26/11/02 20:31:26 WARN Master: Got status update for unknown executor app-20261102203056-0002/0
+26/11/02 20:31:26 WARN Master: Got status update for unknown executor app-20261102203056-0002/4
+26/11/02 20:31:26 WARN Master: Got status update for unknown executor app-20261102203056-0002/7
+26/11/02 20:31:26 WARN Master: Got status update for unknown executor app-20261102203056-0002/3
+26/11/02 20:31:26 WARN Master: Got status update for unknown executor app-20261102203056-0002/6
+26/11/02 20:31:26 WARN Master: Got status update for unknown executor app-20261102203056-0002/2
+26/11/02 20:31:27 ERROR Master: RECEIVED SIGNAL TERM

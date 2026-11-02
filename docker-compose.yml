@@ -1,0 +1,59 @@
+name: nyc311-bigdata
+services:
+  postgres:
+    image: postgres:16.4-bookworm
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-nyc311}
+      POSTGRES_USER: ${POSTGRES_USER:-nyc311}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-nyc311_local}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-55432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  spark-master:
+    image: apache/spark:3.5.3-scala2.12-java17-python3-ubuntu
+    profiles: [spark]
+    user: "0:0"
+    entrypoint: ["/opt/spark/bin/spark-class"]
+    command: ["org.apache.spark.deploy.master.Master", "--host", "spark-master", "--port", "7077", "--webui-port", "8080"]
+    environment:
+      SPARK_DAEMON_MEMORY: 256m
+    ports:
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:7077:7077"
+    volumes:
+      - .:/workspace
+  spark-worker:
+    image: apache/spark:3.5.3-scala2.12-java17-python3-ubuntu
+    profiles: [spark]
+    user: "0:0"
+    entrypoint: ["/opt/spark/bin/spark-class"]
+    command: ["org.apache.spark.deploy.worker.Worker", "--cores", "1", "--memory", "512m", "--webui-port", "8081", "spark://spark-master:7077"]
+    environment:
+      SPARK_DAEMON_MEMORY: 256m
+    depends_on: [spark-master]
+    volumes:
+      - .:/workspace
+  runner:
+    build: .
+    profiles: [app]
+    working_dir: /workspace
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-nyc311}:${POSTGRES_PASSWORD:-nyc311_local}@postgres:5432/${POSTGRES_DB:-nyc311}
+      SPARK_MASTER: local[2]
+      PYTHONPATH: /workspace/src
+      SPARK_DRIVER_HOST: runner
+      SPARK_DRIVER_BIND_ADDRESS: 0.0.0.0
+    volumes:
+      - .:/workspace
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: ["python", "-m", "nyc311.cli", "smoke"]
+volumes:
+  postgres_data:

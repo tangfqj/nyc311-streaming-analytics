@@ -1,0 +1,160 @@
+{
+  "captured_at": "2026-11-02T21:41:54.835852+00:00",
+  "evidence": [
+    {
+      "path": "artifacts/metrics/pytest.xml",
+      "sha256": "be6f2d865a540206939364990f2436e5921c33ceb7143c4f591695f606e9d929",
+      "bytes": 11507
+    },
+    {
+      "path": "artifacts/metrics/smoke.json",
+      "sha256": "4f472517ed75e97e7e16265702f65cd940e32d2712f366298783fec41aeedd55",
+      "bytes": 64448
+    },
+    {
+      "path": "artifacts/metrics/streaming_metrics.json",
+      "sha256": "574bed006f34836695cfa20eb3f9a20e3162927412df14cc4beaf2fba4e8a840",
+      "bytes": 126659
+    },
+    {
+      "path": "artifacts/metrics/model_evaluation.json",
+      "sha256": "677bb6bafcfb89d2d69c47523d0b67ed691a6fa99a51eb0ea37606c3de118377",
+      "bytes": 6527
+    },
+    {
+      "path": "artifacts/metrics/survival.json",
+      "sha256": "05cb8d9b791c586d88b10de8a71d1911beb8d21f45059b928c1318404afb3c22",
+      "bytes": 774
+    },
+    {
+      "path": "artifacts/metrics/seasonality_summary.json",
+      "sha256": "2f6b7e8c1a981464e0c635b78f181c33044263ffd2f52c65b14fe61fc30cb1f8",
+      "bytes": 5146
+    },
+    {
+      "path": "artifacts/metrics/capacity_summary.json",
+      "sha256": "8c8a0304391ae28b69d1a0453eb3da19587b1ed49bde45e33a444687bb248a8c",
+      "bytes": 1729
+    },
+    {
+      "path": "artifacts/metrics/container_smoke.json",
+      "sha256": "5c78ba6ee2f36f4d7b4c221ee5ddd344abd855d5f34d7b2a83ea74ae7f6b21dc",
+      "bytes": 694
+    },
+    {
+      "path": "artifacts/metrics/dashboard_app_test.json",
+      "sha256": "467fb832be547f777596f786e6ac8aea33af448cefc38c43d416b0fd60c9b7d7",
+      "bytes": 3407
+    },
+    {
+      "path": "artifacts/metrics/dashboard_visual_qa.json",
+      "sha256": "b679dc19de9409dad3a52107e23413b09d7de35889e381be69f0bd8ed68f25e3",
+      "bytes": 1341
+    },
+    {
+      "path": "artifacts/metrics/chart_repair.json",
+      "sha256": "f59e2e4bd760898b992548088cbf2eb1c2f57c7af86935ccfe2f0774bf56af75",
+      "bytes": 4579
+    },
+    {
+      "path": "artifacts/metrics/document_links.json",
+      "sha256": "dbfdb4eb2677183743814f54af37175f5f5859a79fbf272bdffac8fadca40449",
+      "bytes": 65
+    },
+    {
+      "path": "artifacts/benchmark/local/plot_manifest.json",
+      "sha256": "d389a6a2e724d6320dbc36e148eac110cff1d3ca864d166c0dfabbf46fda7e73",
+      "bytes": 25650
+    },
+    {
+      "path": "artifacts/benchmark/workers/plot_manifest.json",
+      "sha256": "dfc4a93d3dfec36ad9d75e55119e2656685db5f99019a86c4c1f03f806e41f3f",
+      "bytes": 49747
+    },
+    {
+      "path": "reports/final_report.md",
+      "sha256": "c16befd7bf9baafeb738127cd74592ae18790370add04b92738da8ab12acf8ab",
+      "bytes": 42824
+    },
+    {
+      "path": "artifacts/metrics/interactive_analytics_examples.json",
+      "sha256": "3a4c14abf87a37084bb58b8d772ae163364ac6b43262c8198b850497f0d4a0df",
+      "bytes": 18055
+    },
+    {
+      "path": "artifacts/metrics/interactive_dashboard_app_test.json",
+      "sha256": "9f882de95c91bd058f49aef50aa09ba1dac2a17997881bc78fe3be2fea3a0107",
+      "bytes": 5600
+    },
+    {
+      "path": "artifacts/metrics/dashboard_interaction_qa.json",
+      "sha256": "e28634297cc393c4bd1c77b06d34e33755ca5f2ba23c5b1bcef8a23fab3fbc63",
+      "bytes": 14320
+    },
+    {
+      "path": "artifacts/metrics/explorer_tests.xml",
+      "sha256": "7a3e1ba060b0b306485cb6ab9703ff0b8fd3ba2a3ae56c9bfa41083bd50ff051",
+      "bytes": 2932
+    },
+    {
+      "path": "artifacts/metrics/test_summary.json",
+      "sha256": "5d18051dbd0da812d04635cdf41eeee13c1716b88e12457169df477b3f01bcc2",
+      "bytes": 114
+    },
+    {
+      "path": "artifacts/metrics/milestones.json",
+      "sha256": "2db3892f052bbac2e1eacb1eee41ffaed2e2616cf832cca571ad954c88e7e7ef",
+      "bytes": 1464
+    },
+    {
+      "path": "dashboard/verify_interactions.py",
+      "sha256": "c67be91ac59428871a9f35516bfaaedec093302a0780e0f36747858b0c212a9a",
+      "bytes": 5643
+    },
+    {
+      "path": "src/nyc311/analysis/explorer.py",
+      "sha256": "5670cb03398f54b9ccb41d3661641b2b28f20a5e2f583345bf86be879f83d996",
+      "bytes": 31565
+    },
+    {
+      "path": "dashboard/explorer_ui.py",
+      "sha256": "aa622509be663fd41c3b8ddca2a8dbdfb9b413b1ca4e8b51deb5e44bfecef83e",
+      "bytes": 21238
+    },
+    {
+      "path": "dashboard/app.py",
+      "sha256": "5147581fcfc1b5a7cb2121065222294859607564a31be6c4bdeab12749189cfc",
+      "bytes": 48239
+    },
+    {
+      "path": "dashboard/style.css",
+      "sha256": "3de5a6df824b4640d41476ee19baca403652c4b286418b98a62a1b802c35c0ea",
+      "bytes": 10733
+    },
+    {
+      "path": "tests/test_explorer.py",
+      "sha256": "0a35a74b9f91d9ac18789faafa3bba28350a1e2f15a1618de80309ec0480e350",
+      "bytes": 16823
+    },
+    {
+      "path": "tests/test_dashboard_ui.py",
+      "sha256": "4ad1a1f37c54d8b3ccc65a6e52cf11431d48b8cafe4f23220e40797ab210ccab",
+      "bytes": 2074
+    },
+    {
+      "path": "README.md",
+      "sha256": "ef610ad8cd3a30c462c9803c0cb62c9f64e78a836d967ec2344db9a2f061b548",
+      "bytes": 17502
+    },
+    {
+      "path": "IMPLEMENTATION_STATUS.md",
+      "sha256": "9fb241afd1ae9a1cbab1b9b4f93c213b3315c2a773b95a34996aa68959a1dfcc",
+      "bytes": 9291
+    },
+    {
+      "path": "reports/demo_script.md",
+      "sha256": "4f4cbe21ebbf2e47ed972fa7f81817d62b33b7c925f75c383fde2c7a4795cfcb",
+      "bytes": 2908
+    }
+  ]
+}

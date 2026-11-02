@@ -1,0 +1,50 @@
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/02 20:26:08 INFO Master: Started daemon with process name: 94951@MacBook-Air.local
+26/11/02 20:26:08 INFO SignalUtils: Registering signal handler for TERM
+26/11/02 20:26:08 INFO SignalUtils: Registering signal handler for HUP
+26/11/02 20:26:08 INFO SignalUtils: Registering signal handler for INT
+26/11/02 20:26:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/11/02 20:26:08 INFO SecurityManager: Changing view acls to: guerqian77
+26/11/02 20:26:08 INFO SecurityManager: Changing modify acls to: guerqian77
+26/11/02 20:26:08 INFO SecurityManager: Changing view acls groups to: 
+26/11/02 20:26:08 INFO SecurityManager: Changing modify acls groups to: 
+26/11/02 20:26:08 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: guerqian77; groups with view permissions: EMPTY; users with modify permissions: guerqian77; groups with modify permissions: EMPTY
+26/11/02 20:26:09 INFO Utils: Successfully started service 'sparkMaster' on port 17077.
+26/11/02 20:26:09 INFO Master: Starting Spark master at spark://127.0.0.1:17077
+26/11/02 20:26:09 INFO Master: Running Spark version 3.5.3
+26/11/02 20:26:09 INFO JettyUtils: Start Jetty 127.0.0.1:18080 for MasterUI
+26/11/02 20:26:09 INFO Utils: Successfully started service 'MasterUI' on port 18080.
+26/11/02 20:26:09 INFO MasterWebUI: Bound MasterWebUI to 127.0.0.1, and started at http://localhost:18080
+26/11/02 20:26:09 INFO Master: I have been elected leader! New state: ALIVE
+26/11/02 20:26:13 INFO Master: Registering worker 127.0.0.1:51543 with 1 cores, 512.0 MiB RAM
+26/11/02 20:26:14 INFO Master: Registering app nyc311-benchmark
+26/11/02 20:26:14 INFO Master: Registered app nyc311-benchmark with ID app-20261102202614-0000
+26/11/02 20:26:14 INFO Master: Start scheduling for app app-20261102202614-0000 with rpId: 0
+26/11/02 20:26:14 INFO Master: Launching executor app-20261102202614-0000/0 on worker worker-20261102202613-127.0.0.1-51543
+26/11/02 20:26:14 INFO Master: Start scheduling for app app-20261102202614-0000 with rpId: 0
+26/11/02 20:26:33 INFO Master: Received unregister request from application app-20261102202614-0000
+26/11/02 20:26:33 INFO Master: Removing app app-20261102202614-0000
+26/11/02 20:26:33 INFO Master: 127.0.0.1:51549 got disassociated, removing it.
+26/11/02 20:26:33 INFO Master: 127.0.0.1:51548 got disassociated, removing it.
+26/11/02 20:26:33 WARN Master: Got status update for unknown executor app-20261102202614-0000/0
+26/11/02 20:26:36 INFO Master: Registering app nyc311-benchmark
+26/11/02 20:26:36 INFO Master: Registered app nyc311-benchmark with ID app-20261102202636-0001
+26/11/02 20:26:36 INFO Master: Start scheduling for app app-20261102202636-0001 with rpId: 0
+26/11/02 20:26:36 INFO Master: Launching executor app-20261102202636-0001/0 on worker worker-20261102202613-127.0.0.1-51543
+26/11/02 20:26:36 INFO Master: Start scheduling for app app-20261102202636-0001 with rpId: 0
+26/11/02 20:26:51 INFO Master: Received unregister request from application app-20261102202636-0001
+26/11/02 20:26:51 INFO Master: Removing app app-20261102202636-0001
+26/11/02 20:26:51 INFO Master: 127.0.0.1:51601 got disassociated, removing it.
+26/11/02 20:26:51 INFO Master: 127.0.0.1:51599 got disassociated, removing it.
+26/11/02 20:26:51 WARN Master: Got status update for unknown executor app-20261102202636-0001/0
+26/11/02 20:26:53 INFO Master: Registering app nyc311-benchmark
+26/11/02 20:26:53 INFO Master: Registered app nyc311-benchmark with ID app-20261102202653-0002
+26/11/02 20:26:53 INFO Master: Start scheduling for app app-20261102202653-0002 with rpId: 0
+26/11/02 20:26:53 INFO Master: Launching executor app-20261102202653-0002/0 on worker worker-20261102202613-127.0.0.1-51543
+26/11/02 20:26:53 INFO Master: Start scheduling for app app-20261102202653-0002 with rpId: 0
+26/11/02 20:27:09 INFO Master: Received unregister request from application app-20261102202653-0002
+26/11/02 20:27:09 INFO Master: Removing app app-20261102202653-0002
+26/11/02 20:27:09 INFO Master: 127.0.0.1:51642 got disassociated, removing it.
+26/11/02 20:27:09 INFO Master: 127.0.0.1:51640 got disassociated, removing it.
+26/11/02 20:27:09 WARN Master: Got status update for unknown executor app-20261102202653-0002/0
+26/11/02 20:27:11 ERROR Master: RECEIVED SIGNAL TERM

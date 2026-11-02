@@ -1,0 +1,3761 @@
+{
+  "run_status": "Passed",
+  "run_id": "4e7c6915b060",
+  "pipeline_id": "nyc311-demo-4e7c6915b060",
+  "source_kind": "official_snapshot",
+  "database_schema": "demo_official",
+  "selected_created_min": "2025-03-01T00:21:18Z",
+  "selected_created_max": "2025-03-02T05:41:41Z",
+  "min_created_at": "2025-03-01T00:00:00Z",
+  "snapshot_tickets": 100,
+  "reconstructed_events": 197,
+  "producer": {
+    "timestamp": "2026-11-02T20:34:27.657965+00:00",
+    "component": "producer",
+    "rows": 302,
+    "files": 13,
+    "paths": [
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000000.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000025.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000050.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000075.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000100.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000125.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000150.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000175.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000200.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000225.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000250.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000275.json",
+      "data/stream-demo/4e7c6915b060/incoming/replay-4c612a51304446eabaf1be34dc0179d7-0000000300.json"
+    ],
+    "seed": 311,
+    "duplicate_rows": 91,
+    "disorder_rows": 302,
+    "late_rows": 105,
+    "synthetic_update_rows": 14,
+    "elapsed_seconds": 0.008464583996101283,
+    "source_semantics": "snapshot timestamp reconstruction, not CDC"
+  },
+  "fault_after_commit_observed": true,
+  "before_restart_counts": {
+    "processed_events": 24,
+    "ticket_current": 22,
+    "ticket_predictions": 12,
+    "batch_commits": 1,
+    "quarantined_events": 0
+  },
+  "final_database": {
+    "counts": {
+      "processed_events": 211,
+      "ticket_current": 100,
+      "ticket_predictions": 100,
+      "batch_commits": 14,
+      "quarantined_events": 1
+    },
+    "tickets": [
+      {
+        "request_id": "64215417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 04:06:24+00:00",
+        "closed_at": "2025-03-01 11:06:05+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "660198c0b7a0cddfe15a0e18d6218b5fb5b4ff72b5a3bdb32f2852d49290a4b5"
+      },
+      {
+        "request_id": "64215917",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 00:21:18+00:00",
+        "closed_at": "2025-03-15 09:03:13+00:00",
+        "agency": "HPD",
+        "complaint_type": "DOOR/WINDOW",
+        "borough": "STATEN ISLAND",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "6e01b271d724bb682e5a60789a54006b07950ba851ff7dad792d83704dcce9ae"
+      },
+      {
+        "request_id": "64216217",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 01:18:45+00:00",
+        "closed_at": "2025-03-01 01:19:24+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "419f59b6659824cda74f0e90c7196c497b1e00d027f4791b9b154ad65834c612"
+      },
+      {
+        "request_id": "64216417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 00:29:55+00:00",
+        "closed_at": "2025-03-05 20:18:44+00:00",
+        "agency": "DSNY",
+        "complaint_type": "Highway Condition",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "edb9e47a4d0f6a815b22aea4a55eef7db71df69224eea429c8bcf6da95713a1d"
+      },
+      {
+        "request_id": "64216617",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 05:15:06+00:00",
+        "closed_at": "2025-03-01 15:47:20+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "MANHATTAN",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "56b3059f2f0af01a8e39df43b2ec578ad538b90e89c140eed288c511df9aabae"
+      },
+      {
+        "request_id": "64216817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 03:48:50+00:00",
+        "closed_at": "2025-03-01 05:14:12+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "7221f00217aad6e8f9de8aa08e1afc7748de8c6e88a8bf30bb7507fe55ff4fe7"
+      },
+      {
+        "request_id": "64217017",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 01:16:35+00:00",
+        "closed_at": "2025-03-01 01:50:35+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Commercial",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "817225746ef87d815143577b08c870c78759e5565ec93882ab8d327ad0750a35"
+      },
+      {
+        "request_id": "64217617",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 00:49:10+00:00",
+        "closed_at": "2025-03-01 02:48:22+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Blocked Driveway",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "5d6841ecea3095883fa65aa6bce59644657e4f378d2d945c2b3133072ab80b86"
+      },
+      {
+        "request_id": "64217717",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 04:29:05+00:00",
+        "closed_at": "2025-03-01 13:47:11+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Street/Sidewalk",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "f8d7d56801d3e77fa198e320301fdd58594ecb2c6f43d10d48958660d7cef657"
+      },
+      {
+        "request_id": "64218817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 05:42:10+00:00",
+        "closed_at": "2025-03-01 06:11:19+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Commercial",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "105c46c65b91efe95360a229e4b11792fd0c91755ac86d8f57909a484b184b99"
+      },
+      {
+        "request_id": "64218917",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 01:48:46+00:00",
+        "closed_at": "2025-03-02 09:10:58+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "0020b90fed6307bda7c050dd7b1a0e008337fa840c4d44c3d3ddcabb863748eb"
+      },
+      {
+        "request_id": "64219417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 00:25:13+00:00",
+        "closed_at": "2025-03-03 13:31:23+00:00",
+        "agency": "HPD",
+        "complaint_type": "HEAT/HOT WATER",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "8e92d3321a91d7783fa2b265cec82f90bb07b488eb818061533eae5471fb0d71"
+      },
+      {
+        "request_id": "64219517",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 02:46:31+00:00",
+        "closed_at": "2025-03-12 19:19:22+00:00",
+        "agency": "HPD",
+        "complaint_type": "WATER LEAK",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "8b4dd8611c4358655167e34b78aa5956320821164b4460df71fcf6a16806bca7"
+      },
+      {
+        "request_id": "64220117",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 05:40:37+00:00",
+        "closed_at": "2025-03-01 06:55:31+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Commercial",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "7ecd791509018b5fb0ad33f1d29b09fb0e1ccd8924b7bb3be5f75305b7696544"
+      },
+      {
+        "request_id": "64220217",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 03:49:13+00:00",
+        "closed_at": "2025-03-01 10:53:50+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Blocked Driveway",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "e71a3af62eafea4fbc09a5263d78153a4be19ceeb7255ad43b6478860f2062ae"
+      },
+      {
+        "request_id": "64220617",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 04:36:31+00:00",
+        "closed_at": "2025-03-02 17:43:20+00:00",
+        "agency": "HPD",
+        "complaint_type": "HEAT/HOT WATER",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "adee7614ee111b69fa1b0ea3e881b38c81e300d936eef9fabeace0b05c3f07ad"
+      },
+      {
+        "request_id": "64221617",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 02:47:49+00:00",
+        "closed_at": "2025-03-01 03:49:55+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "5cbb78c82aacd8380ddd29fab6566d88d8b1d11fc099e5b7dad5fe9abf6a0165"
+      },
+      {
+        "request_id": "64222717",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 04:16:58+00:00",
+        "closed_at": "2025-03-01 04:46:32+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "1322300a0b37566c9d762d837afc5a018d646cdf8d5d96aa4637bffcda4b7bc1"
+      },
+      {
+        "request_id": "64222817",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 02:00:43+00:00",
+        "closed_at": "2025-03-01 02:44:29+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "cc08208a75d72286b47fbe9ee5998b2307f79e9806302b94ae8d5bfa82306e7f"
+      },
+      {
+        "request_id": "64222917",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 01:50:26+00:00",
+        "closed_at": "2025-03-01 03:09:39+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Commercial",
+        "borough": "BROOKLYN",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "dc6248babc4ca00b7fb1d4fc599901603040b8deff5a4b3c439d0998717cdcae"
+      },
+      {
+        "request_id": "64223217",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 18:57:45+00:00",
+        "closed_at": "2025-03-01 19:06:21+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Abandoned Vehicle",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "43550a954877582900153d4b34eb4e88c8f2b6fb4ba6f7c37bae80fdaa633b0a"
+      },
+      {
+        "request_id": "64223317",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 20:19:48+00:00",
+        "closed_at": "2025-03-02 01:55:42+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "123e4fcab49ecccff30460678fd29899d4e086415316e577708be92948d6db86"
+      },
+      {
+        "request_id": "64223417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 18:37:44+00:00",
+        "closed_at": "2025-03-01 20:08:21+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "6c307a54039190a079641375caabcd45a517d50d7015eded5a832b3d4d9cecd1"
+      },
+      {
+        "request_id": "64223517",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 04:23:29+00:00",
+        "closed_at": "2025-03-01 21:30:00+00:00",
+        "agency": "DOT",
+        "complaint_type": "Street Condition",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "6d538b0721d987716e5058a4db9effe2f4b5d4689fb868780b160b974383a2e4"
+      },
+      {
+        "request_id": "64223617",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 17:46:44+00:00",
+        "closed_at": "2025-03-03 14:29:49+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "284327d322b50788fb7672e2ab0416da8b211ad567ddd48f7852a086cc8c28ec"
+      },
+      {
+        "request_id": "64223717",
+        "latest_event_version": 3,
+        "status": "OPEN",
+        "created_at": "2025-03-01 13:50:49+00:00",
+        "closed_at": null,
+        "agency": "DOT",
+        "complaint_type": "Street Sign - Missing",
+        "borough": "QUEENS",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "ca98ff9ee97a66440577e7fce1a04cc44dd1ea5ef3b75d5590b7ff523a8e4e57"
+      },
+      {
+        "request_id": "64223817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 23:43:39+00:00",
+        "closed_at": "2025-03-02 03:33:06+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "e912dd828d16301979bf3dcc2be725d569fcb55502372119e79eb69702a19992"
+      },
+      {
+        "request_id": "64223917",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 23:48:12+00:00",
+        "closed_at": "2025-03-02 01:24:57+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "9f092f4823ce0f6f4f593247160d375389478c544f99f2d82e5baaf140d186d5"
+      },
+      {
+        "request_id": "64224017",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 22:07:29+00:00",
+        "closed_at": "2025-03-02 21:08:39+00:00",
+        "agency": "HPD",
+        "complaint_type": "HEAT/HOT WATER",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "a121eb0eaf265ddc4b7a6a7e70410ae6d92702e05383ae17be86a3df3dd521a6"
+      },
+      {
+        "request_id": "64224117",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 14:22:19+00:00",
+        "closed_at": "2025-04-01 19:54:41+00:00",
+        "agency": "HPD",
+        "complaint_type": "SAFETY",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "70a193bc803c0a9eebbc6ca52122d96d277a43f3f615ff1e458d0b41eaf8108a"
+      },
+      {
+        "request_id": "64224217",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 11:29:06+00:00",
+        "closed_at": "2025-03-01 11:40:44+00:00",
+        "agency": "DSNY",
+        "complaint_type": "Dirty Condition",
+        "borough": "STATEN ISLAND",
+        "source_kind": "official_snapshot",
+        "last_event_id": "80d7428656d5d903855b2e1fa8ccfba33c5bd4f5de1073b77825f9836601d2ec"
+      },
+      {
+        "request_id": "64224317",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 23:42:28+00:00",
+        "closed_at": "2025-04-18 04:00:00+00:00",
+        "agency": "DOB",
+        "complaint_type": "Special Projects Inspection Team (SPIT)",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "4b18ac85807ebba62e103896b2006c9c239fbaa7155574f3eeda9cc3946f44fc"
+      },
+      {
+        "request_id": "64224417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 20:25:37+00:00",
+        "closed_at": "2025-03-01 22:15:03+00:00",
+        "agency": "DPR",
+        "complaint_type": "Violation of Park Rules",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "2683713e75d1d3ca1542137856cec75d9a820ed359eef299ce262dbdc85f5ddc"
+      },
+      {
+        "request_id": "64224517",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 05:38:17+00:00",
+        "closed_at": "2025-03-02 07:59:16+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "411268e282fe6edfb328e2fadd995064a15200bc11570767548231bdea85f3ce"
+      },
+      {
+        "request_id": "64224617",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 16:54:26+00:00",
+        "closed_at": "2025-03-01 17:56:24+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "aca6fa896c185b62fbb71c255b015c3e7d71716cfed3bddcdb57d20111c6dc58"
+      },
+      {
+        "request_id": "64224717",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 12:20:17+00:00",
+        "closed_at": "2025-03-01 14:06:50+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "6d4b48a45a072a48427f49d53b0ab0279a3a27cc2a60db7a31e70c520b1614d4"
+      },
+      {
+        "request_id": "64224817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 08:58:39+00:00",
+        "closed_at": "2025-03-01 09:58:33+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Commercial",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "06daf8c02ed0b7b0f411e542a256801032939c031de9c518a36a1eeb52bf222e"
+      },
+      {
+        "request_id": "64224917",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 23:15:25+00:00",
+        "closed_at": "2025-03-01 23:33:22+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "5ca4cf5f2637c7d7a2a99db6f1e7b0eb2abe4a54547cd1af9eae3e340c051003"
+      },
+      {
+        "request_id": "64225017",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 22:53:50+00:00",
+        "closed_at": "2025-03-06 01:00:11+00:00",
+        "agency": "HPD",
+        "complaint_type": "GENERAL",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "fc49689c4746451cb8f56eb71e7264e4aaac5b4fe49871b619fd35b9f452a4fd"
+      },
+      {
+        "request_id": "64225117",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 22:35:16+00:00",
+        "closed_at": "2025-03-04 15:32:52+00:00",
+        "agency": "HPD",
+        "complaint_type": "PAINT/PLASTER",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "06b571d23ab81c5931b9a25a1a198b91057a36b6b503fd5ddd8179b06b1cdece"
+      },
+      {
+        "request_id": "64225217",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 23:13:46+00:00",
+        "closed_at": "2025-03-04 18:58:29+00:00",
+        "agency": "DSNY",
+        "complaint_type": "Illegal Dumping",
+        "borough": "BRONX",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "d66708721f6b5e00e151746d5b428ca9a63c684f70716e38e93f1c8c51f1a72f"
+      },
+      {
+        "request_id": "64225317",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 19:11:00+00:00",
+        "closed_at": "2025-03-03 13:45:00+00:00",
+        "agency": "DEP",
+        "complaint_type": "Water System",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "caf7da64dc4bda2670342cd6f6f6664155d7d901283849de185cf3984bee02f0"
+      },
+      {
+        "request_id": "64225417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 13:35:57+00:00",
+        "closed_at": "2025-03-01 14:23:42+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Blocked Driveway",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "8f0d6cf18c5ccfc36d86476f46245ad6b746b3a9725959df92f14e1541e29e2d"
+      },
+      {
+        "request_id": "64225517",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 02:56:04+00:00",
+        "closed_at": "2025-03-02 07:38:47+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "e10cf1ab70c2badd9e8f4311a8805671167bc6bc4dfd510cbe3dddc771f1212e"
+      },
+      {
+        "request_id": "64225617",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 06:27:31+00:00",
+        "closed_at": "2025-03-01 07:48:40+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "030425ee299fcceb2aed37c3c8705ce13b221ebcc4d2fee5e16286e8da0b8b20"
+      },
+      {
+        "request_id": "64225717",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 19:14:23+00:00",
+        "closed_at": "2025-03-01 19:52:37+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "166455d477812be09ac251d45d498be8f7597a7ab8597c6e0a9bf4745a769960"
+      },
+      {
+        "request_id": "64225817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 03:51:14+00:00",
+        "closed_at": "2025-03-02 05:38:10+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "b9303193b59756d5ab2b169abb47d5446a8f0fdd2b1c15a1b43b91c06828557b"
+      },
+      {
+        "request_id": "64225917",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 06:25:01+00:00",
+        "closed_at": "2025-03-01 10:20:05+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "MANHATTAN",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "99fcc761a909b2bd65804d5f54a0faefb7fc679719558ee0a0479c52b5b08a4e"
+      },
+      {
+        "request_id": "64226017",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 15:42:03+00:00",
+        "closed_at": "2025-03-02 21:42:37+00:00",
+        "agency": "HPD",
+        "complaint_type": "HEAT/HOT WATER",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "4d0bd5729a8307e9282cdf2f047cf85ba5d9e52298e84c5daf6999fd78ed14d0"
+      },
+      {
+        "request_id": "64226117",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 18:42:39+00:00",
+        "closed_at": "2025-03-02 16:35:45+00:00",
+        "agency": "HPD",
+        "complaint_type": "HEAT/HOT WATER",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "dc28fd875063be00f3d6286d62695f3a109208ba97c9b93411ed9ddff519c627"
+      },
+      {
+        "request_id": "64226217",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 15:24:26+00:00",
+        "closed_at": "2025-03-01 19:38:47+00:00",
+        "agency": "DSNY",
+        "complaint_type": "Missed Collection",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "52bfa2fea9bcc5ca8a3d0478995b591791194830feb38d7d1d1f15968d2fd5b0"
+      },
+      {
+        "request_id": "64226317",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 13:08:00+00:00",
+        "closed_at": "2025-03-04 15:44:00+00:00",
+        "agency": "DEP",
+        "complaint_type": "Noise",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "cdb99093d6e5770aa7e1f86b065eab8f780e0be87195b972d006e71b8b80d1e6"
+      },
+      {
+        "request_id": "64226417",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 17:50:39+00:00",
+        "closed_at": "2025-04-08 04:00:00+00:00",
+        "agency": "DOB",
+        "complaint_type": "General Construction/Plumbing",
+        "borough": "STATEN ISLAND",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "793465bca36b8a0e928aa27a42e0c239b0ac40c7e1e3b4aec3a9a4a69bdc9303"
+      },
+      {
+        "request_id": "64226517",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 07:36:57+00:00",
+        "closed_at": "2025-05-01 12:00:04+00:00",
+        "agency": "DOHMH",
+        "complaint_type": "Food Establishment",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "acd9c70132500b84ea682fb61124da1e763c192bc4a728d598daef254a9c35f7"
+      },
+      {
+        "request_id": "64226617",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 00:47:04+00:00",
+        "closed_at": "2025-03-02 01:10:08+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "8552403558ccc6c78c3e2c88ed6248cc5ae7822a76ce41a013420c76cc355625"
+      },
+      {
+        "request_id": "64226717",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 22:29:34+00:00",
+        "closed_at": "2025-03-02 01:14:50+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "STATEN ISLAND",
+        "source_kind": "official_snapshot",
+        "last_event_id": "b9a97857f86fcb84b7fda1acc933405060b94220432b9d823023cb8c192427c5"
+      },
+      {
+        "request_id": "64226817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 22:47:07+00:00",
+        "closed_at": "2025-03-01 23:39:18+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "d609a7bd55b5fe92668b4085df35e116210a89d133d60ac68595c45a44f624cd"
+      },
+      {
+        "request_id": "64226917",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 03:32:29+00:00",
+        "closed_at": "2025-03-02 03:51:59+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "f6fa3524ea4e7cf806ce953e40db3b0dd12c10f58026f07c78ce7d2cf05eb233"
+      },
+      {
+        "request_id": "64227017",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 02:34:02+00:00",
+        "closed_at": "2025-03-02 22:25:06+00:00",
+        "agency": "HPD",
+        "complaint_type": "HEAT/HOT WATER",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "4832ee56e0a25aa696ec76671fcc3dfecd4a31ef0f71844c912fbff408e3cc0e"
+      },
+      {
+        "request_id": "64227117",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 20:23:09+00:00",
+        "closed_at": "2025-04-28 12:29:31+00:00",
+        "agency": "HPD",
+        "complaint_type": "PAINT/PLASTER",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "541ee8368ec1725e27375621077194ddb95721d1d2a809ef6443c63af4d34598"
+      },
+      {
+        "request_id": "64227217",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 17:54:33+00:00",
+        "closed_at": "2025-03-01 18:39:32+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Drug Activity",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "5b2705a3d1e95be9df088abbb257a9518df3a5581479fe2c42b31a07713dbfc1"
+      },
+      {
+        "request_id": "64227317",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 16:05:00+00:00",
+        "closed_at": "2025-03-08 15:30:00+00:00",
+        "agency": "DEP",
+        "complaint_type": "Noise",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "dfb6204cfbab294936d243a475d64daf9f854ed04583cfcea44b7921fe42dd38"
+      },
+      {
+        "request_id": "64227417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 05:41:41+00:00",
+        "closed_at": "2025-03-02 06:47:15+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "8a7838053a71f6534491a9b1f301c38556e41f234185abad6185cb1ad63a3dbe"
+      },
+      {
+        "request_id": "64227517",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 11:35:57+00:00",
+        "closed_at": "2025-03-02 02:11:16+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Blocked Driveway",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "52d2253b8f4851f28b6a7f12e620b5d8819816e694daa747b99918395fd01fdc"
+      },
+      {
+        "request_id": "64227617",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 16:37:05+00:00",
+        "closed_at": "2025-03-02 12:01:13+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Blocked Driveway",
+        "borough": "QUEENS",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "7d4137d15b6b531711cb39445b1719797b45ab82d8428b6b7e756b1af53e9ae3"
+      },
+      {
+        "request_id": "64227717",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 18:08:11+00:00",
+        "closed_at": "2025-03-05 22:05:30+00:00",
+        "agency": "DCWP",
+        "complaint_type": "Consumer Complaint",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "e516874f1b07117a7dfeb652a4bf071fd47b830d406a740ebf835562edf24921"
+      },
+      {
+        "request_id": "64227817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 04:18:42+00:00",
+        "closed_at": "2025-03-02 11:15:39+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Blocked Driveway",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "61eb66b85c6860f90915c3da3fb0ae82cb422002234326745b00d0a08894fffe"
+      },
+      {
+        "request_id": "64227917",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 01:50:58+00:00",
+        "closed_at": "2025-03-05 16:48:30+00:00",
+        "agency": "DSNY",
+        "complaint_type": "Illegal Dumping",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "092bc3209d6a1f100934195800d689688a525db4affbb5486477f85ee6d25b65"
+      },
+      {
+        "request_id": "64228017",
+        "latest_event_version": 1,
+        "status": "OPEN",
+        "created_at": "2025-03-01 16:39:52+00:00",
+        "closed_at": null,
+        "agency": "HPD",
+        "complaint_type": "FLOORING/STAIRS",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "727dc862c3976899588589d114ea5a7f1d5fbefa36ac220d3c9925d98412da46"
+      },
+      {
+        "request_id": "64228117",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 02:46:37+00:00",
+        "closed_at": "2025-03-03 14:18:07+00:00",
+        "agency": "HPD",
+        "complaint_type": "HEAT/HOT WATER",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "e11f7a1675c9a17f185b965fa5959fdedde81ed24f18835ce6e0ad604edc7660"
+      },
+      {
+        "request_id": "64228217",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 18:58:41+00:00",
+        "closed_at": "2025-03-11 21:10:14+00:00",
+        "agency": "HPD",
+        "complaint_type": "UNSANITARY CONDITION",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "d93660bbab3d71ec1cf94e268fa5884e954e2f4c23e2638fe2325eb065c0d699"
+      },
+      {
+        "request_id": "64228317",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 18:17:44+00:00",
+        "closed_at": "2025-03-05 05:00:00+00:00",
+        "agency": "DOB",
+        "complaint_type": "Real Time Enforcement",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "322edf1a02a3822edb4d72b4220e3dec7b0fcd421b7b16c028bf94b0817c6a98"
+      },
+      {
+        "request_id": "64228417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 19:46:41+00:00",
+        "closed_at": "2025-03-04 05:00:00+00:00",
+        "agency": "DOB",
+        "complaint_type": "General Construction/Plumbing",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "43bdcea4ac3c9ff4085ce5632f9fa39cc3916a487996787ac8e33ca3a3331a47"
+      },
+      {
+        "request_id": "64228517",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 14:28:19+00:00",
+        "closed_at": "2025-03-03 13:38:33+00:00",
+        "agency": "DPR",
+        "complaint_type": "Maintenance or Facility",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "794a1b8204f57c5ada278ebcd8e3eac7dd08a6f9e6c66cd5b1f1f34f3db8273c"
+      },
+      {
+        "request_id": "64228617",
+        "latest_event_version": 1,
+        "status": "OPEN",
+        "created_at": "2025-03-02 05:32:12+00:00",
+        "closed_at": null,
+        "agency": "DPR",
+        "complaint_type": "Maintenance or Facility",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "0f51ccb58f1fc825ab97e1de0a2f8cc991669e183dc5aa1076d53ff806309c9f"
+      },
+      {
+        "request_id": "64228717",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 15:08:14+00:00",
+        "closed_at": "2025-03-01 16:04:49+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "46aa221d9949925a1af6248de71dc0e0795a1e49a4b88939472522d084f558f4"
+      },
+      {
+        "request_id": "64228817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 19:43:32+00:00",
+        "closed_at": "2025-03-01 19:55:37+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "7974838214a92bbecf7a34dbce6d505317f16dcd6e5f9cb8009ec587694cd3a4"
+      },
+      {
+        "request_id": "64228917",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 22:21:37+00:00",
+        "closed_at": "2025-03-11 19:17:48+00:00",
+        "agency": "DSNY",
+        "complaint_type": "Dead Animal",
+        "borough": "BRONX",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "5fa5f8943b45f1da8f27c5160141abd0dbdba8137cbdbc192fc76cc070b9843e"
+      },
+      {
+        "request_id": "64229017",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 03:45:26+00:00",
+        "closed_at": "2025-03-02 05:12:46+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "3a531f1aac78877db8a8e1a4c3faa8969929e5812325069ec1904b472d2aed37"
+      },
+      {
+        "request_id": "64229117",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 00:44:20+00:00",
+        "closed_at": "2025-03-03 12:00:53+00:00",
+        "agency": "HPD",
+        "complaint_type": "HEAT/HOT WATER",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "de7a896d755c38cae259fa01fb23eff0feb1619ff91ee0eef7af2996751cdae7"
+      },
+      {
+        "request_id": "64229217",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 02:09:04+00:00",
+        "closed_at": "2025-04-14 12:30:53+00:00",
+        "agency": "HPD",
+        "complaint_type": "UNSANITARY CONDITION",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "86708333070af0c3f7bbbebe741eabaa2c416b11dc5794f71215dbab53c6799c"
+      },
+      {
+        "request_id": "64229317",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 15:11:00+00:00",
+        "closed_at": "2025-03-04 18:21:06+00:00",
+        "agency": "DSNY",
+        "complaint_type": "Missed Collection",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "0b3a4d3b647954e69aa52f5a9456dc67048a435729dba950a30689e9232a299e"
+      },
+      {
+        "request_id": "64229417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 19:20:00+00:00",
+        "closed_at": "2025-03-05 14:02:00+00:00",
+        "agency": "DEP",
+        "complaint_type": "Noise",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "a77d970264f41ae7c0b9509b72564b16fe6032f737b1d7f59a0d56572f4e0f6a"
+      },
+      {
+        "request_id": "64229517",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 18:33:02+00:00",
+        "closed_at": "2025-04-25 04:00:00+00:00",
+        "agency": "DOB",
+        "complaint_type": "General Construction/Plumbing",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "dd28d10fd5fb7b67a911ca340fbd2c49e06f333e2a26edb5e0b1a91195b19628"
+      },
+      {
+        "request_id": "64229617",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 03:44:23+00:00",
+        "closed_at": "2025-03-02 06:22:27+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "60f61c7254c3117a809deba64993876f488b97843c9eca86a488713d7916a6df"
+      },
+      {
+        "request_id": "64229717",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 11:42:30+00:00",
+        "closed_at": "2025-03-01 14:25:09+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "f72d7df4bf35c5e36a9792eedb90893a3135105a1ac81eb1d7481da35bcb8cdc"
+      },
+      {
+        "request_id": "64229817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 14:50:55+00:00",
+        "closed_at": "2025-03-01 15:29:12+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "9bfa8a32462641a6747f81206d82a490de25d8c207c05755707674882344609c"
+      },
+      {
+        "request_id": "64229917",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 01:41:38+00:00",
+        "closed_at": "2025-03-02 03:51:15+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "6a99a02c7dcec2960d62498093c1a3f02364ea2c617f53a03adc038f72bcca43"
+      },
+      {
+        "request_id": "64230017",
+        "latest_event_version": 3,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 01:16:35+00:00",
+        "closed_at": "2025-03-02 02:53:42+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Commercial",
+        "borough": "MANHATTAN",
+        "source_kind": "synthetic_update_test",
+        "last_event_id": "753fe4ba1b383ca10383296f95d4c1abb6ea317186344d21048822fe8b1aadbc"
+      },
+      {
+        "request_id": "64230117",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 17:23:07+00:00",
+        "closed_at": "2025-03-03 16:35:00+00:00",
+        "agency": "DOT",
+        "complaint_type": "Street Condition",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "f14baef1c747a78e6b662c75fa3ecdad1f339c968e8ad6f03323ca26cb48a856"
+      },
+      {
+        "request_id": "64230217",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 08:02:26+00:00",
+        "closed_at": "2025-03-02 12:52:49+00:00",
+        "agency": "HPD",
+        "complaint_type": "HEAT/HOT WATER",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "596af6cb3f096a5abc7ade54bbd43968ea7cc07b7fef6c9874539052dcc3c04a"
+      },
+      {
+        "request_id": "64230317",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 16:23:51+00:00",
+        "closed_at": "2025-03-04 21:50:38+00:00",
+        "agency": "HPD",
+        "complaint_type": "UNSANITARY CONDITION",
+        "borough": "MANHATTAN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "9464481a39d72ab249c199be8bbc8519298067711d2b2562f5349a9f74c7cc96"
+      },
+      {
+        "request_id": "64230417",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 15:56:00+00:00",
+        "closed_at": "2025-03-01 19:30:00+00:00",
+        "agency": "DEP",
+        "complaint_type": "Sewer",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "d84be80f1fd196982d58283bf8df1eb896ea55050bc76973c24478aa891b3bdf"
+      },
+      {
+        "request_id": "64230517",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 01:03:17+00:00",
+        "closed_at": "2025-03-02 03:59:40+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Blocked Driveway",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "2c46ceb802688a332f56a6f96fd0c509c037127cd09c05565685dbbf9d0140f8"
+      },
+      {
+        "request_id": "64230617",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 23:04:26+00:00",
+        "closed_at": "2025-03-01 23:04:26+00:00",
+        "agency": "DOHMH",
+        "complaint_type": "Rodent",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "8270787bc0ccdcba2335aebb405e51b71c4d2eb9490a11699b52bb0a1d63e0f5"
+      },
+      {
+        "request_id": "64230717",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 03:15:27+00:00",
+        "closed_at": "2025-03-02 03:42:08+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Traffic",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "ba02a20179bafe6c9c6eea38bbc68af3576401c80c17bae5ac8fc7a47b11d464"
+      },
+      {
+        "request_id": "64230817",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 11:36:51+00:00",
+        "closed_at": "2025-03-01 12:17:04+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Illegal Parking",
+        "borough": "BROOKLYN",
+        "source_kind": "official_snapshot",
+        "last_event_id": "897bc217d6446b9ddcaf68ee1ef2ccdb01a053ee1c25759af0064a28649fa691"
+      },
+      {
+        "request_id": "64230917",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 08:01:56+00:00",
+        "closed_at": "2025-03-01 14:16:35+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "217148de2bab6ca5fa14d470ac2488f8d80ab53dbde5c049cef0572010287e7c"
+      },
+      {
+        "request_id": "64231017",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-01 20:54:49+00:00",
+        "closed_at": "2025-03-01 21:42:34+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Traffic",
+        "borough": "QUEENS",
+        "source_kind": "official_snapshot",
+        "last_event_id": "d279e25520e61e4e27cf42b94d2cea17222d14e1dbdfc8235e3d5f693ccd0145"
+      },
+      {
+        "request_id": "64231117",
+        "latest_event_version": 2,
+        "status": "CLOSED",
+        "created_at": "2025-03-02 03:55:03+00:00",
+        "closed_at": "2025-03-02 04:20:14+00:00",
+        "agency": "NYPD",
+        "complaint_type": "Noise - Residential",
+        "borough": "BRONX",
+        "source_kind": "official_snapshot",
+        "last_event_id": "9c89a945fed801c99281ab36cfc8aa6cc66557a707d051ad2d5f8a73711b092c"
+      }
+    ],
+    "batches": [
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 0,
+        "input_rows": 25,
+        "accepted_rows": 24,
+        "duplicate_rows": 1,
+        "quarantined_rows": 0,
+        "predictions_rows": 12,
+        "elapsed_seconds": 0.4820792919927044,
+        "committed_at": "2026-11-02 20:34:28.931777+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 1,
+        "input_rows": 25,
+        "accepted_rows": 23,
+        "duplicate_rows": 2,
+        "quarantined_rows": 0,
+        "predictions_rows": 10,
+        "elapsed_seconds": 0.1564853750023758,
+        "committed_at": "2026-11-02 20:34:29.877994+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 2,
+        "input_rows": 25,
+        "accepted_rows": 23,
+        "duplicate_rows": 2,
+        "quarantined_rows": 0,
+        "predictions_rows": 11,
+        "elapsed_seconds": 0.17072179200476967,
+        "committed_at": "2026-11-02 20:34:30.269300+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 3,
+        "input_rows": 25,
+        "accepted_rows": 19,
+        "duplicate_rows": 6,
+        "quarantined_rows": 0,
+        "predictions_rows": 11,
+        "elapsed_seconds": 0.19296516600297764,
+        "committed_at": "2026-11-02 20:34:30.624003+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 4,
+        "input_rows": 25,
+        "accepted_rows": 16,
+        "duplicate_rows": 9,
+        "quarantined_rows": 0,
+        "predictions_rows": 7,
+        "elapsed_seconds": 0.12307100000907667,
+        "committed_at": "2026-11-02 20:34:31.077207+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 5,
+        "input_rows": 25,
+        "accepted_rows": 18,
+        "duplicate_rows": 7,
+        "quarantined_rows": 0,
+        "predictions_rows": 8,
+        "elapsed_seconds": 0.13564295899413992,
+        "committed_at": "2026-11-02 20:34:31.368628+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 6,
+        "input_rows": 25,
+        "accepted_rows": 21,
+        "duplicate_rows": 4,
+        "quarantined_rows": 0,
+        "predictions_rows": 11,
+        "elapsed_seconds": 0.1669858329987619,
+        "committed_at": "2026-11-02 20:34:31.686225+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 7,
+        "input_rows": 25,
+        "accepted_rows": 13,
+        "duplicate_rows": 12,
+        "quarantined_rows": 0,
+        "predictions_rows": 5,
+        "elapsed_seconds": 0.09989170900371391,
+        "committed_at": "2026-11-02 20:34:32.014373+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 8,
+        "input_rows": 25,
+        "accepted_rows": 18,
+        "duplicate_rows": 7,
+        "quarantined_rows": 0,
+        "predictions_rows": 9,
+        "elapsed_seconds": 0.13159287499729544,
+        "committed_at": "2026-11-02 20:34:32.326625+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 9,
+        "input_rows": 25,
+        "accepted_rows": 12,
+        "duplicate_rows": 13,
+        "quarantined_rows": 0,
+        "predictions_rows": 5,
+        "elapsed_seconds": 0.10049587501271162,
+        "committed_at": "2026-11-02 20:34:32.616809+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 10,
+        "input_rows": 25,
+        "accepted_rows": 12,
+        "duplicate_rows": 13,
+        "quarantined_rows": 0,
+        "predictions_rows": 5,
+        "elapsed_seconds": 0.11127141599718016,
+        "committed_at": "2026-11-02 20:34:33.326869+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 11,
+        "input_rows": 25,
+        "accepted_rows": 11,
+        "duplicate_rows": 14,
+        "quarantined_rows": 0,
+        "predictions_rows": 6,
+        "elapsed_seconds": 0.1081179580069147,
+        "committed_at": "2026-11-02 20:34:33.608223+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 12,
+        "input_rows": 2,
+        "accepted_rows": 1,
+        "duplicate_rows": 1,
+        "quarantined_rows": 0,
+        "predictions_rows": 0,
+        "elapsed_seconds": 0.02203554099833127,
+        "committed_at": "2026-11-02 20:34:33.907897+00:00"
+      },
+      {
+        "pipeline_id": "nyc311-demo-4e7c6915b060",
+        "batch_id": 13,
+        "input_rows": 1,
+        "accepted_rows": 0,
+        "duplicate_rows": 0,
+        "quarantined_rows": 1,
+        "predictions_rows": 0,
+        "elapsed_seconds": 0.016886333003640175,
+        "committed_at": "2026-11-02 20:34:34.153034+00:00"
+      }
+    ],
+    "agency_borough": [
+      {
+        "agency": "DCWP",
+        "borough": "BROOKLYN",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "DEP",
+        "borough": "BROOKLYN",
+        "open_tickets": 0,
+        "closed_tickets": 4
+      },
+      {
+        "agency": "DEP",
+        "borough": "QUEENS",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "DOB",
+        "borough": "BRONX",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "DOB",
+        "borough": "MANHATTAN",
+        "open_tickets": 0,
+        "closed_tickets": 2
+      },
+      {
+        "agency": "DOB",
+        "borough": "QUEENS",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "DOB",
+        "borough": "STATEN ISLAND",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "DOHMH",
+        "borough": "BROOKLYN",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "DOHMH",
+        "borough": "QUEENS",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "DOT",
+        "borough": "BROOKLYN",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "DOT",
+        "borough": "MANHATTAN",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "DOT",
+        "borough": "QUEENS",
+        "open_tickets": 1,
+        "closed_tickets": 0
+      },
+      {
+        "agency": "DPR",
+        "borough": "MANHATTAN",
+        "open_tickets": 0,
+        "closed_tickets": 2
+      },
+      {
+        "agency": "DPR",
+        "borough": "QUEENS",
+        "open_tickets": 1,
+        "closed_tickets": 0
+      },
+      {
+        "agency": "DSNY",
+        "borough": "BRONX",
+        "open_tickets": 0,
+        "closed_tickets": 3
+      },
+      {
+        "agency": "DSNY",
+        "borough": "QUEENS",
+        "open_tickets": 0,
+        "closed_tickets": 3
+      },
+      {
+        "agency": "DSNY",
+        "borough": "STATEN ISLAND",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "HPD",
+        "borough": "BRONX",
+        "open_tickets": 0,
+        "closed_tickets": 7
+      },
+      {
+        "agency": "HPD",
+        "borough": "BROOKLYN",
+        "open_tickets": 0,
+        "closed_tickets": 3
+      },
+      {
+        "agency": "HPD",
+        "borough": "MANHATTAN",
+        "open_tickets": 1,
+        "closed_tickets": 5
+      },
+      {
+        "agency": "HPD",
+        "borough": "QUEENS",
+        "open_tickets": 0,
+        "closed_tickets": 2
+      },
+      {
+        "agency": "HPD",
+        "borough": "STATEN ISLAND",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      },
+      {
+        "agency": "NYPD",
+        "borough": "BRONX",
+        "open_tickets": 0,
+        "closed_tickets": 14
+      },
+      {
+        "agency": "NYPD",
+        "borough": "BROOKLYN",
+        "open_tickets": 0,
+        "closed_tickets": 17
+      },
+      {
+        "agency": "NYPD",
+        "borough": "MANHATTAN",
+        "open_tickets": 0,
+        "closed_tickets": 9
+      },
+      {
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "open_tickets": 0,
+        "closed_tickets": 14
+      },
+      {
+        "agency": "NYPD",
+        "borough": "STATEN ISLAND",
+        "open_tickets": 0,
+        "closed_tickets": 1
+      }
+    ],
+    "prediction_models": [
+      {
+        "model_version": "cox-f574e2033056ad27",
+        "prediction_rows": 100
+      }
+    ],
+    "event_time_windows": [],
+    "window_as_of": "2025-07-01 00:00:00+00:00",
+    "window_semantics": "Exact PostgreSQL event-ledger recomputation; late arrivals correct windows on refresh; no watermark dropping"
+  },
+  "second_restart_unchanged": true,
+  "prediction_status": "Passed: new CREATED-event predictions committed; actual selected-ticket coverage and model versions reported",
+  "prediction_summary": {
+    "selected_ticket_count": 100,
+    "selected_ticket_prediction_count": 100,
+    "selected_ticket_prediction_rows": 100,
+    "model_versions": [
+      {
+        "model_version": "cox-f574e2033056ad27",
+        "prediction_rows": 100
+      }
+    ],
+    "newly_written_prediction_rows": 100,
+    "current_callback_model_coverage": "Not verified: persisted model versions are shown explicitly"
+  },
+  "elapsed_seconds": 20.848271042006672,
+  "stream_progress": {
+    "timestamp": "2026-11-02T20:34:34.221388+00:00",
+    "component": "structured_streaming",
+    "pipeline_id": "nyc311-demo-4e7c6915b060",
+    "run_status": "Passed",
+    "elapsed_seconds": 4.690384999994421,
+    "progress": [
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:29.583Z",
+        "batchId": 0,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 196.8503937007874,
+        "durationMs": {
+          "addBatch": 73,
+          "commitOffsets": 37,
+          "getBatch": 5,
+          "queryPlanning": 5,
+          "triggerExecution": 127
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": null,
+            "endOffset": {
+              "logOffset": 0
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 196.8503937007874
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:29.717Z",
+        "batchId": 1,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 186.56716417910448,
+        "processedRowsPerSecond": 70.2247191011236,
+        "durationMs": {
+          "addBatch": 244,
+          "commitOffsets": 40,
+          "getBatch": 5,
+          "latestOffset": 30,
+          "queryPlanning": 5,
+          "triggerExecution": 356,
+          "walCommit": 30
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 0
+            },
+            "endOffset": {
+              "logOffset": 1
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 186.56716417910448,
+            "processedRowsPerSecond": 70.2247191011236
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:30.074Z",
+        "batchId": 2,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 70.0280112044818,
+        "processedRowsPerSecond": 63.613231552162844,
+        "durationMs": {
+          "addBatch": 265,
+          "commitOffsets": 37,
+          "getBatch": 7,
+          "latestOffset": 39,
+          "queryPlanning": 6,
+          "triggerExecution": 393,
+          "walCommit": 37
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 1
+            },
+            "endOffset": {
+              "logOffset": 2
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 70.0280112044818,
+            "processedRowsPerSecond": 63.613231552162844
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:30.468Z",
+        "batchId": 3,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 63.45177664974619,
+        "processedRowsPerSecond": 57.47126436781609,
+        "durationMs": {
+          "addBatch": 311,
+          "commitOffsets": 41,
+          "getBatch": 6,
+          "latestOffset": 35,
+          "queryPlanning": 4,
+          "triggerExecution": 435,
+          "walCommit": 37
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 2
+            },
+            "endOffset": {
+              "logOffset": 3
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 63.45177664974619,
+            "processedRowsPerSecond": 57.47126436781609
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:30.904Z",
+        "batchId": 4,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 57.3394495412844,
+        "processedRowsPerSecond": 75.75757575757575,
+        "durationMs": {
+          "addBatch": 193,
+          "commitOffsets": 41,
+          "getBatch": 6,
+          "latestOffset": 43,
+          "queryPlanning": 5,
+          "triggerExecution": 330,
+          "walCommit": 39
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 3
+            },
+            "endOffset": {
+              "logOffset": 4
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 57.3394495412844,
+            "processedRowsPerSecond": 75.75757575757575
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:31.235Z",
+        "batchId": 5,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 75.52870090634441,
+        "processedRowsPerSecond": 80.38585209003216,
+        "durationMs": {
+          "addBatch": 178,
+          "commitOffsets": 50,
+          "getBatch": 6,
+          "latestOffset": 36,
+          "queryPlanning": 5,
+          "triggerExecution": 311,
+          "walCommit": 34
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 4
+            },
+            "endOffset": {
+              "logOffset": 5
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 75.52870090634441,
+            "processedRowsPerSecond": 80.38585209003216
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:31.547Z",
+        "batchId": 6,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 80.12820512820512,
+        "processedRowsPerSecond": 74.62686567164178,
+        "durationMs": {
+          "addBatch": 216,
+          "commitOffsets": 38,
+          "getBatch": 5,
+          "latestOffset": 33,
+          "queryPlanning": 3,
+          "triggerExecution": 335,
+          "walCommit": 39
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 5
+            },
+            "endOffset": {
+              "logOffset": 6
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 80.12820512820512,
+            "processedRowsPerSecond": 74.62686567164178
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:31.883Z",
+        "batchId": 7,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 74.4047619047619,
+        "processedRowsPerSecond": 98.0392156862745,
+        "durationMs": {
+          "addBatch": 148,
+          "commitOffsets": 32,
+          "getBatch": 5,
+          "latestOffset": 35,
+          "queryPlanning": 3,
+          "triggerExecution": 255,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 6
+            },
+            "endOffset": {
+              "logOffset": 7
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 74.4047619047619,
+            "processedRowsPerSecond": 98.0392156862745
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:32.139Z",
+        "batchId": 8,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 97.65625,
+        "processedRowsPerSecond": 73.09941520467835,
+        "durationMs": {
+          "addBatch": 227,
+          "commitOffsets": 33,
+          "getBatch": 5,
+          "latestOffset": 40,
+          "queryPlanning": 3,
+          "triggerExecution": 342,
+          "walCommit": 33
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 7
+            },
+            "endOffset": {
+              "logOffset": 8
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 97.65625,
+            "processedRowsPerSecond": 73.09941520467835
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:32.481Z",
+        "batchId": 9,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 73.09941520467835,
+        "processedRowsPerSecond": 96.15384615384615,
+        "durationMs": {
+          "addBatch": 149,
+          "commitOffsets": 33,
+          "getBatch": 4,
+          "latestOffset": 39,
+          "queryPlanning": 3,
+          "triggerExecution": 260,
+          "walCommit": 31
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 8
+            },
+            "endOffset": {
+              "logOffset": 9
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 73.09941520467835,
+            "processedRowsPerSecond": 96.15384615384615
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:32.741Z",
+        "batchId": 10,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 96.15384615384615,
+        "processedRowsPerSecond": 34.48275862068966,
+        "durationMs": {
+          "addBatch": 159,
+          "commitOffsets": 39,
+          "getBatch": 4,
+          "latestOffset": 118,
+          "queryPlanning": 3,
+          "triggerExecution": 725,
+          "walCommit": 400
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 9
+            },
+            "endOffset": {
+              "logOffset": 10
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 96.15384615384615,
+            "processedRowsPerSecond": 34.48275862068966
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:33.467Z",
+        "batchId": 11,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 34.43526170798898,
+        "processedRowsPerSecond": 87.71929824561404,
+        "durationMs": {
+          "addBatch": 174,
+          "commitOffsets": 42,
+          "getBatch": 4,
+          "latestOffset": 32,
+          "queryPlanning": 3,
+          "triggerExecution": 285,
+          "walCommit": 29
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 10
+            },
+            "endOffset": {
+              "logOffset": 11
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 34.43526170798898,
+            "processedRowsPerSecond": 87.71929824561404
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:33.753Z",
+        "batchId": 12,
+        "numInputRows": 2,
+        "inputRowsPerSecond": 6.993006993006993,
+        "processedRowsPerSecond": 9.389671361502348,
+        "durationMs": {
+          "addBatch": 77,
+          "commitOffsets": 49,
+          "getBatch": 5,
+          "latestOffset": 36,
+          "queryPlanning": 2,
+          "triggerExecution": 213,
+          "walCommit": 42
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 11
+            },
+            "endOffset": {
+              "logOffset": 12
+            },
+            "latestOffset": null,
+            "numInputRows": 2,
+            "inputRowsPerSecond": 6.993006993006993,
+            "processedRowsPerSecond": 9.389671361502348
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "1b0e3e86-7698-4490-a36d-c12cbd51bb3b",
+        "runId": "cbfd7df5-4f39-407f-86be-3296e72281a2",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:33.967Z",
+        "batchId": 13,
+        "numInputRows": 1,
+        "inputRowsPerSecond": 4.672897196261682,
+        "processedRowsPerSecond": 4.25531914893617,
+        "durationMs": {
+          "addBatch": 78,
+          "commitOffsets": 42,
+          "getBatch": 4,
+          "latestOffset": 55,
+          "queryPlanning": 3,
+          "triggerExecution": 235,
+          "walCommit": 51
+        },
+        "stateOperators": [],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 12
+            },
+            "endOffset": {
+              "logOffset": 13
+            },
+            "latestOffset": null,
+            "numInputRows": 1,
+            "inputRowsPerSecond": 4.672897196261682,
+            "processedRowsPerSecond": 4.25531914893617
+          }
+        ],
+        "sink": {
+          "description": "ForeachBatchSink",
+          "numOutputRows": -1
+        }
+      }
+    ],
+    "checkpoint": "data/stream-demo/4e7c6915b060/checkpoint",
+    "input_directory": "data/stream-demo/4e7c6915b060/incoming"
+  },
+  "watermarked_windows": {
+    "run_status": "Passed",
+    "configuration": {
+      "incoming": "/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming",
+      "output_dir": "/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/windows",
+      "watermark": "2 days",
+      "window": "1 hour",
+      "query_version": 1
+    },
+    "deduplicated_events_persisted": 45,
+    "finalized_window_rows": 41,
+    "finalized_window_preview": [
+      {
+        "window": {
+          "start": "2025-03-01 00:00:00",
+          "end": "2025-03-01 01:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 01:00:00",
+          "end": "2025-03-01 02:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BROOKLYN",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 01:00:00",
+          "end": "2025-03-01 02:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 03:00:00",
+          "end": "2025-03-01 04:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BRONX",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 03:00:00",
+          "end": "2025-03-01 04:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BROOKLYN",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 04:00:00",
+          "end": "2025-03-01 05:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 06:00:00",
+          "end": "2025-03-01 07:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "MANHATTAN",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 07:00:00",
+          "end": "2025-03-01 08:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BRONX",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 08:00:00",
+          "end": "2025-03-01 09:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 11:00:00",
+          "end": "2025-03-01 12:00:00"
+        },
+        "agency": "DSNY",
+        "borough": "STATEN ISLAND",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 11:00:00",
+          "end": "2025-03-01 12:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BRONX",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 11:00:00",
+          "end": "2025-03-01 12:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BROOKLYN",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 14:00:00",
+          "end": "2025-03-01 15:00:00"
+        },
+        "agency": "HPD",
+        "borough": "BRONX",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 16:00:00",
+          "end": "2025-03-01 17:00:00"
+        },
+        "agency": "HPD",
+        "borough": "MANHATTAN",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 16:00:00",
+          "end": "2025-03-01 17:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 17:00:00",
+          "end": "2025-03-01 18:00:00"
+        },
+        "agency": "DOB",
+        "borough": "STATEN ISLAND",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 17:00:00",
+          "end": "2025-03-01 18:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 18:00:00",
+          "end": "2025-03-01 19:00:00"
+        },
+        "agency": "DOB",
+        "borough": "MANHATTAN",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 18:00:00",
+          "end": "2025-03-01 19:00:00"
+        },
+        "agency": "HPD",
+        "borough": "BROOKLYN",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 18:00:00",
+          "end": "2025-03-01 19:00:00"
+        },
+        "agency": "HPD",
+        "borough": "MANHATTAN",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 18:00:00",
+          "end": "2025-03-01 19:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 19:00:00",
+          "end": "2025-03-01 20:00:00"
+        },
+        "agency": "DEP",
+        "borough": "BROOKLYN",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 19:00:00",
+          "end": "2025-03-01 20:00:00"
+        },
+        "agency": "DEP",
+        "borough": "QUEENS",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 19:00:00",
+          "end": "2025-03-01 20:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BROOKLYN",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 2,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 2
+      },
+      {
+        "window": {
+          "start": "2025-03-01 21:00:00",
+          "end": "2025-03-01 22:00:00"
+        },
+        "agency": "DOT",
+        "borough": "BROOKLYN",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 22:00:00",
+          "end": "2025-03-01 23:00:00"
+        },
+        "agency": "DSNY",
+        "borough": "BRONX",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-01 23:00:00",
+          "end": "2025-03-02 00:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "MANHATTAN",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 2,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 2
+      },
+      {
+        "window": {
+          "start": "2025-03-01 23:00:00",
+          "end": "2025-03-02 00:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "MANHATTAN",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-02 01:00:00",
+          "end": "2025-03-02 02:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BROOKLYN",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 2,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 2
+      },
+      {
+        "window": {
+          "start": "2025-03-02 02:00:00",
+          "end": "2025-03-02 03:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-02 03:00:00",
+          "end": "2025-03-02 04:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BRONX",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-02 03:00:00",
+          "end": "2025-03-02 04:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CREATED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-02 06:00:00",
+          "end": "2025-03-02 07:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BRONX",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-02 07:00:00",
+          "end": "2025-03-02 08:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "QUEENS",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-02 11:00:00",
+          "end": "2025-03-02 12:00:00"
+        },
+        "agency": "NYPD",
+        "borough": "BRONX",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-02 22:00:00",
+          "end": "2025-03-02 23:00:00"
+        },
+        "agency": "HPD",
+        "borough": "BRONX",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-04 15:00:00",
+          "end": "2025-03-04 16:00:00"
+        },
+        "agency": "HPD",
+        "borough": "BRONX",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-05 14:00:00",
+          "end": "2025-03-05 15:00:00"
+        },
+        "agency": "DEP",
+        "borough": "BROOKLYN",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-08 15:00:00",
+          "end": "2025-03-08 16:00:00"
+        },
+        "agency": "DEP",
+        "borough": "BROOKLYN",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-11 21:00:00",
+          "end": "2025-03-11 22:00:00"
+        },
+        "agency": "HPD",
+        "borough": "MANHATTAN",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      },
+      {
+        "window": {
+          "start": "2025-03-12 19:00:00",
+          "end": "2025-03-12 20:00:00"
+        },
+        "agency": "HPD",
+        "borough": "BRONX",
+        "event_type": "CLOSED",
+        "source_kind": "official_snapshot",
+        "event_count": 1,
+        "observed_injected_late_events": 0,
+        "observed_injected_disorder_events": 1
+      }
+    ],
+    "preview_limit": 200,
+    "deduplication": {
+      "retained_progress_batches": 14,
+      "input_rows_in_retained_progress": 303,
+      "watermark_dropped_rows_in_retained_progress": 240,
+      "duplicate_dropped_rows_in_retained_progress": 3,
+      "last_event_time": {
+        "watermark": "2025-04-29T12:00:04.000Z"
+      },
+      "progress_scope": "This invocation's retained Spark recentProgress; older batches beyond Spark retention are not included"
+    },
+    "aggregation": {
+      "retained_progress_batches": 2,
+      "input_rows_in_retained_progress": 45,
+      "watermark_dropped_rows_in_retained_progress": 0,
+      "duplicate_dropped_rows_in_retained_progress": 0,
+      "last_event_time": {
+        "watermark": "2025-04-29T12:00:04.000Z"
+      },
+      "progress_scope": "This invocation's retained Spark recentProgress; older batches beyond Spark retention are not included"
+    },
+    "deduplication_progress": [
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:34.542Z",
+        "batchId": 0,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 13.79690949227373,
+        "durationMs": {
+          "addBatch": 1623,
+          "commitOffsets": 58,
+          "getBatch": 5,
+          "latestOffset": 39,
+          "queryPlanning": 49,
+          "triggerExecution": 1812,
+          "walCommit": 36
+        },
+        "eventTime": {
+          "avg": "2025-03-02T14:10:47.840Z",
+          "max": "2025-03-11T21:10:14.000Z",
+          "min": "2025-03-01T00:49:10.000Z",
+          "watermark": "1970-01-01T00:00:00.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 24,
+            "numRowsUpdated": 24,
+            "allUpdatesTimeMs": 202,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 243,
+            "memoryUsedBytes": 7040,
+            "numRowsDroppedByWatermark": 0,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 0,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 1,
+              "stateOnCurrentVersionSizeBytes": 6464
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": null,
+            "endOffset": {
+              "logOffset": 0
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 13.79690949227373
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:36.356Z",
+        "batchId": 1,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 13.781697905181918,
+        "processedRowsPerSecond": 34.15300546448088,
+        "durationMs": {
+          "addBatch": 498,
+          "commitOffsets": 94,
+          "getBatch": 4,
+          "latestOffset": 64,
+          "queryPlanning": 17,
+          "triggerExecution": 732,
+          "walCommit": 50
+        },
+        "eventTime": {
+          "avg": "2025-03-02T08:21:02.454Z",
+          "max": "2025-03-12T19:19:22.000Z",
+          "min": "2025-03-01T01:16:35.000Z",
+          "watermark": "2025-03-09T21:10:14.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 3,
+            "numRowsUpdated": 20,
+            "allUpdatesTimeMs": 117,
+            "numRowsRemoved": 41,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 289,
+            "memoryUsedBytes": 8496,
+            "numRowsDroppedByWatermark": 0,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 4,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 2,
+              "stateOnCurrentVersionSizeBytes": 1616
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 0
+            },
+            "endOffset": {
+              "logOffset": 1
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 13.781697905181918,
+            "processedRowsPerSecond": 34.15300546448088
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:37.090Z",
+        "batchId": 2,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 34.059945504087196,
+        "processedRowsPerSecond": 32.50975292587776,
+        "durationMs": {
+          "addBatch": 419,
+          "commitOffsets": 61,
+          "getBatch": 11,
+          "latestOffset": 77,
+          "queryPlanning": 22,
+          "triggerExecution": 769,
+          "walCommit": 176
+        },
+        "eventTime": {
+          "avg": "2025-03-01T23:32:24.333Z",
+          "max": "2025-03-04T15:44:00.000Z",
+          "min": "2025-03-01T00:25:13.000Z",
+          "watermark": "2025-03-10T19:19:22.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 2,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 16,
+            "numRowsRemoved": 1,
+            "allRemovalsTimeMs": 12,
+            "commitTimeMs": 226,
+            "memoryUsedBytes": 2992,
+            "numRowsDroppedByWatermark": 24,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 8,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 960
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 1
+            },
+            "endOffset": {
+              "logOffset": 2
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 34.059945504087196,
+            "processedRowsPerSecond": 32.50975292587776
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:37.860Z",
+        "batchId": 3,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 32.467532467532465,
+        "processedRowsPerSecond": 44.247787610619476,
+        "durationMs": {
+          "addBatch": 393,
+          "commitOffsets": 51,
+          "getBatch": 6,
+          "latestOffset": 48,
+          "queryPlanning": 14,
+          "triggerExecution": 565,
+          "walCommit": 53
+        },
+        "eventTime": {
+          "avg": "2025-03-04T15:28:01.480Z",
+          "max": "2025-05-01T12:00:04.000Z",
+          "min": "2025-03-01T00:21:18.000Z",
+          "watermark": "2025-03-10T19:19:22.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 3,
+            "numRowsUpdated": 1,
+            "allUpdatesTimeMs": 37,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 226,
+            "memoryUsedBytes": 2576,
+            "numRowsDroppedByWatermark": 24,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 12,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 1200
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 2
+            },
+            "endOffset": {
+              "logOffset": 3
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 32.467532467532465,
+            "processedRowsPerSecond": 44.247787610619476
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:38.426Z",
+        "batchId": 4,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 44.169611307420496,
+        "processedRowsPerSecond": 42.08754208754209,
+        "durationMs": {
+          "addBatch": 390,
+          "commitOffsets": 75,
+          "getBatch": 5,
+          "latestOffset": 48,
+          "queryPlanning": 12,
+          "triggerExecution": 594,
+          "walCommit": 62
+        },
+        "eventTime": {
+          "avg": "2025-03-02T04:15:29.500Z",
+          "max": "2025-03-05T05:00:00.000Z",
+          "min": "2025-03-01T00:25:13.000Z",
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 15,
+            "numRowsRemoved": 2,
+            "allRemovalsTimeMs": 29,
+            "commitTimeMs": 219,
+            "memoryUsedBytes": 2544,
+            "numRowsDroppedByWatermark": 24,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 16,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 3
+            },
+            "endOffset": {
+              "logOffset": 4
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 44.169611307420496,
+            "processedRowsPerSecond": 42.08754208754209
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:39.021Z",
+        "batchId": 5,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 42.016806722689076,
+        "processedRowsPerSecond": 38.81987577639752,
+        "durationMs": {
+          "addBatch": 463,
+          "commitOffsets": 56,
+          "getBatch": 5,
+          "latestOffset": 56,
+          "queryPlanning": 16,
+          "triggerExecution": 644,
+          "walCommit": 46
+        },
+        "eventTime": {
+          "avg": "2025-03-03T22:10:45.772Z",
+          "max": "2025-04-01T19:54:41.000Z",
+          "min": "2025-03-01T01:50:26.000Z",
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 24,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 260,
+            "memoryUsedBytes": 2064,
+            "numRowsDroppedByWatermark": 22,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 20,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 4
+            },
+            "endOffset": {
+              "logOffset": 5
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 42.016806722689076,
+            "processedRowsPerSecond": 38.81987577639752
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:39.666Z",
+        "batchId": 6,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 38.75968992248062,
+        "processedRowsPerSecond": 47.98464491362764,
+        "durationMs": {
+          "addBatch": 363,
+          "commitOffsets": 40,
+          "getBatch": 4,
+          "latestOffset": 41,
+          "queryPlanning": 13,
+          "triggerExecution": 521,
+          "walCommit": 56
+        },
+        "eventTime": {
+          "avg": "2025-03-03T21:29:25.666Z",
+          "max": "2025-04-08T04:00:00.000Z",
+          "min": "2025-03-01T00:29:55.000Z",
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 13,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 257,
+            "memoryUsedBytes": 2064,
+            "numRowsDroppedByWatermark": 24,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 24,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 5
+            },
+            "endOffset": {
+              "logOffset": 6
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 38.75968992248062,
+            "processedRowsPerSecond": 47.98464491362764
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:40.188Z",
+        "batchId": 7,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 47.89272030651341,
+        "processedRowsPerSecond": 59.1016548463357,
+        "durationMs": {
+          "addBatch": 289,
+          "commitOffsets": 40,
+          "getBatch": 4,
+          "latestOffset": 39,
+          "queryPlanning": 10,
+          "triggerExecution": 423,
+          "walCommit": 39
+        },
+        "eventTime": {
+          "avg": "2025-03-01T23:56:59.400Z",
+          "max": "2025-03-05T20:18:44.000Z",
+          "min": "2025-03-01T01:18:45.000Z",
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 13,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 182,
+            "memoryUsedBytes": 2064,
+            "numRowsDroppedByWatermark": 25,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 28,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 6
+            },
+            "endOffset": {
+              "logOffset": 7
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 47.89272030651341,
+            "processedRowsPerSecond": 59.1016548463357
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:40.612Z",
+        "batchId": 8,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 58.9622641509434,
+        "processedRowsPerSecond": 65.78947368421052,
+        "durationMs": {
+          "addBatch": 249,
+          "commitOffsets": 35,
+          "getBatch": 4,
+          "latestOffset": 45,
+          "queryPlanning": 9,
+          "triggerExecution": 380,
+          "walCommit": 36
+        },
+        "eventTime": {
+          "avg": "2025-03-04T16:04:41.434Z",
+          "max": "2025-04-28T12:29:31.000Z",
+          "min": "2025-03-01T01:50:35.000Z",
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 10,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 154,
+            "memoryUsedBytes": 2064,
+            "numRowsDroppedByWatermark": 23,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 32,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 7
+            },
+            "endOffset": {
+              "logOffset": 8
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 58.9622641509434,
+            "processedRowsPerSecond": 65.78947368421052
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:40.993Z",
+        "batchId": 9,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 65.61679790026247,
+        "processedRowsPerSecond": 56.433408577878104,
+        "durationMs": {
+          "addBatch": 303,
+          "commitOffsets": 41,
+          "getBatch": 3,
+          "latestOffset": 46,
+          "queryPlanning": 10,
+          "triggerExecution": 443,
+          "walCommit": 37
+        },
+        "eventTime": {
+          "avg": "2025-03-06T19:42:29.125Z",
+          "max": "2025-04-25T04:00:00.000Z",
+          "min": "2025-03-01T04:06:24.000Z",
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 9,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 153,
+            "memoryUsedBytes": 2064,
+            "numRowsDroppedByWatermark": 24,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 36,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 8
+            },
+            "endOffset": {
+              "logOffset": 9
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 65.61679790026247,
+            "processedRowsPerSecond": 56.433408577878104
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:41.437Z",
+        "batchId": 10,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 56.306306306306304,
+        "processedRowsPerSecond": 62.65664160401002,
+        "durationMs": {
+          "addBatch": 275,
+          "commitOffsets": 40,
+          "getBatch": 3,
+          "latestOffset": 40,
+          "queryPlanning": 8,
+          "triggerExecution": 399,
+          "walCommit": 31
+        },
+        "eventTime": {
+          "avg": "2025-03-04T11:17:49.791Z",
+          "max": "2025-04-18T04:00:00.000Z",
+          "min": "2025-03-01T00:29:55.000Z",
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 9,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 158,
+            "memoryUsedBytes": 2064,
+            "numRowsDroppedByWatermark": 24,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 40,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 9
+            },
+            "endOffset": {
+              "logOffset": 10
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 56.306306306306304,
+            "processedRowsPerSecond": 62.65664160401002
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:41.836Z",
+        "batchId": 11,
+        "numInputRows": 25,
+        "inputRowsPerSecond": 62.65664160401002,
+        "processedRowsPerSecond": 39.37007874015748,
+        "durationMs": {
+          "addBatch": 499,
+          "commitOffsets": 43,
+          "getBatch": 3,
+          "latestOffset": 34,
+          "queryPlanning": 13,
+          "triggerExecution": 635,
+          "walCommit": 41
+        },
+        "eventTime": {
+          "avg": "2025-03-03T12:16:34.541Z",
+          "max": "2025-04-01T19:54:41.000Z",
+          "min": "2025-03-01T01:48:46.000Z",
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 48,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 460,
+            "memoryUsedBytes": 2064,
+            "numRowsDroppedByWatermark": 24,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 44,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 10
+            },
+            "endOffset": {
+              "logOffset": 11
+            },
+            "latestOffset": null,
+            "numInputRows": 25,
+            "inputRowsPerSecond": 62.65664160401002,
+            "processedRowsPerSecond": 39.37007874015748
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:42.472Z",
+        "batchId": 12,
+        "numInputRows": 2,
+        "inputRowsPerSecond": 3.144654088050314,
+        "processedRowsPerSecond": 5.58659217877095,
+        "durationMs": {
+          "addBatch": 250,
+          "commitOffsets": 36,
+          "getBatch": 5,
+          "latestOffset": 30,
+          "queryPlanning": 8,
+          "triggerExecution": 358,
+          "walCommit": 29
+        },
+        "eventTime": {
+          "avg": "2025-03-03T22:27:54.000Z",
+          "max": "2025-03-06T01:00:11.000Z",
+          "min": "2025-03-01T19:55:37.000Z",
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 8,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 162,
+            "memoryUsedBytes": 2064,
+            "numRowsDroppedByWatermark": 2,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 48,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 11
+            },
+            "endOffset": {
+              "logOffset": 12
+            },
+            "latestOffset": null,
+            "numInputRows": 2,
+            "inputRowsPerSecond": 3.144654088050314,
+            "processedRowsPerSecond": 5.58659217877095
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "88caffe3-d019-4c61-b39e-b86683d7a5fb",
+        "runId": "a83a620e-cde3-4088-a874-b9963b283752",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:42.831Z",
+        "batchId": 13,
+        "numInputRows": 1,
+        "inputRowsPerSecond": 2.785515320334262,
+        "processedRowsPerSecond": 2.2075055187637966,
+        "durationMs": {
+          "addBatch": 312,
+          "commitOffsets": 53,
+          "getBatch": 4,
+          "latestOffset": 37,
+          "queryPlanning": 8,
+          "triggerExecution": 453,
+          "walCommit": 38
+        },
+        "eventTime": {
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "dedupeWithinWatermark",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 14,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 0,
+            "commitTimeMs": 192,
+            "memoryUsedBytes": 2064,
+            "numRowsDroppedByWatermark": 0,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 52,
+              "loadedMapCacheMissCount": 0,
+              "numDroppedDuplicateRows": 0,
+              "stateOnCurrentVersionSizeBytes": 720
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/incoming]",
+            "startOffset": {
+              "logOffset": 12
+            },
+            "endOffset": {
+              "logOffset": 13
+            },
+            "latestOffset": null,
+            "numInputRows": 1,
+            "inputRowsPerSecond": 2.785515320334262,
+            "processedRowsPerSecond": 2.2075055187637966
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+          "numOutputRows": -1
+        }
+      }
+    ],
+    "aggregation_progress": [
+      {
+        "id": "eff46d44-2d91-4b74-82a9-8ed5f94a8f10",
+        "runId": "1bba1baa-e91d-4b04-8b6d-fe20086af50a",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:43.498Z",
+        "batchId": 0,
+        "numInputRows": 45,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 46.77754677754678,
+        "durationMs": {
+          "addBatch": 768,
+          "commitOffsets": 66,
+          "getBatch": 7,
+          "latestOffset": 42,
+          "queryPlanning": 36,
+          "triggerExecution": 962,
+          "walCommit": 42
+        },
+        "eventTime": {
+          "avg": "2025-03-03T20:53:24.577Z",
+          "max": "2025-05-01T12:00:04.000Z",
+          "min": "2025-03-01T00:49:10.000Z",
+          "watermark": "1970-01-01T00:00:00.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "stateStoreSave",
+            "numRowsTotal": 42,
+            "numRowsUpdated": 42,
+            "allUpdatesTimeMs": 87,
+            "numRowsRemoved": 0,
+            "allRemovalsTimeMs": 72,
+            "commitTimeMs": 217,
+            "memoryUsedBytes": 13848,
+            "numRowsDroppedByWatermark": 0,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 0,
+              "loadedMapCacheMissCount": 0,
+              "stateOnCurrentVersionSizeBytes": 13272
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+            "startOffset": null,
+            "endOffset": {
+              "logOffset": 0
+            },
+            "latestOffset": null,
+            "numInputRows": 45,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 46.77754677754678
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/hourly_windows]",
+          "numOutputRows": -1
+        }
+      },
+      {
+        "id": "eff46d44-2d91-4b74-82a9-8ed5f94a8f10",
+        "runId": "1bba1baa-e91d-4b04-8b6d-fe20086af50a",
+        "name": null,
+        "timestamp": "2026-11-02T20:34:44.462Z",
+        "batchId": 1,
+        "numInputRows": 0,
+        "inputRowsPerSecond": 0.0,
+        "processedRowsPerSecond": 0.0,
+        "durationMs": {
+          "addBatch": 447,
+          "commitOffsets": 56,
+          "getBatch": 0,
+          "latestOffset": 0,
+          "queryPlanning": 21,
+          "triggerExecution": 583,
+          "walCommit": 56
+        },
+        "eventTime": {
+          "watermark": "2025-04-29T12:00:04.000Z"
+        },
+        "stateOperators": [
+          {
+            "operatorName": "stateStoreSave",
+            "numRowsTotal": 1,
+            "numRowsUpdated": 0,
+            "allUpdatesTimeMs": 9,
+            "numRowsRemoved": 41,
+            "allRemovalsTimeMs": 98,
+            "commitTimeMs": 185,
+            "memoryUsedBytes": 15352,
+            "numRowsDroppedByWatermark": 0,
+            "numShufflePartitions": 4,
+            "numStateStoreInstances": 4,
+            "customMetrics": {
+              "loadedMapCacheHitCount": 8,
+              "loadedMapCacheMissCount": 0,
+              "stateOnCurrentVersionSizeBytes": 1512
+            }
+          }
+        ],
+        "sources": [
+          {
+            "description": "FileStreamSource[file:/Users/guerqian77/Documents/ChatGPT/bigdata/data/stream-demo/4e7c6915b060/windows/deduplicated_events]",
+            "startOffset": {
+              "logOffset": 0
+            },
+            "endOffset": {
+              "logOffset": 0
+            },
+            "latestOffset": null,
+            "numInputRows": 0,
+            "inputRowsPerSecond": 0.0,
+            "processedRowsPerSecond": 0.0
+          }
+        ],
+        "sink": {
+          "description": "FileSink[data/stream-demo/4e7c6915b060/windows/hourly_windows]",
+          "numOutputRows": -1
+        }
+      }
+    ],
+    "late_event_policy": "Spark drops events older than its watermark; finalized windows cannot be corrected in this append sink. PostgreSQL retains all valid unique events and recomputes exact windows after late arrivals.",
+    "pending_window_policy": "Newest windows remain checkpointed until event time advances beyond the watermark; an empty finalized sink is a valid outcome.",
+    "source_semantics": "Operational historical-event replay, not official CDC; synthetic update events are excluded, injection flags remain explicit",
+    "elapsed_seconds": 11.19476100000611
+  }
+}

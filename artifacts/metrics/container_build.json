@@ -1,0 +1,11 @@
+{
+  "status": "Passed",
+  "command": "docker compose --profile app build runner",
+  "image_id": "sha256:bd827133eb237ce4c1b398928a6628c74db333fe8ce654dfb4375e5827f1238e",
+  "created": "2026-11-02T20:33:32.646751384Z",
+  "architecture": "arm64",
+  "os": "linux",
+  "log": "artifacts/logs/docker-build.log",
+  "pinned_dependencies": "requirements.lock",
+  "scope": "Clean image build separate from container runtime test"
+}

@@ -1,0 +1,68 @@
+{
+  "status": "Passed",
+  "audited_runs": 9,
+  "checks": [
+    {
+      "run_id": "10f6d8bf-d41b-4781-9951-dfb577f69fbd",
+      "multiplier": 1,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "728357c4-7cec-44d7-a220-34584dfe4207",
+      "multiplier": 1,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "7132e513-9ad5-4f76-bba6-3cb51f0bfcae",
+      "multiplier": 1,
+      "parquet_rows": 1000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "45f026fd-ecc6-4ae4-9a99-3fe27f9c2972",
+      "multiplier": 10,
+      "parquet_rows": 10000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "f8952efe-96d5-4b09-bec6-7bf8ae6f58e0",
+      "multiplier": 10,
+      "parquet_rows": 10000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "5056d46f-c087-4773-9b15-b52ad9f4b6c7",
+      "multiplier": 10,
+      "parquet_rows": 10000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "294c7692-8eee-4763-a41a-480619750ea1",
+      "multiplier": 100,
+      "parquet_rows": 100000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "e28e2bbe-2357-4374-9641-9802a39880fc",
+      "multiplier": 100,
+      "parquet_rows": 100000,
+      "status": "Passed"
+    },
+    {
+      "run_id": "734174f0-092a-4224-8e57-e2123a150ab6",
+      "multiplier": 100,
+      "parquet_rows": 100000,
+      "status": "Passed"
+    }
+  ],
+  "checked_invariants": [
+    "CSV input_rows equals multiplier times base1000",
+    "Parquet physical footer rows equal ETL accepted_rows and CSV processed_rows",
+    "DQ reconciliation",
+    "throughput equals accepted rows divided by measured ETL seconds",
+    "silver source_kind is synthetic_scale_replica",
+    "per-run result success matches CSV"
+  ]
+}

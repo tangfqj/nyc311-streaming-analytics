@@ -1,0 +1,24 @@
+{
+  "demonstration_kind": "Synthetic unseen input using observed categories; excluded from all statistics",
+  "input": {
+    "agency": "NYPD",
+    "complaint_type": "Illegal Parking",
+    "borough": "QUEENS",
+    "request_id": "DEMO_UNSEEN_CREATION",
+    "event_type": "CREATED",
+    "created_date": "2025-03-01T04:07:24+00:00"
+  },
+  "prediction": {
+    "model_version": "cox-f574e2033056ad27",
+    "predicted_median_days": 0.06263888888888888,
+    "median_status": "Reached",
+    "horizon_support_days": 58.70033564814815,
+    "prediction_status": "Predicted",
+    "training_source_kinds": [
+      "official_snapshot"
+    ],
+    "p_closed_7d": 0.9999999641105268,
+    "p_closed_30d": 0.9999999999961278,
+    "p_closed_90d": null
+  }
+}

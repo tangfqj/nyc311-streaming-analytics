@@ -1,0 +1,73 @@
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/02 20:29:30 INFO Worker: Started daemon with process name: 96871@MacBook-Air.local
+26/11/02 20:29:30 INFO SignalUtils: Registering signal handler for TERM
+26/11/02 20:29:30 INFO SignalUtils: Registering signal handler for HUP
+26/11/02 20:29:30 INFO SignalUtils: Registering signal handler for INT
+26/11/02 20:29:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/11/02 20:29:31 INFO SecurityManager: Changing view acls to: guerqian77
+26/11/02 20:29:31 INFO SecurityManager: Changing modify acls to: guerqian77
+26/11/02 20:29:31 INFO SecurityManager: Changing view acls groups to: 
+26/11/02 20:29:31 INFO SecurityManager: Changing modify acls groups to: 
+26/11/02 20:29:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: guerqian77; groups with view permissions: EMPTY; users with modify permissions: guerqian77; groups with modify permissions: EMPTY
+26/11/02 20:29:31 INFO Utils: Successfully started service 'sparkWorker' on port 52046.
+26/11/02 20:29:31 INFO Worker: Worker decommissioning not enabled.
+26/11/02 20:29:32 INFO Worker: Starting Spark worker 127.0.0.1:52046 with 1 cores, 512.0 MiB RAM
+26/11/02 20:29:32 INFO Worker: Running Spark version 3.5.3
+26/11/02 20:29:32 INFO Worker: Spark home: /Users/guerqian77/Documents/ChatGPT/bigdata/.venv/lib/python3.11/site-packages/pyspark
+26/11/02 20:29:32 INFO ResourceUtils: ==============================================================
+26/11/02 20:29:32 INFO ResourceUtils: No custom resources configured for spark.worker.
+26/11/02 20:29:32 INFO ResourceUtils: ==============================================================
+26/11/02 20:29:32 INFO JettyUtils: Start Jetty 127.0.0.1:18084 for WorkerUI
+26/11/02 20:29:32 INFO Utils: Successfully started service 'WorkerUI' on port 18084.
+26/11/02 20:29:32 INFO WorkerWebUI: Bound WorkerWebUI to 127.0.0.1, and started at http://localhost:18084
+26/11/02 20:29:32 INFO Worker: Connecting to master 127.0.0.1:17077...
+26/11/02 20:29:32 INFO TransportClientFactory: Successfully created connection to /127.0.0.1:17077 after 27 ms (0 ms spent in bootstraps)
+26/11/02 20:29:32 INFO Worker: Successfully registered with master spark://127.0.0.1:17077
+26/11/02 20:29:33 INFO Worker: Asked to launch executor app-20261102202933-0000/2 for nyc311-benchmark
+26/11/02 20:29:33 INFO SecurityManager: Changing view acls to: guerqian77
+26/11/02 20:29:33 INFO SecurityManager: Changing modify acls to: guerqian77
+26/11/02 20:29:33 INFO SecurityManager: Changing view acls groups to: 
+26/11/02 20:29:33 INFO SecurityManager: Changing modify acls groups to: 
+26/11/02 20:29:33 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: guerqian77; groups with view permissions: EMPTY; users with modify permissions: guerqian77; groups with modify permissions: EMPTY
+26/11/02 20:29:33 INFO ExecutorRunner: Launch command: "/Users/guerqian77/Documents/ChatGPT/bigdata/data/runtime/java17/Contents/Home/bin/java" "-cp" "/Users/guerqian77/Documents/ChatGPT/bigdata/.venv/lib/python3.11/site-packages/pyspark/conf:/Users/guerqian77/Documents/ChatGPT/bigdata/.venv/lib/python3.11/site-packages/pyspark/jars/*" "-Xmx512M" "-Dspark.driver.port=52060" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@127.0.0.1:52060" "--executor-id" "2" "--hostname" "127.0.0.1" "--cores" "1" "--app-id" "app-20261102202933-0000" "--worker-url" "spark://Worker@127.0.0.1:52046" "--resourceProfileId" "0"
+26/11/02 20:30:14 INFO Worker: Asked to kill executor app-20261102202933-0000/2
+26/11/02 20:30:14 INFO ExecutorRunner: Runner thread for executor app-20261102202933-0000/2 interrupted
+26/11/02 20:30:14 INFO ExecutorRunner: Killing process!
+26/11/02 20:30:14 INFO Worker: Executor app-20261102202933-0000/2 finished with state KILLED exitStatus 0
+26/11/02 20:30:14 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 2
+26/11/02 20:30:14 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20261102202933-0000, execId=2)
+26/11/02 20:30:14 INFO Worker: Cleaning up local directories for application app-20261102202933-0000
+26/11/02 20:30:14 INFO ExternalShuffleBlockResolver: Application app-20261102202933-0000 removed, cleanupLocalDirs = true
+26/11/02 20:30:16 INFO Worker: Asked to launch executor app-20261102203016-0001/2 for nyc311-benchmark
+26/11/02 20:30:16 INFO SecurityManager: Changing view acls to: guerqian77
+26/11/02 20:30:16 INFO SecurityManager: Changing modify acls to: guerqian77
+26/11/02 20:30:16 INFO SecurityManager: Changing view acls groups to: 
+26/11/02 20:30:16 INFO SecurityManager: Changing modify acls groups to: 
+26/11/02 20:30:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: guerqian77; groups with view permissions: EMPTY; users with modify permissions: guerqian77; groups with modify permissions: EMPTY
+26/11/02 20:30:16 INFO ExecutorRunner: Launch command: "/Users/guerqian77/Documents/ChatGPT/bigdata/data/runtime/java17/Contents/Home/bin/java" "-cp" "/Users/guerqian77/Documents/ChatGPT/bigdata/.venv/lib/python3.11/site-packages/pyspark/conf:/Users/guerqian77/Documents/ChatGPT/bigdata/.venv/lib/python3.11/site-packages/pyspark/jars/*" "-Xmx512M" "-Dspark.driver.port=52228" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@127.0.0.1:52228" "--executor-id" "2" "--hostname" "127.0.0.1" "--cores" "1" "--app-id" "app-20261102203016-0001" "--worker-url" "spark://Worker@127.0.0.1:52046" "--resourceProfileId" "0"
+26/11/02 20:30:53 INFO Worker: Asked to kill executor app-20261102203016-0001/2
+26/11/02 20:30:53 INFO ExecutorRunner: Runner thread for executor app-20261102203016-0001/2 interrupted
+26/11/02 20:30:53 INFO ExecutorRunner: Killing process!
+26/11/02 20:30:53 INFO Worker: Executor app-20261102203016-0001/2 finished with state KILLED exitStatus 0
+26/11/02 20:30:53 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 2
+26/11/02 20:30:53 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20261102203016-0001, execId=2)
+26/11/02 20:30:53 INFO ExternalShuffleBlockResolver: Application app-20261102203016-0001 removed, cleanupLocalDirs = true
+26/11/02 20:30:53 INFO Worker: Cleaning up local directories for application app-20261102203016-0001
+26/11/02 20:30:56 INFO Worker: Asked to launch executor app-20261102203056-0002/2 for nyc311-benchmark
+26/11/02 20:30:56 INFO SecurityManager: Changing view acls to: guerqian77
+26/11/02 20:30:56 INFO SecurityManager: Changing modify acls to: guerqian77
+26/11/02 20:30:56 INFO SecurityManager: Changing view acls groups to: 
+26/11/02 20:30:56 INFO SecurityManager: Changing modify acls groups to: 
+26/11/02 20:30:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: guerqian77; groups with view permissions: EMPTY; users with modify permissions: guerqian77; groups with modify permissions: EMPTY
+26/11/02 20:30:56 INFO ExecutorRunner: Launch command: "/Users/guerqian77/Documents/ChatGPT/bigdata/data/runtime/java17/Contents/Home/bin/java" "-cp" "/Users/guerqian77/Documents/ChatGPT/bigdata/.venv/lib/python3.11/site-packages/pyspark/conf:/Users/guerqian77/Documents/ChatGPT/bigdata/.venv/lib/python3.11/site-packages/pyspark/jars/*" "-Xmx512M" "-Dspark.driver.port=52370" "-Djava.net.preferIPv6Addresses=false" "-XX:+IgnoreUnrecognizedVMOptions" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" "--add-opens=java.base/java.io=ALL-UNNAMED" "--add-opens=java.base/java.net=ALL-UNNAMED" "--add-opens=java.base/java.nio=ALL-UNNAMED" "--add-opens=java.base/java.util=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED" "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED" "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED" "--add-opens=java.base/sun.nio.cs=ALL-UNNAMED" "--add-opens=java.base/sun.security.action=ALL-UNNAMED" "--add-opens=java.base/sun.util.calendar=ALL-UNNAMED" "--add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED" "-Djdk.reflect.useDirectMethodHandle=false" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@127.0.0.1:52370" "--executor-id" "2" "--hostname" "127.0.0.1" "--cores" "1" "--app-id" "app-20261102203056-0002" "--worker-url" "spark://Worker@127.0.0.1:52046" "--resourceProfileId" "0"
+26/11/02 20:31:25 INFO Worker: Asked to kill executor app-20261102203056-0002/2
+26/11/02 20:31:25 INFO ExecutorRunner: Runner thread for executor app-20261102203056-0002/2 interrupted
+26/11/02 20:31:25 INFO ExecutorRunner: Killing process!
+26/11/02 20:31:26 INFO Worker: Executor app-20261102203056-0002/2 finished with state KILLED exitStatus 143
+26/11/02 20:31:26 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 2
+26/11/02 20:31:26 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20261102203056-0002, execId=2)
+26/11/02 20:31:26 INFO ExternalShuffleBlockResolver: Application app-20261102203056-0002 removed, cleanupLocalDirs = true
+26/11/02 20:31:26 INFO Worker: Cleaning up local directories for application app-20261102203056-0002
+26/11/02 20:31:27 ERROR Worker: RECEIVED SIGNAL TERM
+26/11/02 20:31:27 INFO ShutdownHookManager: Shutdown hook called
+26/11/02 20:31:27 INFO ShutdownHookManager: Deleting directory /private/var/folders/gv/m9x0rxm16s9d2fgdbbksxhrh0000gn/T/spark-2a772689-b80e-47ee-9c3c-d60be9b0b7a6

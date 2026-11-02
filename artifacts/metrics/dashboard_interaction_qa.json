@@ -1,0 +1,273 @@
+{
+  "status": "Passed",
+  "captured_at": "2026-11-02T21:40:59.602442+00:00",
+  "url": "http://127.0.0.1:8501",
+  "method": "Actual Chromium pointer/controls/downloads through playwright-cli; DOM values independently reconciled to official silver calculations",
+  "source_rows": 8813,
+  "as_of": "2025-07-01T00:00:00Z",
+  "viewport_checks": {
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": {
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "test": null,
+          "width": 137.8984375
+        },
+        {
+          "tag": "TABLE",
+          "test": null,
+          "width": 111.8984375
+        },
+        {
+          "tag": "TBODY",
+          "test": null,
+          "width": 111.8984375
+        },
+        {
+          "tag": "TR",
+          "test": null,
+          "width": 111.8984375
+        },
+        {
+          "tag": "TD",
+          "test": null,
+          "width": 82.3046875
+        },
+        {
+          "tag": "TD",
+          "test": null,
+          "width": 29.59375
+        },
+        {
+          "tag": "TR",
+          "test": null,
+          "width": 111.8984375
+        },
+        {
+          "tag": "TD",
+          "test": null,
+          "width": 82.3046875
+        },
+        {
+          "tag": "TD",
+          "test": null,
+          "width": 29.59375
+        }
+      ],
+      "exceptions": 0
+    }
+  },
+  "cohort_checks": {
+    "full": {
+      "status": "Passed",
+      "observed": {
+        "case": "Fresh overview",
+        "metrics": [
+          "8,813",
+          "97.9",
+          "8,543",
+          "270",
+          "100",
+          "100",
+          "14"
+        ],
+        "insights": "01\nSelected cohort\n\n8,813 downloaded systematic sample requests were created from 2025-01-01 through 2025-03-31 (NYC local dates). Mean = 97.9 requests per covered day (90/90 days covered). The selected calendar is fully covered for this sample.\n\n02\nMovement inside this window\n\nFirst 7 versus last 7 covered local calendar days: 918 arrivals (2025-01-01\u20132025-01-07) versus 627 (2025-03-25\u20132025-03-31), -31.7%. This describes sampled arrivals, not a causal effect, annual seasonality or citywide demand.\n\n03\nAgency mix\n\nNYPD accounts for 3,891 requests (44.2%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings.",
+        "canvas": [
+          {
+            "x": 404.796875,
+            "y": 738.8046875,
+            "width": 960,
+            "height": 105
+          },
+          {
+            "x": 404.796875,
+            "y": 1186.5859375,
+            "width": 573,
+            "height": 285
+          },
+          {
+            "x": 1074.765625,
+            "y": 1270.5859375,
+            "width": 290,
+            "height": 285
+          }
+        ]
+      },
+      "expected_selected_metrics": [
+        "8,813",
+        "97.9",
+        "8,543",
+        "270"
+      ]
+    },
+    "brush": {
+      "status": "Passed",
+      "observed": {
+        "case": "Pointer brush",
+        "metrics": [
+          "2,287",
+          "91.5",
+          "2,211",
+          "76",
+          "100",
+          "100",
+          "14"
+        ],
+        "navigator": "0 calendar days \u00b7 America/New_York \u00b7 systematic sample, not NYC totals. Only downloaded years are offered; date filters do not download new history.\n\nTIMELINE NAVIGATOR Drag across dates to focus every linked view below\n\nBrush active \u00b7 2025-02-02 through 2025-02-26, inclusive. Metrics, detail charts, cohort tables and explanations below use these dates. Double-click the navigator or reset to clear the brush.\n\nReset chart focus",
+        "insights": "01\nSelected cohort\n\n2,287 downloaded systematic sample requests were created from 2025-02-02 through 2025-02-26 (NYC local dates). Mean = 91.5 requests per covered day (25/25 days covered). The selected calendar is fully covered for this sample.\n\n02\nMovement inside this window\n\nFirst 7 versus last 7 covered local calendar days: 617 arrivals (2025-02-02\u20132025-02-08) versus 654 (2025-02-20\u20132025-02-26), +6.0%. This describes sampled arrivals, not a causal effect, annual seasonality or citywide demand.\n\n03\nAgency mix\n\nNYPD accounts for 913 requests (39.9%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings.",
+        "exceptions": 0
+      },
+      "expected_selected_metrics": [
+        "2,287",
+        "91.5",
+        "2,211",
+        "76"
+      ]
+    },
+    "february": {
+      "status": "Passed",
+      "observed": {
+        "case": "February HPD Bronx",
+        "metrics": [
+          "253",
+          "9.0",
+          "245",
+          "8",
+          "100",
+          "100",
+          "14"
+        ],
+        "filters": "EXPLORE REQUESTS\nYour question, your cohort.\nLive calculations \u00b7 saved silver data\n\nAvailable year\n\nAll available\n\nDate selection\n\nDate range\n\nChart aggregation\n\nDay\n\nMoving average \u00b7 calendar days\n\n7\n1\n28\n\nCreated on or after\n\nPress the down arrow key to interact with the calendar and select a date. Press the escape button to close the calendar.\n\nSelected date is 2025/02/01. Select the second date.\n\nCreated on or before\n\nPress the down arrow key to interact with the calendar and select a date. Press the escape button to close the calendar.\n\nSelected date is 2025/02/28. Select the second date.\n\nCompare previous equal-length period\n\nRefine the cohort \u00b7 agency, borough & complaint type\n\nAll agencies\n\nAgencies\n\nHPD\n\nAll boroughs\n\nBoroughs\n\nBRONX\n\nAll complaint types\n\nComplaint types\n\nChoose complaint types\n\nUncheck an All option to choose categories. An empty category selection deliberately matches no requests.\n\nDownloaded coverage: 2025-01-01 \u2013 2025-03-31 \u00b7 90 calendar days \u00b7 America/New_York \u00b7 systematic sample, not NYC totals. Only downloaded years are offered; date filters do not download new history.\n\nTIMELINE NAVIGATOR Drag across dates to focus every linked view below\n\nActive creation window \u00b7 2025-02-01 through 2025-02-28, inclusive. Metrics, detail charts, cohort tables and explanations below use these dates. Double-click the navigator or reset to clear the brush.\n\nReset chart focus",
+        "insights": "01\nSelected cohort\n\n253 downloaded systematic sample requests were created from 2025-02-01 through 2025-02-28 (NYC local dates). Mean = 9.0 requests per covered day (28/28 days covered). The selected calendar is fully covered for this sample.\n\n02\nChange versus previous window\n\nSample arrivals changed -31.1% (367 \u2192 253) versus 2025-01-04\u20132025-01-31. Both windows contain 28 local calendar days and use the same category filters. Each window contains at least 20 sampled requests. This describes request arrivals in the sample; it does not establish a cause or citywide change.\n\n03\nAgency mix\n\nHPD accounts for 253 requests (100.0%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings."
+      },
+      "expected_selected_metrics": [
+        "253",
+        "9.0",
+        "245",
+        "8"
+      ]
+    },
+    "before": {
+      "status": "Passed",
+      "observed": {
+        "case": "Inclusive before January15",
+        "metrics": [
+          "1,902",
+          "126.8",
+          "1,856",
+          "46",
+          "100",
+          "100",
+          "14"
+        ],
+        "navigator": "-03-31 \u00b7 90 calendar days \u00b7 America/New_York \u00b7 systematic sample, not NYC totals. Only downloaded years are offered; date filters do not download new history.\n\nTIMELINE NAVIGATOR Drag across dates to focus every linked view below\n\nActive creation window \u00b7 2025-01-01 through 2025-01-15, inclusive. Metrics, detail charts, cohort tables and explanations below use these dates. Double-click the navigator or reset to clear the brush.\n\nReset chart focus",
+        "insights": "01\nSelected cohort\n\n1,902 downloaded systematic sample requests were created from 2025-01-01 through 2025-01-15 (NYC local dates). Mean = 126.8 requests per covered day (15/15 days covered). The selected calendar is fully covered for this sample.\n\n02\nTrend needs more support\n\nRequires four full covered calendar weeks; compares first two versus last two. No direction of change is inferred from this selection.\n\n03\nAgency mix\n\nNYPD accounts for 962 requests (50.6%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings."
+      },
+      "expected_selected_metrics": [
+        "1,902",
+        "126.8",
+        "1,856",
+        "46"
+      ]
+    }
+  },
+  "weekly_brush": {
+    "case": "Weekly aggregation keeps brush cohort",
+    "metrics": [
+      "2,287",
+      "91.5",
+      "2,211",
+      "76",
+      "100",
+      "100",
+      "14"
+    ],
+    "navigator": "0 calendar days \u00b7 America/New_York \u00b7 systematic sample, not NYC totals. Only downloaded years are offered; date filters do not download new history.\n\nTIMELINE NAVIGATOR Drag across dates to focus every linked view below\n\nBrush active \u00b7 2025-02-02 through 2025-02-26, inclusive. Metrics, detail charts, cohort tables and explanations below use these dates. Double-click the navigator or reset to clear the brush.\n\nReset chart focus",
+    "insights": "01\nSelected cohort\n\n2,287 downloaded systematic sample requests were created from 2025-02-02 through 2025-02-26 (NYC local dates). Mean = 91.5 requests per covered day (25/25 days covered). The selected calendar is fully covered for this sample.\n\n02\nTrend needs more support\n\nRequires four full covered calendar weeks; compares first two versus last two. No direction of change is inferred from this selection.\n\n03\nAgency mix\n\nNYPD accounts for 913 requests (39.9%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings."
+  },
+  "reset": {
+    "case": "Reset restores control window",
+    "metrics": [
+      "8,813",
+      "97.9",
+      "8,543",
+      "270",
+      "100",
+      "100",
+      "14"
+    ],
+    "navigator": "-03-31 \u00b7 90 calendar days \u00b7 America/New_York \u00b7 systematic sample, not NYC totals. Only downloaded years are offered; date filters do not download new history.\n\nTIMELINE NAVIGATOR Drag across dates to focus every linked view below\n\nActive creation window \u00b7 2025-01-01 through 2025-03-31, inclusive. Metrics, detail charts, cohort tables and explanations below use these dates. Double-click the navigator or reset to clear the brush.\n\nReset chart focus",
+    "insights": "01\nSelected cohort\n\n8,813 downloaded systematic sample requests were created from 2025-01-01 through 2025-03-31 (NYC local dates). Mean = 97.9 requests per covered day (90/90 days covered). The selected calendar is fully covered for this sample.\n\n02\nMovement inside this window\n\nFirst two versus last two full covered Monday\u2013Sunday weeks: 1,625 arrivals (2025-01-06\u20132025-01-19) versus 1,270 (2025-03-17\u20132025-03-30), -21.8%. This describes sampled arrivals, not a causal effect, annual seasonality or citywide demand.\n\n03\nAgency mix\n\nNYPD accounts for 3,891 requests (44.2%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings."
+  },
+  "filtered_km_ci": {
+    "case": "Filtered KM with CI",
+    "metrics": [
+      "253",
+      "3.2%",
+      "245",
+      "8",
+      " 6,003 ",
+      " 2,800 ",
+      " 0.746 "
+    ],
+    "scope": true,
+    "exceptions": 0
+  },
+  "filtered_weather": {
+    "case": "Filtered weather precipitation",
+    "metrics": [
+      "253",
+      "9.0",
+      "28 / 28",
+      "28",
+      "-0.416",
+      " 5 ",
+      " 0 "
+    ],
+    "interpretation": "What this relationship supports\nThe association is recalculated when your cohort changes\n\nFiltered arrivals / weather \u00b7 Spearman \u03c1\n\n-0.416\n\n28 paired days \u00b7 Estimable \u00b7 minimum 10 days and variation in both variables required.\n\nThe selected sample has a negative rank association (\u03c1=-0.416) with precipitation. Complaint mix, sampling and season may explain the relationship. This is exploratory evidence, not a weather effect or a forecast.\nThe available quarter-year history cannot establish annual seasonality. Weather comes from one NYC reference point and is used for retrospective analysis only.",
+    "exceptions": 0
+  },
+  "download_checks": {
+    "status": "Passed",
+    "csv": "output/playwright/interactive-february-hpd-bronx.csv",
+    "csv_rows": 28,
+    "sum_requests": 253,
+    "filters": {
+      "agencies": [
+        "HPD"
+      ],
+      "boroughs": [
+        "BRONX"
+      ],
+      "complaint_types": null
+    },
+    "text": "output/playwright/interactive-february-hpd-bronx.txt"
+  },
+  "screenshots": [
+    "output/playwright/interactive-overview-desktop.png",
+    "output/playwright/interactive-brush-desktop.png",
+    "output/playwright/interactive-filtered-story-desktop.png",
+    "output/playwright/interactive-filtered-km-ci.png",
+    "output/playwright/interactive-filtered-weather.png",
+    "output/playwright/interactive-controls-mobile.png",
+    "output/playwright/interactive-weather-mobile.png"
+  ],
+  "benchmark_csv_unchanged": true,
+  "console": {
+    "observed_errors": 0,
+    "warnings": "Vega transient empty-extent warnings during dataset/selection updates; charts inspected after rendering"
+  },
+  "limitations": [
+    "Current official data covers 2025Q1 only",
+    "Local browser verification, not hosted deployment",
+    "Model evaluation and capacity scenarios retain their saved cohorts",
+    "Mobile overflow list includes an offscreen Vega tooltip; document/body width remain 390px"
+  ]
+}

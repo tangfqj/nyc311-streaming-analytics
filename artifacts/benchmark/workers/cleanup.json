@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-11-02T20:32:16.931146+00:00",
+  "status": "Passed",
+  "benchmark_app_ids": [
+    "app-20261102202614-0000",
+    "app-20261102202636-0001",
+    "app-20261102202653-0002",
+    "app-20261102202716-0000",
+    "app-20261102202737-0001",
+    "app-20261102202757-0002",
+    "app-20261102202821-0000",
+    "app-20261102202844-0001",
+    "app-20261102202905-0002",
+    "app-20261102202933-0000",
+    "app-20261102203016-0001",
+    "app-20261102203056-0002"
+  ],
+  "residual_processes": [],
+  "cleanup_method": "cluster_bench.sh own-PID trap completed; process table checked for benchmark port17077, benchmark work directories, and benchmark application IDs"
+}

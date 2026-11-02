@@ -1,0 +1,7 @@
+{
+  "mode": "local_threads",
+  "worker_count": null,
+  "registered_workers": null,
+  "active_executors": null,
+  "note": "local[N] threads are not standalone workers"
+}

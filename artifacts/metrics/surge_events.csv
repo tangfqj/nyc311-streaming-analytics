@@ -1,0 +1,1 @@
+date,observed_rows,complaint_type,borough,coverage_complete,coverage_status,count,population_complete,weekday,baseline_mean,baseline_std,baseline_n,z_score,is_surge,surge_method,rolling_mean_7d

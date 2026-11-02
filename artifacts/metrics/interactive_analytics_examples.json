@@ -1,0 +1,419 @@
+{
+  "status": "Passed",
+  "source": "actual official silver and paired coverage manifest",
+  "as_of": "2025-07-01T00:00:00Z",
+  "examples": [
+    {
+      "example": "Fullavailablequarter",
+      "selection": {
+        "start_date": "2025-01-01",
+        "end_date": "2025-03-31",
+        "end_date_inclusive": true,
+        "timezone": "America/New_York",
+        "frequency": "daily",
+        "agencies": null,
+        "complaint_types": null,
+        "boroughs": null
+      },
+      "metrics": {
+        "input_rows": 8813,
+        "selected_rows": 8813,
+        "filtered_out_rows": 0,
+        "future_created_excluded_rows": 0,
+        "calendar_days": 90,
+        "covered_days": 90,
+        "unknown_days": 0,
+        "coverage_complete": true,
+        "covered_sample_rows": 8813,
+        "mean_daily_count": 97.92222222222222,
+        "peak_day": "2025-01-07",
+        "peak_count": 155,
+        "peak_tied_days": 1,
+        "as_of": "2025-07-01T00:00:00+00:00",
+        "label_rows": 8813,
+        "label_rejected_rows": 0,
+        "closed_observed_rows": 8543,
+        "censored_rows": 270,
+        "censoring_fraction": 0.030636559627822534,
+        "source_kinds": [
+          "official_snapshot"
+        ],
+        "population_complete": false,
+        "scope": "official systematic sample, not city totals"
+      },
+      "comparison": {
+        "status": "Not Estimable",
+        "reason": "Both equal-length windows must have complete selected-sample extraction on every day",
+        "method": "Immediately preceding equal-length local calendar window, with identical category filters",
+        "calendar_days_each": 90,
+        "current_start": "2025-01-01",
+        "current_end": "2025-03-31",
+        "previous_start": "2024-10-03",
+        "previous_end": "2024-12-31",
+        "current_count": null,
+        "previous_count": null,
+        "absolute_change": null,
+        "percent_change": null,
+        "minimum_requests_each": 20,
+        "current_covered_days": 90,
+        "previous_covered_days": 0
+      },
+      "trend": {
+        "status": "Estimable",
+        "reason": null,
+        "method": "First 7 versus last 7 covered local calendar days",
+        "percent_change": -31.69934640522876,
+        "first_count": 918,
+        "last_count": 627,
+        "days_each": 7,
+        "minimum_requests_each": 20,
+        "first_start": "2025-01-01",
+        "first_end": "2025-01-07",
+        "last_start": "2025-03-25",
+        "last_end": "2025-03-31"
+      },
+      "insights": [
+        {
+          "title": "Selected cohort",
+          "tone": "neutral",
+          "body": "8,813 downloaded systematic sample requests were created from 2025-01-01 through 2025-03-31 (NYC local dates). Mean = 97.9 requests per covered day (90/90 days covered). The selected calendar is fully covered for this sample."
+        },
+        {
+          "title": "Movement inside this window",
+          "tone": "neutral",
+          "body": "First 7 versus last 7 covered local calendar days: 918 requests (2025-01-01\u20132025-01-07) versus 627 (2025-03-25\u20132025-03-31), -31.7%. Each block has 7 complete calendar days and at least 20 requests. This is a descriptive sample contrast, not an annual seasonal pattern or causal effect."
+        },
+        {
+          "title": "Busiest covered day",
+          "tone": "neutral",
+          "body": "2025-01-07 recorded 155 selected sample arrivals (1 day(s) tied for this maximum). This can identify periods to investigate; it is not an anomaly test or a measure of service capacity."
+        },
+        {
+          "title": "Agency mix",
+          "tone": "neutral",
+          "body": "NYPD accounts for 3,891 requests (44.2%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings."
+        },
+        {
+          "title": "Resolution follow-up",
+          "tone": "neutral",
+          "body": "270/8,813 requests (3.1%) have no observed closure by the fixed cutoff 2025-07-01T00:00:00+00:00. They are right-censored at that cutoff. This is follow-up for the selected creation cohort, not the city's current backlog."
+        },
+        {
+          "title": "How to use this view",
+          "tone": "muted",
+          "body": "Use date and category filters to inspect the same sample consistently. Counts are not city totals; systematic ID-suffix sampling may be biased. Missing days are gaps, edge weeks/months are labelled partial, and snapshot category fields may have been updated after creation. A short available history cannot establish year-round seasonality or staffing effects."
+        }
+      ]
+    },
+    {
+      "example": "FebruaryHPDBronx",
+      "selection": {
+        "start_date": "2025-02-01",
+        "end_date": "2025-02-28",
+        "end_date_inclusive": true,
+        "timezone": "America/New_York",
+        "frequency": "daily",
+        "agencies": [
+          "HPD"
+        ],
+        "complaint_types": null,
+        "boroughs": [
+          "BRONX"
+        ]
+      },
+      "metrics": {
+        "input_rows": 8813,
+        "selected_rows": 253,
+        "filtered_out_rows": 8560,
+        "future_created_excluded_rows": 0,
+        "calendar_days": 28,
+        "covered_days": 28,
+        "unknown_days": 0,
+        "coverage_complete": true,
+        "covered_sample_rows": 253,
+        "mean_daily_count": 9.035714285714286,
+        "peak_day": "2025-02-03",
+        "peak_count": 18,
+        "peak_tied_days": 1,
+        "as_of": "2025-07-01T00:00:00+00:00",
+        "label_rows": 253,
+        "label_rejected_rows": 0,
+        "closed_observed_rows": 245,
+        "censored_rows": 8,
+        "censoring_fraction": 0.03162055335968379,
+        "source_kinds": [
+          "official_snapshot"
+        ],
+        "population_complete": false,
+        "scope": "official systematic sample, not city totals"
+      },
+      "comparison": {
+        "status": "Estimable",
+        "reason": null,
+        "method": "Immediately preceding equal-length local calendar window, with identical category filters",
+        "calendar_days_each": 28,
+        "current_start": "2025-02-01",
+        "current_end": "2025-02-28",
+        "previous_start": "2025-01-04",
+        "previous_end": "2025-01-31",
+        "current_count": 253,
+        "previous_count": 367,
+        "absolute_change": -114,
+        "percent_change": -31.06267029972752,
+        "minimum_requests_each": 20,
+        "current_covered_days": 28,
+        "previous_covered_days": 28
+      },
+      "trend": {
+        "status": "Estimable",
+        "reason": null,
+        "method": "First 7 versus last 7 covered local calendar days",
+        "percent_change": -24.65753424657534,
+        "first_count": 73,
+        "last_count": 55,
+        "days_each": 7,
+        "minimum_requests_each": 20,
+        "first_start": "2025-02-01",
+        "first_end": "2025-02-07",
+        "last_start": "2025-02-22",
+        "last_end": "2025-02-28"
+      },
+      "insights": [
+        {
+          "title": "Selected cohort",
+          "tone": "neutral",
+          "body": "253 downloaded systematic sample requests were created from 2025-02-01 through 2025-02-28 (NYC local dates). Mean = 9.0 requests per covered day (28/28 days covered). The selected calendar is fully covered for this sample."
+        },
+        {
+          "title": "Change versus previous window",
+          "tone": "neutral",
+          "body": "Sample arrivals changed -31.1% (367 \u2192 253) versus 2025-01-04\u20132025-01-31. Both windows contain 28 local calendar days and use the same category filters. Each window contains at least 20 sampled requests. This describes request arrivals in the sample; it does not establish a cause or citywide change."
+        },
+        {
+          "title": "Busiest covered day",
+          "tone": "neutral",
+          "body": "2025-02-03 recorded 18 selected sample arrivals (1 day(s) tied for this maximum). This can identify periods to investigate; it is not an anomaly test or a measure of service capacity."
+        },
+        {
+          "title": "Agency mix",
+          "tone": "neutral",
+          "body": "HPD accounts for 253 requests (100.0%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings."
+        },
+        {
+          "title": "Resolution follow-up",
+          "tone": "neutral",
+          "body": "8/253 requests (3.2%) have no observed closure by the fixed cutoff 2025-07-01T00:00:00+00:00. They are right-censored at that cutoff. This is follow-up for the selected creation cohort, not the city's current backlog."
+        },
+        {
+          "title": "How to use this view",
+          "tone": "muted",
+          "body": "Use date and category filters to inspect the same sample consistently. Counts are not city totals; systematic ID-suffix sampling may be biased. Missing days are gaps, edge weeks/months are labelled partial, and snapshot category fields may have been updated after creation. A short available history cannot establish year-round seasonality or staffing effects."
+        }
+      ]
+    },
+    {
+      "example": "ThroughJanuary15",
+      "selection": {
+        "start_date": "2025-01-01",
+        "end_date": "2025-01-15",
+        "end_date_inclusive": true,
+        "timezone": "America/New_York",
+        "frequency": "daily",
+        "agencies": null,
+        "complaint_types": null,
+        "boroughs": null
+      },
+      "metrics": {
+        "input_rows": 8813,
+        "selected_rows": 1902,
+        "filtered_out_rows": 6911,
+        "future_created_excluded_rows": 0,
+        "calendar_days": 15,
+        "covered_days": 15,
+        "unknown_days": 0,
+        "coverage_complete": true,
+        "covered_sample_rows": 1902,
+        "mean_daily_count": 126.8,
+        "peak_day": "2025-01-07",
+        "peak_count": 155,
+        "peak_tied_days": 1,
+        "as_of": "2025-07-01T00:00:00+00:00",
+        "label_rows": 1902,
+        "label_rejected_rows": 0,
+        "closed_observed_rows": 1856,
+        "censored_rows": 46,
+        "censoring_fraction": 0.024185068349106203,
+        "source_kinds": [
+          "official_snapshot"
+        ],
+        "population_complete": false,
+        "scope": "official systematic sample, not city totals"
+      },
+      "comparison": {
+        "status": "Not Estimable",
+        "reason": "Both equal-length windows must have complete selected-sample extraction on every day",
+        "method": "Immediately preceding equal-length local calendar window, with identical category filters",
+        "calendar_days_each": 15,
+        "current_start": "2025-01-01",
+        "current_end": "2025-01-15",
+        "previous_start": "2024-12-17",
+        "previous_end": "2024-12-31",
+        "current_count": null,
+        "previous_count": null,
+        "absolute_change": null,
+        "percent_change": null,
+        "minimum_requests_each": 20,
+        "current_covered_days": 15,
+        "previous_covered_days": 0
+      },
+      "trend": {
+        "status": "Estimable",
+        "reason": null,
+        "method": "First 7 versus last 7 covered local calendar days",
+        "percent_change": -7.298474945533769,
+        "first_count": 918,
+        "last_count": 851,
+        "days_each": 7,
+        "minimum_requests_each": 20,
+        "first_start": "2025-01-01",
+        "first_end": "2025-01-07",
+        "last_start": "2025-01-09",
+        "last_end": "2025-01-15"
+      },
+      "insights": [
+        {
+          "title": "Selected cohort",
+          "tone": "neutral",
+          "body": "1,902 downloaded systematic sample requests were created from 2025-01-01 through 2025-01-15 (NYC local dates). Mean = 126.8 requests per covered day (15/15 days covered). The selected calendar is fully covered for this sample."
+        },
+        {
+          "title": "Movement inside this window",
+          "tone": "neutral",
+          "body": "First 7 versus last 7 covered local calendar days: 918 requests (2025-01-01\u20132025-01-07) versus 851 (2025-01-09\u20132025-01-15), -7.3%. Each block has 7 complete calendar days and at least 20 requests. This is a descriptive sample contrast, not an annual seasonal pattern or causal effect."
+        },
+        {
+          "title": "Busiest covered day",
+          "tone": "neutral",
+          "body": "2025-01-07 recorded 155 selected sample arrivals (1 day(s) tied for this maximum). This can identify periods to investigate; it is not an anomaly test or a measure of service capacity."
+        },
+        {
+          "title": "Agency mix",
+          "tone": "neutral",
+          "body": "NYPD accounts for 962 requests (50.6%) in the selected cohort. This identifies where sampled arrivals concentrate; agencies handle different complaint mixes and request difficulty, so shares are not staff-performance rankings."
+        },
+        {
+          "title": "Resolution follow-up",
+          "tone": "neutral",
+          "body": "46/1,902 requests (2.4%) have no observed closure by the fixed cutoff 2025-07-01T00:00:00+00:00. They are right-censored at that cutoff. This is follow-up for the selected creation cohort, not the city's current backlog."
+        },
+        {
+          "title": "How to use this view",
+          "tone": "muted",
+          "body": "Use date and category filters to inspect the same sample consistently. Counts are not city totals; systematic ID-suffix sampling may be biased. Missing days are gaps, edge weeks/months are labelled partial, and snapshot category fields may have been updated after creation. A short available history cannot establish year-round seasonality or staffing effects."
+        }
+      ]
+    },
+    {
+      "example": "Emptycombination",
+      "selection": {
+        "start_date": "2025-01-01",
+        "end_date": "2025-03-31",
+        "end_date_inclusive": true,
+        "timezone": "America/New_York",
+        "frequency": "daily",
+        "agencies": [],
+        "complaint_types": null,
+        "boroughs": null
+      },
+      "metrics": {
+        "input_rows": 8813,
+        "selected_rows": 0,
+        "filtered_out_rows": 8813,
+        "future_created_excluded_rows": 0,
+        "calendar_days": 90,
+        "covered_days": 90,
+        "unknown_days": 0,
+        "coverage_complete": true,
+        "covered_sample_rows": 0,
+        "mean_daily_count": 0.0,
+        "peak_day": "2025-01-01",
+        "peak_count": 0,
+        "peak_tied_days": 90,
+        "as_of": "2025-07-01T00:00:00+00:00",
+        "label_rows": 0,
+        "label_rejected_rows": 0,
+        "closed_observed_rows": 0,
+        "censored_rows": 0,
+        "censoring_fraction": null,
+        "source_kinds": [
+          "official_snapshot"
+        ],
+        "population_complete": false,
+        "scope": "official systematic sample, not city totals"
+      },
+      "comparison": {
+        "status": "Not Estimable",
+        "reason": "Both equal-length windows must have complete selected-sample extraction on every day",
+        "method": "Immediately preceding equal-length local calendar window, with identical category filters",
+        "calendar_days_each": 90,
+        "current_start": "2025-01-01",
+        "current_end": "2025-03-31",
+        "previous_start": "2024-10-03",
+        "previous_end": "2024-12-31",
+        "current_count": null,
+        "previous_count": null,
+        "absolute_change": null,
+        "percent_change": null,
+        "minimum_requests_each": 20,
+        "current_covered_days": 90,
+        "previous_covered_days": 0
+      },
+      "trend": {
+        "status": "Not Estimable",
+        "reason": "Requires at least 20 sample requests in each comparison block",
+        "method": "First 7 versus last 7 covered local calendar days",
+        "percent_change": null,
+        "first_count": 0,
+        "last_count": 0,
+        "days_each": 7,
+        "minimum_requests_each": 20,
+        "first_start": "2025-01-01",
+        "first_end": "2025-01-07",
+        "last_start": "2025-03-25",
+        "last_end": "2025-03-31"
+      },
+      "insights": [
+        {
+          "title": "Selected cohort",
+          "tone": "neutral",
+          "body": "0 downloaded systematic sample requests were created from 2025-01-01 through 2025-03-31 (NYC local dates). Mean = 0.0 requests per covered day (90/90 days covered). The selected calendar is fully covered for this sample."
+        },
+        {
+          "title": "Trend comparison unavailable",
+          "tone": "muted",
+          "body": "Previous-window comparison: Both equal-length windows must have complete selected-sample extraction on every day. Within-window contrast: Requires at least 20 sample requests in each comparison block. No direction of change is inferred from insufficient support."
+        },
+        {
+          "title": "Busiest covered day",
+          "tone": "neutral",
+          "body": "2025-01-01 recorded 0 selected sample arrivals (90 day(s) tied for this maximum). This can identify periods to investigate; it is not an anomaly test or a measure of service capacity."
+        },
+        {
+          "title": "Agency mix",
+          "tone": "muted",
+          "body": "No requests match the selected filters. Covered zero-count days remain valid observations."
+        },
+        {
+          "title": "Resolution follow-up",
+          "tone": "muted",
+          "body": "No valid requests are available for right-censored follow-up under these filters."
+        },
+        {
+          "title": "How to use this view",
+          "tone": "muted",
+          "body": "Use date and category filters to inspect the same sample consistently. Counts are not city totals; systematic ID-suffix sampling may be biased. Missing days are gaps, edge weeks/months are labelled partial, and snapshot category fields may have been updated after creation. A short available history cannot establish year-round seasonality or staffing effects."
+        }
+      ]
+    }
+  ]
+}

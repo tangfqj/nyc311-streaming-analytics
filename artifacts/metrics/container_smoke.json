@@ -1,0 +1,16 @@
+{
+  "status": "Passed",
+  "image": "nyc311-bigdata-runner",
+  "host_bind_mounts": false,
+  "scope": "Fresh Linux application container against the existing real project PostgreSQL service; not a second physical machine",
+  "image_id": "sha256:bd827133eb237ce4c1b398928a6628c74db333fe8ce654dfb4375e5827f1238e",
+  "image_created": "2026-11-02T20:33:32.646751384Z",
+  "architecture": "arm64",
+  "os": "linux",
+  "exit_code": 0,
+  "oom_killed": false,
+  "log": "artifacts/logs/container-smoke.log",
+  "inner_status": "Passed",
+  "engine_versions": "3.11.10 (main, Dec  3 2024, 09:27:10) [GCC 12.2.0]\n3.5.3\nLinux-6.10.11-linuxkit-aarch64-with-glibc2.36",
+  "elapsed_seconds": 21.989773791996413
+}

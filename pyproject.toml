@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools==75.3.0", "wheel==0.44.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nyc311-bigdata"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+ "pyspark==3.5.3", "pandas==2.2.3", "numpy==1.26.4",
+ "pyarrow==18.0.0", "lifelines==0.30.0", "scipy==1.14.1",
+ "scikit-learn==1.5.2", "matplotlib==3.9.2", "PyYAML==6.0.2",
+ "requests==2.32.3", "psycopg[binary]==3.2.3", "streamlit==1.40.1",
+ "pytest==8.3.3", "psutil==6.1.0"
+]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+nyc311 = ["streaming/*.sql"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["spark: starts a real Spark JVM", "postgres: requires PostgreSQL", "integration: end-to-end integration"]

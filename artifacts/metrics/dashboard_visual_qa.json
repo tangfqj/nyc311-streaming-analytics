@@ -1,0 +1,40 @@
+{
+  "status": "Passed",
+  "method": "Actual Playwright Chromium browser",
+  "url": "http://127.0.0.1:8501",
+  "desktop_viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "mobile_viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "observed_mobile_document_width": 390,
+  "mobile_horizontal_page_overflow": false,
+  "console_errors_observed": 0,
+  "console_notes": "Vega emitted transient infinite-extent warnings while Streamlit initially mounted datasets; final visible plots and real values were visually inspected",
+  "pages_checked": [
+    "Overview",
+    "Survival & Prediction",
+    "Seasonality & Capacity",
+    "Scalability"
+  ],
+  "interactions_checked": [
+    "Page navigation",
+    "Data and Worker benchmark tabs",
+    "Prediction submission with saved model",
+    "Capacity calibration comparison",
+    "Mobile sidebar collapse and expansion"
+  ],
+  "screenshots": [
+    "output/playwright/overview-desktop.png",
+    "output/playwright/scalability-data-desktop.png",
+    "output/playwright/scalability-mobile.png",
+    "output/playwright/capacity-desktop.png",
+    "output/playwright/prediction-desktop.png",
+    "output/playwright/scalability-workers-desktop.png",
+    "output/playwright/overview-mobile.png"
+  ],
+  "screenshot_semantics": "Actual viewport captures; Streamlit scrolls its internal main container"
+}

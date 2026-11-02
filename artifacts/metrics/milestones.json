@@ -1,0 +1,52 @@
+{
+  "M1": {
+    "status": "Passed",
+    "tests": 13,
+    "raw_rows": 8822,
+    "silver_rows": 8813
+  },
+  "M2": {
+    "status": "Passed",
+    "tests": 23,
+    "official_prediction_rows": 100,
+    "watermarked_stream": "Actually run; authoritative late correction via PostgreSQL"
+  },
+  "M3": {
+    "status": "Passed",
+    "tests": 8,
+    "train_rows": 6003,
+    "test_rows": 2800,
+    "outside_split_rows": 10
+  },
+  "M4": {
+    "status": "Executed",
+    "tests": 11,
+    "weather_days": 90,
+    "capacity_calibrated_groups": 0,
+    "capacity_failed_groups": 5,
+    "precise_delta_claims": 0
+  },
+  "M5": {
+    "status": "Passed",
+    "benchmark_succeeded": 21,
+    "benchmark_failed": 0,
+    "benchmark_not_run": 0,
+    "dashboard": "Passed: redesigned four pages, real browser desktop/mobile and AppTest",
+    "clean_container_smoke": "Passed",
+    "chart_routing": "Passed: 5 applicable figures; 4 stale placeholders removed; original CSV hashes unchanged",
+    "interactive_dashboard": "Passed: 14 AppTest assertions, actual browser brush/date/category/export checks, desktop/mobile; official 2025Q1 only"
+  },
+  "final_tests": {
+    "passed": 95,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 20.806
+  },
+  "remaining_scope_limits": [
+    "Systematic Q12025sample only",
+    "Max synthetic stress100000rows",
+    "Single physical host",
+    "Cox proportional-hazards violations",
+    "Capacity calibration failed; no precise benefit recommendation"
+  ]
+}
