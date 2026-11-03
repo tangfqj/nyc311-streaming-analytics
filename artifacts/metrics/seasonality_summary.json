@@ -1,44 +1,44 @@
 {
   "status": "Success",
   "reason": null,
-  "input_rows": 8813,
-  "analyzed_rows": 8813,
+  "input_rows": 3973398,
+  "analyzed_rows": 3973398,
   "excluded_synthetic": 0,
   "invalid_or_future_created": 0,
-  "coverage_manifest": "data/raw/nyc311_2025q1_suffix17/manifest.json",
+  "coverage_manifest": "data/raw/nyc311_12mo_full/manifest.json",
   "coverage_semantics": "Complete extraction of selected systematic ID-suffix sample; never population-complete",
   "sampling": {
-    "method": "systematic_numeric_id_suffix",
-    "suffix": "17",
-    "population_complete": false,
-    "limitations": "Suffix sampling is systematic, not random; sampled counts are not population counts."
+    "method": "complete_date_windows",
+    "suffix": null,
+    "population_complete": true,
+    "limitations": "Snapshot values can change between downloads."
   },
   "source_kind": [
     "official_snapshot"
   ],
-  "start_date": "2025-01-01",
-  "requested_end_date_exclusive": "2025-04-01",
-  "end_date_exclusive": "2025-04-01",
+  "start_date": "2025-11-01",
+  "requested_end_date_exclusive": "2026-11-01",
+  "end_date_exclusive": "2026-11-01",
   "partial_as_of_local_day_excluded": true,
-  "calendar_days": 90,
-  "covered_days": 90,
+  "calendar_days": 365,
+  "covered_days": 365,
   "unverified_or_missing_days": 0,
-  "surge_group_days": 0,
-  "total_sample_surge_days": 0,
+  "surge_group_days": 2920,
+  "total_sample_surge_days": 16,
   "weather": {
     "status": "Success",
-    "paired_complete_weather_days": 90,
+    "paired_complete_weather_days": 361,
     "semantics": "Historical reanalysis association at one NYC point; no weather predictors enter creation-time model"
   },
   "weather_associations": [
     {
       "target": "total_sample_count",
       "weather_variable": "temperature_2m_min",
-      "n_days": 90,
-      "spearman_rho": -0.2806953890521109,
-      "spearman_p_value": 0.007366840649468032,
-      "month_controlled_rank_correlation": -0.10152311784143657,
-      "month_controlled_p_value": 0.34660815898189223,
+      "n_days": 361,
+      "spearman_rho": -0.0024639810409970604,
+      "spearman_p_value": 0.962789513009636,
+      "month_controlled_rank_correlation": -0.11527189652027893,
+      "month_controlled_p_value": 0.031082349077010577,
       "status": "Success",
       "interpretation": "Observational sample association; not causal",
       "month_controlled_method": "Rank residual correlation controlling calendar-month fixed effects; approximate t test"
@@ -46,11 +46,11 @@
     {
       "target": "heat_sample_count",
       "weather_variable": "temperature_2m_min",
-      "n_days": 90,
-      "spearman_rho": -0.8046832146639878,
-      "spearman_p_value": 1.2428962237506298e-21,
-      "month_controlled_rank_correlation": -0.6645817235514749,
-      "month_controlled_p_value": 1.6641604840942271e-12,
+      "n_days": 361,
+      "spearman_rho": -0.9221410697932404,
+      "spearman_p_value": 3.876135894883571e-150,
+      "month_controlled_rank_correlation": -0.5775006426460297,
+      "month_controlled_p_value": 1.611663675391798e-32,
       "status": "Success",
       "interpretation": "Observational sample association; not causal",
       "month_controlled_method": "Rank residual correlation controlling calendar-month fixed effects; approximate t test"
@@ -58,11 +58,11 @@
     {
       "target": "total_sample_count",
       "weather_variable": "temperature_2m_max",
-      "n_days": 90,
-      "spearman_rho": -0.34472426563067565,
-      "spearman_p_value": 0.0008771259441821735,
-      "month_controlled_rank_correlation": -0.17598284483244808,
-      "month_controlled_p_value": 0.10098685757685688,
+      "n_days": 361,
+      "spearman_rho": 0.07139546623675662,
+      "spearman_p_value": 0.17588410328672502,
+      "month_controlled_rank_correlation": 0.0794897204166246,
+      "month_controlled_p_value": 0.13777020479899524,
       "status": "Success",
       "interpretation": "Observational sample association; not causal",
       "month_controlled_method": "Rank residual correlation controlling calendar-month fixed effects; approximate t test"
@@ -70,11 +70,11 @@
     {
       "target": "heat_sample_count",
       "weather_variable": "temperature_2m_max",
-      "n_days": 90,
-      "spearman_rho": -0.8731731282739185,
-      "spearman_p_value": 3.3158757669742274e-29,
-      "month_controlled_rank_correlation": -0.7739489158395244,
-      "month_controlled_p_value": 9.480309944792863e-19,
+      "n_days": 361,
+      "spearman_rho": -0.9070306915428492,
+      "spearman_p_value": 6.417588480237469e-137,
+      "month_controlled_rank_correlation": -0.5475776498884549,
+      "month_controlled_p_value": 8.989443765020563e-29,
       "status": "Success",
       "interpretation": "Observational sample association; not causal",
       "month_controlled_method": "Rank residual correlation controlling calendar-month fixed effects; approximate t test"
@@ -82,11 +82,11 @@
     {
       "target": "total_sample_count",
       "weather_variable": "precipitation_sum",
-      "n_days": 90,
-      "spearman_rho": -0.3806694411865578,
-      "spearman_p_value": 0.0002145500566036883,
-      "month_controlled_rank_correlation": -0.3378056765717359,
-      "month_controlled_p_value": 0.0012874453442554223,
+      "n_days": 361,
+      "spearman_rho": -0.27557478507461125,
+      "spearman_p_value": 1.0311713202441043e-07,
+      "month_controlled_rank_correlation": -0.2773880112396385,
+      "month_controlled_p_value": 1.3293258371448734e-07,
       "status": "Success",
       "interpretation": "Observational sample association; not causal",
       "month_controlled_method": "Rank residual correlation controlling calendar-month fixed effects; approximate t test"
@@ -94,11 +94,11 @@
     {
       "target": "heat_sample_count",
       "weather_variable": "precipitation_sum",
-      "n_days": 90,
-      "spearman_rho": -0.20680237470219553,
-      "spearman_p_value": 0.050503848375620115,
-      "month_controlled_rank_correlation": -0.18304927077494765,
-      "month_controlled_p_value": 0.0878113319668175,
+      "n_days": 361,
+      "spearman_rho": -0.13333261158011417,
+      "spearman_p_value": 0.011216972593242409,
+      "month_controlled_rank_correlation": -0.02041559680933979,
+      "month_controlled_p_value": 0.7034895466725273,
       "status": "Success",
       "interpretation": "Observational sample association; not causal",
       "month_controlled_method": "Rank residual correlation controlling calendar-month fixed effects; approximate t test"
@@ -118,5 +118,5 @@
     "min_count": 20,
     "min_excess": 5
   },
-  "elapsed_seconds": 2.4949752090033144
+  "elapsed_seconds": 11.201325624715537
 }

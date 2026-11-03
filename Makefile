@@ -25,7 +25,7 @@ stream-demo:
 bench:
 	$(RUN) bench
 bench-workers:
-	source scripts/env.sh && bash scripts/cluster_bench.sh data/raw/nyc311_2025q1_suffix17 artifacts/benchmark/workers
+	source scripts/env.sh && bash scripts/cluster_bench.sh data/raw/nyc311_12mo_full artifacts/benchmark/workers
 bench-plots:
 	$(RUN) bench-plots
 report:

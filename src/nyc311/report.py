@@ -41,7 +41,7 @@ def build_report():
     weather_findings = " ".join(weather_findings) or "Exact weather association values and statuses are retained in the summary below."
     capacity_findings = f"Of {capacity.get('groups_selected','Not Run')} selected groups, {capacity.get('groups_calibrated','Not Run')} passed calibration and {capacity.get('groups_failed_calibration','Not Run')} failed. Published nonbaseline improvement deltas: {capacity.get('published_nonbaseline_deltas','Not Run')}. Failed calibration is a negative result, and this execution supports no numerical staffing benefit claim."
 
-    manifest_path = ROOT/"data/raw/nyc311_2025q1_suffix17/manifest.json"
+    manifest_path = ROOT/"data/raw/nyc311_12mo_full/manifest.json"
     if manifest_path.exists():
         write_json(ROOT/"artifacts/metrics/source_manifest.json",json.loads(manifest_path.read_text()))
     test_path = ROOT/"artifacts/metrics/pytest.xml"

@@ -15,10 +15,11 @@ def main(argv=None):
     sub.add_parser("doctor")
     fetch = sub.add_parser("fetch-sample")
     fetch.add_argument("--start"); fetch.add_argument("--end")
-    fetch.add_argument("--max-rows",type=int); fetch.add_argument("--output",default="data/raw/nyc311_2025q1_suffix17")
-    fetch.add_argument("--sample-suffix", default="17")
+    fetch.add_argument("--max-rows",type=int); fetch.add_argument("--output",default="data/raw/nyc311_12mo_full")
+    fetch.add_argument("--sample-suffix", default="none",
+                       help="Numeric unique_key suffix for a systematic subsample; 'none' requests the full population")
     etl = sub.add_parser("etl")
-    etl.add_argument("--input",default="data/raw/nyc311_2025q1_suffix17")
+    etl.add_argument("--input",default="data/raw/nyc311_12mo_full")
     etl.add_argument("--output",default="data/silver")
     etl.add_argument("--metrics",default="artifacts/metrics/data_quality.json")
     analyze = sub.add_parser("analyze")
@@ -26,7 +27,7 @@ def main(argv=None):
     analyze.add_argument("--output",default="artifacts")
     analyze.add_argument("--part", choices=["all","survival","model","seasonality","capacity"],default="all")
     weather = sub.add_parser("fetch-weather")
-    weather.add_argument("--start",default="2025-01-01"); weather.add_argument("--end",default="2025-03-31")
+    weather.add_argument("--start",default="2025-11-01"); weather.add_argument("--end",default="2026-11-01")
     weather.add_argument("--output",default="data/weather")
     stream = sub.add_parser("stream-demo")
     stream.add_argument("--silver",default="data/silver")
@@ -45,7 +46,7 @@ def main(argv=None):
     predict.add_argument("--borough",required=True); predict.add_argument("--created-at",required=True)
     predict.add_argument("--model",default="artifacts/models/cox_model.pkl")
     bench = sub.add_parser("bench")
-    bench.add_argument("--input",default="data/raw/nyc311_2025q1_suffix17")
+    bench.add_argument("--input",default="data/raw/nyc311_12mo_full")
     bench.add_argument("--output",default="artifacts/benchmark/local")
     bench.add_argument("--multipliers",default="1,10,100"); bench.add_argument("--repetitions",type=int,default=3)
     bench.add_argument("--base-rows",type=int,default=1000); bench.add_argument("--master",default="local[2]")
@@ -77,7 +78,7 @@ def dispatch(a,cfg):
         return run_doctor()
     if a.command == "fetch-sample":
         from .ingest.download_311 import download_311
-        result = download_311(a.output,start_date=a.start or cfg["ingest"]["start"],end_date=a.end or cfg["ingest"]["end"],max_rows=a.max_rows or cfg["ingest"]["max_rows"],page_size=cfg["ingest"]["page_size"],window_days=1,sample_suffix=a.sample_suffix)
+        result = download_311(a.output,start_date=a.start or cfg["ingest"]["start"],end_date=a.end or cfg["ingest"]["end"],max_rows=a.max_rows or cfg["ingest"]["max_rows"],page_size=cfg["ingest"]["page_size"],window_days=cfg["ingest"]["window_days"],sample_suffix=(None if str(a.sample_suffix).strip().lower() in ("", "none", "null") else a.sample_suffix))
         write_json("artifacts/metrics/source_manifest.json", result)
         return result
     if a.command == "etl":

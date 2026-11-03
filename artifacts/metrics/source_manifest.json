@@ -3,1466 +3,879 @@
   "source_url": "https://data.cityofnewyork.us/resource/erm2-nwe9.json",
   "source_kind": "official_nyc311_snapshot",
   "query_config": {
-    "start_date": "2025-01-01",
-    "end_date": "2025-04-01",
-    "sample_suffix": "17",
-    "window_days": 1,
-    "max_rows": 50000,
-    "page_size": 1000
+    "start_date": "2025-11-01",
+    "end_date": "2026-11-01",
+    "sample_suffix": null,
+    "window_days": 7,
+    "max_rows": null,
+    "page_size": 20000
   },
   "source_semantics": "Daily published snapshot; not a CDC event feed",
   "sampling": {
-    "method": "systematic_numeric_id_suffix",
-    "suffix": "17",
-    "population_complete": false,
-    "limitations": "Suffix sampling is systematic, not random; sampled counts are not population counts."
+    "method": "complete_date_windows",
+    "suffix": null,
+    "population_complete": true,
+    "limitations": "Snapshot values can change between downloads."
   },
   "windows": [
     {
-      "start_date": "2025-01-01",
-      "end_date": "2025-01-02",
-      "file": "311_2025-01-01_2025-01-02.jsonl",
+      "start_date": "2025-11-01",
+      "end_date": "2025-11-08",
+      "file": "311_2025-11-01_2025-11-08.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-01T00:00:00' AND created_date < '2025-01-02T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2025-11-01T00:00:00' AND created_date < '2025-11-08T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 114,
+      "rows": 72494,
       "status": "Success",
-      "sha256": "57d961ccef20879baae6f96de79e48a648ff31b3965f6f40128835efca2bb00c",
-      "downloaded_at": "2026-11-02T20:15:20.707973+00:00",
-      "bytes": 46324
+      "sha256": "17d35aecbd8a94d7cf4057c4c37643a971eba36b3917a9284eb8e72936bcd418",
+      "downloaded_at": "2026-11-03T16:25:44.374309+00:00",
+      "bytes": 55280355
     },
     {
-      "start_date": "2025-01-02",
-      "end_date": "2025-01-03",
-      "file": "311_2025-01-02_2025-01-03.jsonl",
+      "start_date": "2025-11-08",
+      "end_date": "2025-11-15",
+      "file": "311_2025-11-08_2025-11-15.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-02T00:00:00' AND created_date < '2025-01-03T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2025-11-08T00:00:00' AND created_date < '2025-11-15T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 136,
+      "rows": 75313,
       "status": "Success",
-      "sha256": "501fe94d53154fb5ff9f037c76ec6da53a67e6ec17c499eb11a31ce9ad8881a2",
-      "downloaded_at": "2026-11-02T20:15:21.096752+00:00",
-      "bytes": 55237
+      "sha256": "f4e88dbad32bb60f379a7650eaaaa00117cb624244a1eec6dc54cd4a80fff5c1",
+      "downloaded_at": "2026-11-03T16:26:04.118025+00:00",
+      "bytes": 60747207
     },
     {
-      "start_date": "2025-01-03",
-      "end_date": "2025-01-04",
-      "file": "311_2025-01-03_2025-01-04.jsonl",
+      "start_date": "2025-11-15",
+      "end_date": "2025-11-22",
+      "file": "311_2025-11-15_2025-11-22.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-03T00:00:00' AND created_date < '2025-01-04T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2025-11-15T00:00:00' AND created_date < '2025-11-22T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 123,
+      "rows": 71584,
       "status": "Success",
-      "sha256": "b01915fd765ac04908432b20bd45b98d67e9265b326a612a35efd15b31a59e1c",
-      "downloaded_at": "2026-11-02T20:15:40.443103+00:00",
-      "bytes": 50155
+      "sha256": "e187892c99b5b8b71cb76fcd432df53b88aed98a0a04e653c6e761a9426952b4",
+      "downloaded_at": "2026-11-03T16:26:27.785967+00:00",
+      "bytes": 67635498
     },
     {
-      "start_date": "2025-01-04",
-      "end_date": "2025-01-05",
-      "file": "311_2025-01-04_2025-01-05.jsonl",
+      "start_date": "2025-11-22",
+      "end_date": "2025-11-29",
+      "file": "311_2025-11-22_2025-11-29.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-04T00:00:00' AND created_date < '2025-01-05T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2025-11-22T00:00:00' AND created_date < '2025-11-29T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 114,
+      "rows": 65549,
       "status": "Success",
-      "sha256": "9503ee14ad47502b70ada86001651f280709f3b9ae837ff9cb6b4aef1a50c2a0",
-      "downloaded_at": "2026-11-02T20:15:53.481450+00:00",
-      "bytes": 46439
+      "sha256": "c9a808513003e4be67a3922d7301434da31c6bd6d2f31a8218f6f36fa198cfb9",
+      "downloaded_at": "2026-11-03T16:26:51.524029+00:00",
+      "bytes": 64157555
     },
     {
-      "start_date": "2025-01-05",
-      "end_date": "2025-01-06",
-      "file": "311_2025-01-05_2025-01-06.jsonl",
+      "start_date": "2025-11-29",
+      "end_date": "2025-12-06",
+      "file": "311_2025-11-29_2025-12-06.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-05T00:00:00' AND created_date < '2025-01-06T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2025-11-29T00:00:00' AND created_date < '2025-12-06T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 137,
+      "rows": 83247,
       "status": "Success",
-      "sha256": "a8eaf5ea70738ffec2c02129a6aea6ac4dd549937b10de5270d80f9023ab9c31",
-      "downloaded_at": "2026-11-02T20:15:53.834939+00:00",
-      "bytes": 55572
+      "sha256": "b24327811275a5c2a31109c4bac5d2ae0f53efc40c570d0d4776d89f4e270027",
+      "downloaded_at": "2026-11-03T16:27:44.679116+00:00",
+      "bytes": 81264486
     },
     {
-      "start_date": "2025-01-06",
-      "end_date": "2025-01-07",
-      "file": "311_2025-01-06_2025-01-07.jsonl",
+      "start_date": "2025-12-06",
+      "end_date": "2025-12-13",
+      "file": "311_2025-12-06_2025-12-13.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-06T00:00:00' AND created_date < '2025-01-07T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2025-12-06T00:00:00' AND created_date < '2025-12-13T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 139,
+      "rows": 84330,
       "status": "Success",
-      "sha256": "f9a16b1569eff838b51e76fae8adf88657ab03f3e91953499002395c3ceb98d2",
-      "downloaded_at": "2026-11-02T20:15:54.196922+00:00",
-      "bytes": 56483
+      "sha256": "a706d8813eb49a71c647b96dc3513bc18b1923593cf96076668f465b8ef7344e",
+      "downloaded_at": "2026-11-03T16:27:59.880148+00:00",
+      "bytes": 82532505
     },
     {
-      "start_date": "2025-01-07",
-      "end_date": "2025-01-08",
-      "file": "311_2025-01-07_2025-01-08.jsonl",
+      "start_date": "2025-12-13",
+      "end_date": "2025-12-20",
+      "file": "311_2025-12-13_2025-12-20.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-07T00:00:00' AND created_date < '2025-01-08T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2025-12-13T00:00:00' AND created_date < '2025-12-20T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 155,
+      "rows": 82306,
       "status": "Success",
-      "sha256": "a24eb19ce92ad52d81e5ada86e0dd4208b07e696178e56bc41b41977e3ae42a2",
-      "downloaded_at": "2026-11-02T20:15:54.445512+00:00",
-      "bytes": 62818
+      "sha256": "49db6d27798f511128ce3980b19626556e199982d6616469f94e0a9899dbb81d",
+      "downloaded_at": "2026-11-03T16:28:29.114153+00:00",
+      "bytes": 77062546
     },
     {
-      "start_date": "2025-01-08",
-      "end_date": "2025-01-09",
-      "file": "311_2025-01-08_2025-01-09.jsonl",
+      "start_date": "2025-12-20",
+      "end_date": "2025-12-27",
+      "file": "311_2025-12-20_2025-12-27.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-08T00:00:00' AND created_date < '2025-01-09T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2025-12-20T00:00:00' AND created_date < '2025-12-27T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 133,
+      "rows": 57364,
       "status": "Success",
-      "sha256": "ec6e0e6d8e090ea2891601b3508195029e8e99b0b8a8b7ab294c4b3a4011f3ab",
-      "downloaded_at": "2026-11-02T20:15:59.275966+00:00",
-      "bytes": 53766
+      "sha256": "2631ad3679df6255d0120ce02f792c12fffbd0b0a60162d52422e69a6835c160",
+      "downloaded_at": "2026-11-03T16:28:46.433107+00:00",
+      "bytes": 54746089
     },
     {
-      "start_date": "2025-01-09",
-      "end_date": "2025-01-10",
-      "file": "311_2025-01-09_2025-01-10.jsonl",
+      "start_date": "2025-12-27",
+      "end_date": "2026-01-03",
+      "file": "311_2025-12-27_2026-01-03.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-09T00:00:00' AND created_date < '2025-01-10T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2025-12-27T00:00:00' AND created_date < '2026-01-03T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 148,
+      "rows": 63491,
       "status": "Success",
-      "sha256": "335645bdcb2679fa61ff74dbcb14560d2a5002787c28a479ccdfb13555a61b48",
-      "downloaded_at": "2026-11-02T20:16:05.616397+00:00",
-      "bytes": 59852
+      "sha256": "2f8ee8779a94fa9d8f8289290853a2aeeabbefb821cdc7b40f9b2a6caadf0901",
+      "downloaded_at": "2026-11-03T16:29:10.524760+00:00",
+      "bytes": 59786018
     },
     {
-      "start_date": "2025-01-10",
-      "end_date": "2025-01-11",
-      "file": "311_2025-01-10_2025-01-11.jsonl",
+      "start_date": "2026-01-03",
+      "end_date": "2026-01-10",
+      "file": "311_2026-01-03_2026-01-10.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-10T00:00:00' AND created_date < '2025-01-11T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-01-03T00:00:00' AND created_date < '2026-01-10T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 144,
+      "rows": 70086,
       "status": "Success",
-      "sha256": "bc5f64b458fad4734fe344e07c9c9c9e2597d04b7ccd705f76ccf5e02211df86",
-      "downloaded_at": "2026-11-02T20:16:13.861481+00:00",
-      "bytes": 58751
+      "sha256": "444d085ccb4ec35c1f6531b97dfa216c858ca5ae53b2a64a9378cd56976b3bd2",
+      "downloaded_at": "2026-11-03T16:29:23.082168+00:00",
+      "bytes": 65513472
     },
     {
-      "start_date": "2025-01-11",
-      "end_date": "2025-01-12",
-      "file": "311_2025-01-11_2025-01-12.jsonl",
+      "start_date": "2026-01-10",
+      "end_date": "2026-01-17",
+      "file": "311_2026-01-10_2026-01-17.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-11T00:00:00' AND created_date < '2025-01-12T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-01-10T00:00:00' AND created_date < '2026-01-17T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 113,
+      "rows": 68086,
       "status": "Success",
-      "sha256": "f9a8cb6ebb05e985045e03e5b2ca36b9fc09275bd9825161556e43b5a035da80",
-      "downloaded_at": "2026-11-02T20:16:14.220515+00:00",
-      "bytes": 45974
+      "sha256": "571e18a51d46ddd757d7401061895cc7a7c2f9e2fdf6ceb75d19d99f50e52373",
+      "downloaded_at": "2026-11-03T16:29:41.295578+00:00",
+      "bytes": 63614019
     },
     {
-      "start_date": "2025-01-12",
-      "end_date": "2025-01-13",
-      "file": "311_2025-01-12_2025-01-13.jsonl",
+      "start_date": "2026-01-17",
+      "end_date": "2026-01-24",
+      "file": "311_2026-01-17_2026-01-24.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-12T00:00:00' AND created_date < '2025-01-13T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-01-17T00:00:00' AND created_date < '2026-01-24T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 121,
+      "rows": 71146,
       "status": "Success",
-      "sha256": "17ba59f3f609db0ed9fb15514b74c55f530045a8b3478a8c7fe2c7913df51da8",
-      "downloaded_at": "2026-11-02T20:16:17.998431+00:00",
-      "bytes": 49126
+      "sha256": "fecfe0b781a27e2397f3cde2535925556cdaf0613c69d26cfdc4a8fe9326da6d",
+      "downloaded_at": "2026-11-03T16:30:16.873154+00:00",
+      "bytes": 66420782
     },
     {
-      "start_date": "2025-01-13",
-      "end_date": "2025-01-14",
-      "file": "311_2025-01-13_2025-01-14.jsonl",
+      "start_date": "2026-01-24",
+      "end_date": "2026-01-31",
+      "file": "311_2026-01-24_2026-01-31.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-13T00:00:00' AND created_date < '2025-01-14T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-01-24T00:00:00' AND created_date < '2026-01-31T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 129,
+      "rows": 107754,
       "status": "Success",
-      "sha256": "4123e4bb2dd08e4d3e599446df440d34147f63854708a1aaf2434981f6847652",
-      "downloaded_at": "2026-11-02T20:16:18.487408+00:00",
-      "bytes": 52404
+      "sha256": "29dcb9493344aa5960bc674bafb7fe10320cf453614436243d18221924648605",
+      "downloaded_at": "2026-11-03T16:31:10.108229+00:00",
+      "bytes": 96127722
     },
     {
-      "start_date": "2025-01-14",
-      "end_date": "2025-01-15",
-      "file": "311_2025-01-14_2025-01-15.jsonl",
+      "start_date": "2026-01-31",
+      "end_date": "2026-02-07",
+      "file": "311_2026-01-31_2026-02-07.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-14T00:00:00' AND created_date < '2025-01-15T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-01-31T00:00:00' AND created_date < '2026-02-07T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 95,
+      "rows": 89765,
       "status": "Success",
-      "sha256": "a06fb0b97c55fbc5832de53366f97ba167c895bac06e6370b13cfbc914badb09",
-      "downloaded_at": "2026-11-02T20:16:24.971380+00:00",
-      "bytes": 38334
+      "sha256": "2bd5e28e70752f137c980ca57b4e39340964225d3cd994ea871ffc4363cbcebb",
+      "downloaded_at": "2026-11-03T16:31:49.950010+00:00",
+      "bytes": 82577069
     },
     {
-      "start_date": "2025-01-15",
-      "end_date": "2025-01-16",
-      "file": "311_2025-01-15_2025-01-16.jsonl",
+      "start_date": "2026-02-07",
+      "end_date": "2026-02-14",
+      "file": "311_2026-02-07_2026-02-14.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-15T00:00:00' AND created_date < '2025-01-16T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-02-07T00:00:00' AND created_date < '2026-02-14T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 101,
+      "rows": 86430,
       "status": "Success",
-      "sha256": "61de20d599f7665bb109ae66fe232673f3794944003a93e784a573fbbdb90650",
-      "downloaded_at": "2026-11-02T20:16:25.289652+00:00",
-      "bytes": 41038
+      "sha256": "b4dd4e7984e314db445ea259977bdad5ef7876b094e8958ded7aac5158a0d9ec",
+      "downloaded_at": "2026-11-03T16:32:42.238894+00:00",
+      "bytes": 80391235
     },
     {
-      "start_date": "2025-01-16",
-      "end_date": "2025-01-17",
-      "file": "311_2025-01-16_2025-01-17.jsonl",
+      "start_date": "2026-02-14",
+      "end_date": "2026-02-21",
+      "file": "311_2026-02-14_2026-02-21.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-16T00:00:00' AND created_date < '2025-01-17T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-02-14T00:00:00' AND created_date < '2026-02-21T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 94,
+      "rows": 68335,
       "status": "Success",
-      "sha256": "380390d97acdf0a68c1962846c96bf7c44138f49fa53b780128abd6d395bc6a4",
-      "downloaded_at": "2026-11-02T20:16:25.691012+00:00",
-      "bytes": 37954
+      "sha256": "5168393fae012c3f6b5484eff96bb19f1156b04b26a36523fbb37aa6799963d0",
+      "downloaded_at": "2026-11-03T16:33:01.112092+00:00",
+      "bytes": 63764372
     },
     {
-      "start_date": "2025-01-17",
-      "end_date": "2025-01-18",
-      "file": "311_2025-01-17_2025-01-18.jsonl",
+      "start_date": "2026-02-21",
+      "end_date": "2026-02-28",
+      "file": "311_2026-02-21_2026-02-28.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-17T00:00:00' AND created_date < '2025-01-18T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-02-21T00:00:00' AND created_date < '2026-02-28T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 96,
+      "rows": 93569,
       "status": "Success",
-      "sha256": "48227cdb73aef087e6e979f7740781fcc851c7e5a129be0fac8ee6140e2b2ec3",
-      "downloaded_at": "2026-11-02T20:16:26.071837+00:00",
-      "bytes": 39251
+      "sha256": "af670d312c92a1201a8ed4e0f7f0728176150a977c41fd4565f2c72780b1343e",
+      "downloaded_at": "2026-11-03T16:33:26.342732+00:00",
+      "bytes": 83162565
     },
     {
-      "start_date": "2025-01-18",
-      "end_date": "2025-01-19",
-      "file": "311_2025-01-18_2025-01-19.jsonl",
+      "start_date": "2026-02-28",
+      "end_date": "2026-03-07",
+      "file": "311_2026-02-28_2026-03-07.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-18T00:00:00' AND created_date < '2025-01-19T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-02-28T00:00:00' AND created_date < '2026-03-07T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 79,
+      "rows": 74449,
       "status": "Success",
-      "sha256": "9c01f53799db5d034990c87c834ea4154a7d1efe6479e32b3ef9c1db8782d34f",
-      "downloaded_at": "2026-11-02T20:16:26.391891+00:00",
-      "bytes": 32152
+      "sha256": "e3b6fb2adeaa401542116dd0aa95220dc1149ba1e6f235a422ff6c3e87c3cda5",
+      "downloaded_at": "2026-11-03T16:33:51.888293+00:00",
+      "bytes": 68305822
     },
     {
-      "start_date": "2025-01-19",
-      "end_date": "2025-01-20",
-      "file": "311_2025-01-19_2025-01-20.jsonl",
+      "start_date": "2026-03-07",
+      "end_date": "2026-03-14",
+      "file": "311_2026-03-07_2026-03-14.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-19T00:00:00' AND created_date < '2025-01-20T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-03-07T00:00:00' AND created_date < '2026-03-14T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 78,
+      "rows": 82867,
       "status": "Success",
-      "sha256": "57ca3e909bb5a4f76fd83b15723301a796cd265bf23a0b9b22038784239add39",
-      "downloaded_at": "2026-11-02T20:16:29.783590+00:00",
-      "bytes": 31644
+      "sha256": "0aaa629ce6d89ca6f10d6faf727340f36d631bdfb7090befc001d8f09801f384",
+      "downloaded_at": "2026-11-03T16:34:20.779297+00:00",
+      "bytes": 75737652
     },
     {
-      "start_date": "2025-01-20",
-      "end_date": "2025-01-21",
-      "file": "311_2025-01-20_2025-01-21.jsonl",
+      "start_date": "2026-03-14",
+      "end_date": "2026-03-21",
+      "file": "311_2026-03-14_2026-03-21.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-20T00:00:00' AND created_date < '2025-01-21T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-03-14T00:00:00' AND created_date < '2026-03-21T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 91,
+      "rows": 76189,
       "status": "Success",
-      "sha256": "0a8a8def4f50b474c7408379be329123adb19d1a3ac66561d241f8c0bf2bb6e1",
-      "downloaded_at": "2026-11-02T20:16:31.296085+00:00",
-      "bytes": 36859
+      "sha256": "a1e3ff29204e4a0c14e95cd2f73820ac9b7086cc1f39f3661372a927f20dabb3",
+      "downloaded_at": "2026-11-03T16:34:41.081823+00:00",
+      "bytes": 69433005
     },
     {
-      "start_date": "2025-01-21",
-      "end_date": "2025-01-22",
-      "file": "311_2025-01-21_2025-01-22.jsonl",
+      "start_date": "2026-03-21",
+      "end_date": "2026-03-28",
+      "file": "311_2026-03-21_2026-03-28.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-21T00:00:00' AND created_date < '2025-01-22T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-03-21T00:00:00' AND created_date < '2026-03-28T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 141,
+      "rows": 75385,
       "status": "Success",
-      "sha256": "2954ed3581a88a61c9da890bcef76399a7a41b5cdae28141e240405d8c2fb425",
-      "downloaded_at": "2026-11-02T20:16:31.831997+00:00",
-      "bytes": 57092
+      "sha256": "b62c45334f50daa20d3c7956f86452c09ea7d8f275ce266d62074ea887e359dd",
+      "downloaded_at": "2026-11-03T16:35:04.066127+00:00",
+      "bytes": 69264306
     },
     {
-      "start_date": "2025-01-22",
-      "end_date": "2025-01-23",
-      "file": "311_2025-01-22_2025-01-23.jsonl",
+      "start_date": "2026-03-28",
+      "end_date": "2026-04-04",
+      "file": "311_2026-03-28_2026-04-04.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-22T00:00:00' AND created_date < '2025-01-23T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-03-28T00:00:00' AND created_date < '2026-04-04T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 136,
+      "rows": 73238,
       "status": "Success",
-      "sha256": "32e253ecfdccb71c1f5f0b14113f2ed1797cf148174438635ac7065337e2ed55",
-      "downloaded_at": "2026-11-02T20:16:32.233005+00:00",
-      "bytes": 55187
+      "sha256": "763a71cfc1da3c1b7426bc3214073acdbf9210b14778dd88a147afcc7b113089",
+      "downloaded_at": "2026-11-03T16:35:22.488062+00:00",
+      "bytes": 67969224
     },
     {
-      "start_date": "2025-01-23",
-      "end_date": "2025-01-24",
-      "file": "311_2025-01-23_2025-01-24.jsonl",
+      "start_date": "2026-04-04",
+      "end_date": "2026-04-11",
+      "file": "311_2026-04-04_2026-04-11.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-23T00:00:00' AND created_date < '2025-01-24T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-04-04T00:00:00' AND created_date < '2026-04-11T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 117,
+      "rows": 66851,
       "status": "Success",
-      "sha256": "aaec27d77d6f4e22643369c56d226b28acffcef09b14caa43463f66d2af9b81c",
-      "downloaded_at": "2026-11-02T20:16:32.550161+00:00",
-      "bytes": 47412
+      "sha256": "db33fe3c5aacd558503eb3de83c09b09da0b06b238790de425c4c71b573ba29c",
+      "downloaded_at": "2026-11-03T16:35:47.671686+00:00",
+      "bytes": 61817886
     },
     {
-      "start_date": "2025-01-24",
-      "end_date": "2025-01-25",
-      "file": "311_2025-01-24_2025-01-25.jsonl",
+      "start_date": "2026-04-11",
+      "end_date": "2026-04-18",
+      "file": "311_2026-04-11_2026-04-18.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-24T00:00:00' AND created_date < '2025-01-25T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-04-11T00:00:00' AND created_date < '2026-04-18T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 116,
+      "rows": 74710,
       "status": "Success",
-      "sha256": "ded94eb526196df123cc5f3291b482da5e019dc39620dfdae8e74c4b84fd5ad8",
-      "downloaded_at": "2026-11-02T20:16:32.895284+00:00",
-      "bytes": 46934
+      "sha256": "2cd58e205848641c75c3613dacc3412146a5456c2eca105c8f2a7a132a4857ca",
+      "downloaded_at": "2026-11-03T16:36:27.087890+00:00",
+      "bytes": 70499789
     },
     {
-      "start_date": "2025-01-25",
-      "end_date": "2025-01-26",
-      "file": "311_2025-01-25_2025-01-26.jsonl",
+      "start_date": "2026-04-18",
+      "end_date": "2026-04-25",
+      "file": "311_2026-04-18_2026-04-25.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-25T00:00:00' AND created_date < '2025-01-26T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-04-18T00:00:00' AND created_date < '2026-04-25T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 91,
+      "rows": 71262,
       "status": "Success",
-      "sha256": "a073237871a55d6f1534a04a1d1e398a7ee5840bc9332720c73fa666c065757b",
-      "downloaded_at": "2026-11-02T20:16:33.286266+00:00",
-      "bytes": 36804
+      "sha256": "da5ed58e2310d7a375d355d69924cbbd191254a8c1150815958673a9fa929314",
+      "downloaded_at": "2026-11-03T16:37:01.136726+00:00",
+      "bytes": 66756087
     },
     {
-      "start_date": "2025-01-26",
-      "end_date": "2025-01-27",
-      "file": "311_2025-01-26_2025-01-27.jsonl",
+      "start_date": "2026-04-25",
+      "end_date": "2026-05-02",
+      "file": "311_2026-04-25_2026-05-02.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-26T00:00:00' AND created_date < '2025-01-27T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-04-25T00:00:00' AND created_date < '2026-05-02T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 71,
+      "rows": 69523,
       "status": "Success",
-      "sha256": "5b91ccda489ba69787664cf74107d1b11204e082b209dc6c98e80b97cf199fde",
-      "downloaded_at": "2026-11-02T20:16:36.536070+00:00",
-      "bytes": 28904
+      "sha256": "9b9f0bd90427651144eb71e7ee3c5f2bb401cb1d632d577ea73317b474aaeabe",
+      "downloaded_at": "2026-11-03T16:37:25.984537+00:00",
+      "bytes": 64882447
     },
     {
-      "start_date": "2025-01-27",
-      "end_date": "2025-01-28",
-      "file": "311_2025-01-27_2025-01-28.jsonl",
+      "start_date": "2026-05-02",
+      "end_date": "2026-05-09",
+      "file": "311_2026-05-02_2026-05-09.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-27T00:00:00' AND created_date < '2025-01-28T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-05-02T00:00:00' AND created_date < '2026-05-09T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 103,
+      "rows": 72510,
       "status": "Success",
-      "sha256": "bbeeb5b18840244e61cb591435c8bc878c7437d96ea2dd1430f199a31419268a",
-      "downloaded_at": "2026-11-02T20:16:38.888176+00:00",
-      "bytes": 41894
+      "sha256": "86d2be84ce57919b7137e7dc5ab180d04fc700a05d4c5e7d704773afacf3a081",
+      "downloaded_at": "2026-11-03T16:38:23.063246+00:00",
+      "bytes": 68456087
     },
     {
-      "start_date": "2025-01-28",
-      "end_date": "2025-01-29",
-      "file": "311_2025-01-28_2025-01-29.jsonl",
+      "start_date": "2026-05-09",
+      "end_date": "2026-05-16",
+      "file": "311_2026-05-09_2026-05-16.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-28T00:00:00' AND created_date < '2025-01-29T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-05-09T00:00:00' AND created_date < '2026-05-16T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 97,
+      "rows": 72622,
       "status": "Success",
-      "sha256": "1d2be59efca26b706aacbc69197dc69e392263c4dcbd61a5d84e1d6922dec510",
-      "downloaded_at": "2026-11-02T20:16:42.183064+00:00",
-      "bytes": 39149
+      "sha256": "21678cb1d6ad86db153bff46ad1e9ae99589f06c798838cd2a8f654341cc6615",
+      "downloaded_at": "2026-11-03T16:38:40.380124+00:00",
+      "bytes": 68420198
     },
     {
-      "start_date": "2025-01-29",
-      "end_date": "2025-01-30",
-      "file": "311_2025-01-29_2025-01-30.jsonl",
+      "start_date": "2026-05-16",
+      "end_date": "2026-05-23",
+      "file": "311_2026-05-16_2026-05-23.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-29T00:00:00' AND created_date < '2025-01-30T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-05-16T00:00:00' AND created_date < '2026-05-23T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 86,
+      "rows": 81692,
       "status": "Success",
-      "sha256": "17e079d9a1854d35a18d5706d70be4d31ea262de06616d07fe219aa5bbc7d7a1",
-      "downloaded_at": "2026-11-02T20:16:42.618047+00:00",
-      "bytes": 34970
+      "sha256": "f58c3ac1d33f90cc2a5be3097925a5a0b7919b592206e11a99a8fabcf278a626",
+      "downloaded_at": "2026-11-03T16:39:11.804550+00:00",
+      "bytes": 76987767
     },
     {
-      "start_date": "2025-01-30",
-      "end_date": "2025-01-31",
-      "file": "311_2025-01-30_2025-01-31.jsonl",
+      "start_date": "2026-05-23",
+      "end_date": "2026-05-30",
+      "file": "311_2026-05-23_2026-05-30.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-30T00:00:00' AND created_date < '2025-01-31T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-05-23T00:00:00' AND created_date < '2026-05-30T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 96,
+      "rows": 73073,
       "status": "Success",
-      "sha256": "0e36f6ba5b598de45ee9f11f3cdea8470616901e3b72d2065e13bd1ef508592b",
-      "downloaded_at": "2026-11-02T20:16:46.230458+00:00",
-      "bytes": 39011
+      "sha256": "c2e41a9f72ec5052c8b8370f9a6a9eead4e710c8572e498a511344ebb5090607",
+      "downloaded_at": "2026-11-03T16:39:30.866645+00:00",
+      "bytes": 69263226
     },
     {
-      "start_date": "2025-01-31",
-      "end_date": "2025-02-01",
-      "file": "311_2025-01-31_2025-02-01.jsonl",
+      "start_date": "2026-05-30",
+      "end_date": "2026-06-06",
+      "file": "311_2026-05-30_2026-06-06.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-01-31T00:00:00' AND created_date < '2025-02-01T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-05-30T00:00:00' AND created_date < '2026-06-06T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 87,
+      "rows": 79393,
       "status": "Success",
-      "sha256": "ea660016af3b46bdab8ae166fb9cdcf9fa0b71354596cf381c857ce965b3359b",
-      "downloaded_at": "2026-11-02T20:16:49.711352+00:00",
-      "bytes": 35508
+      "sha256": "0f395957ab98c7dec377812ecdb5d3fa243582eed2d3899c045b863e59fde6f1",
+      "downloaded_at": "2026-11-03T16:40:05.686409+00:00",
+      "bytes": 75488065
     },
     {
-      "start_date": "2025-02-01",
-      "end_date": "2025-02-02",
-      "file": "311_2025-02-01_2025-02-02.jsonl",
+      "start_date": "2026-06-06",
+      "end_date": "2026-06-13",
+      "file": "311_2026-06-06_2026-06-13.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-01T00:00:00' AND created_date < '2025-02-02T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-06-06T00:00:00' AND created_date < '2026-06-13T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 81,
+      "rows": 80524,
       "status": "Success",
-      "sha256": "053ea633ea4e660f565dd9d2ab1df39bba1b350cb7c71c7622a141c4a81fb555",
-      "downloaded_at": "2026-11-02T20:16:52.681305+00:00",
-      "bytes": 32993
+      "sha256": "bf5ea28441bd4ac3ade66c55c3f922e372ad1621939289ae25da8b0d8d5b33bf",
+      "downloaded_at": "2026-11-03T16:40:47.302217+00:00",
+      "bytes": 75179000
     },
     {
-      "start_date": "2025-02-02",
-      "end_date": "2025-02-03",
-      "file": "311_2025-02-02_2025-02-03.jsonl",
+      "start_date": "2026-06-13",
+      "end_date": "2026-06-20",
+      "file": "311_2026-06-13_2026-06-20.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-02T00:00:00' AND created_date < '2025-02-03T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-06-13T00:00:00' AND created_date < '2026-06-20T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 81,
+      "rows": 75124,
       "status": "Success",
-      "sha256": "bd950fac5591c641e9a2cb92ad9982199fe05bcad428da896906e40e5c18c22e",
-      "downloaded_at": "2026-11-02T20:16:53.101386+00:00",
-      "bytes": 32869
+      "sha256": "0f78a5ca9aeb5c5c4d9550e5e0d8f54d7d3836368c2579acd749e0491891d815",
+      "downloaded_at": "2026-11-03T16:41:17.863761+00:00",
+      "bytes": 71078926
     },
     {
-      "start_date": "2025-02-03",
-      "end_date": "2025-02-04",
-      "file": "311_2025-02-03_2025-02-04.jsonl",
+      "start_date": "2026-06-20",
+      "end_date": "2026-06-27",
+      "file": "311_2026-06-20_2026-06-27.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-03T00:00:00' AND created_date < '2025-02-04T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-06-20T00:00:00' AND created_date < '2026-06-27T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 90,
+      "rows": 77197,
       "status": "Success",
-      "sha256": "e74ecc347e1b05016b88439ff7f4a55c06696f23f4fb1f470b5047e38a0f5630",
-      "downloaded_at": "2026-11-02T20:16:53.496379+00:00",
-      "bytes": 36307
+      "sha256": "161336814742dcf17a55fe8382a9db952764e0f6f513554a1c0d3191f1118c8a",
+      "downloaded_at": "2026-11-03T16:41:58.069754+00:00",
+      "bytes": 73832452
     },
     {
-      "start_date": "2025-02-04",
-      "end_date": "2025-02-05",
-      "file": "311_2025-02-04_2025-02-05.jsonl",
+      "start_date": "2026-06-27",
+      "end_date": "2026-07-04",
+      "file": "311_2026-06-27_2026-07-04.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-04T00:00:00' AND created_date < '2025-02-05T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-06-27T00:00:00' AND created_date < '2026-07-04T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 102,
+      "rows": 82971,
       "status": "Success",
-      "sha256": "78aa0642c2092a950e01f2880a82fd557b76581ac4ee040da40eb628e75bcffc",
-      "downloaded_at": "2026-11-02T20:16:54.084733+00:00",
-      "bytes": 41579
+      "sha256": "cab7d3a02f9e66af63531a36451e7168892831572a0f4f028d6a8c8386a463c9",
+      "downloaded_at": "2026-11-03T16:42:28.984293+00:00",
+      "bytes": 77323799
     },
     {
-      "start_date": "2025-02-05",
-      "end_date": "2025-02-06",
-      "file": "311_2025-02-05_2025-02-06.jsonl",
+      "start_date": "2026-07-04",
+      "end_date": "2026-07-11",
+      "file": "311_2026-07-04_2026-07-11.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-05T00:00:00' AND created_date < '2025-02-06T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-07-04T00:00:00' AND created_date < '2026-07-11T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 92,
+      "rows": 81713,
       "status": "Success",
-      "sha256": "125d0d2a3db7daa03357b2e59d303047430910cd429b8b8f3ca814ae3fcb60a0",
-      "downloaded_at": "2026-11-02T20:16:58.384716+00:00",
-      "bytes": 37520
+      "sha256": "29f083be167eea48aadd1ca08e018e3cc27f12ecd7488c47d3bdca6b837ae2e8",
+      "downloaded_at": "2026-11-03T16:43:00.972506+00:00",
+      "bytes": 76453980
     },
     {
-      "start_date": "2025-02-06",
-      "end_date": "2025-02-07",
-      "file": "311_2025-02-06_2025-02-07.jsonl",
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-18",
+      "file": "311_2026-07-11_2026-07-18.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-06T00:00:00' AND created_date < '2025-02-07T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-07-11T00:00:00' AND created_date < '2026-07-18T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 89,
+      "rows": 74429,
       "status": "Success",
-      "sha256": "6e5138952d2809fd6bd145af5ce3d471d095a1cf781e04b7e7e49220f85dcc45",
-      "downloaded_at": "2026-11-02T20:16:59.718601+00:00",
-      "bytes": 36019
+      "sha256": "f751826c21dccbccb2ec4b25706335067a7bad319344a9d7012ef1cffa494345",
+      "downloaded_at": "2026-11-03T16:43:45.669534+00:00",
+      "bytes": 69159058
     },
     {
-      "start_date": "2025-02-07",
-      "end_date": "2025-02-08",
-      "file": "311_2025-02-07_2025-02-08.jsonl",
+      "start_date": "2026-07-18",
+      "end_date": "2026-07-25",
+      "file": "311_2026-07-18_2026-07-25.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-07T00:00:00' AND created_date < '2025-02-08T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-07-18T00:00:00' AND created_date < '2026-07-25T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 88,
+      "rows": 73940,
       "status": "Success",
-      "sha256": "634d032fbb5621c5aea06b4ebd9cffbbb79922ac48bda63f4ad51b300d0c95d4",
-      "downloaded_at": "2026-11-02T20:17:01.164398+00:00",
-      "bytes": 35911
+      "sha256": "3db2875599cbe1a12b96c3b8577a15ce815aff66eff2d6e006a2971a3ec634a8",
+      "downloaded_at": "2026-11-03T16:44:20.207004+00:00",
+      "bytes": 68909949
     },
     {
-      "start_date": "2025-02-08",
-      "end_date": "2025-02-09",
-      "file": "311_2025-02-08_2025-02-09.jsonl",
+      "start_date": "2026-07-25",
+      "end_date": "2026-08-01",
+      "file": "311_2026-07-25_2026-08-01.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-08T00:00:00' AND created_date < '2025-02-09T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-07-25T00:00:00' AND created_date < '2026-08-01T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 75,
+      "rows": 74226,
       "status": "Success",
-      "sha256": "79e08fba7537bd8c621a776effec4a0f097617fa386a7bf486b6487b23dc2095",
-      "downloaded_at": "2026-11-02T20:17:01.613703+00:00",
-      "bytes": 30384
+      "sha256": "98e052d69be3e4d594a261a44727a8150887f72025607904bdb5b2dfb6e56621",
+      "downloaded_at": "2026-11-03T16:44:52.606772+00:00",
+      "bytes": 70377026
     },
     {
-      "start_date": "2025-02-09",
-      "end_date": "2025-02-10",
-      "file": "311_2025-02-09_2025-02-10.jsonl",
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-08",
+      "file": "311_2026-08-01_2026-08-08.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-09T00:00:00' AND created_date < '2025-02-10T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-08-01T00:00:00' AND created_date < '2026-08-08T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 82,
+      "rows": 73771,
       "status": "Success",
-      "sha256": "a08537a697c2a3b2b5c4c51dcba01def7bc6951141e2879cbb89d44adbed7d42",
-      "downloaded_at": "2026-11-02T20:17:02.103111+00:00",
-      "bytes": 32877
+      "sha256": "4ca0c263b35396207b89f9cb1f4e2e4dbbdb30405b0f82a875cf1562adc11fa7",
+      "downloaded_at": "2026-11-03T16:45:31.941759+00:00",
+      "bytes": 68673485
     },
     {
-      "start_date": "2025-02-10",
-      "end_date": "2025-02-11",
-      "file": "311_2025-02-10_2025-02-11.jsonl",
+      "start_date": "2026-08-08",
+      "end_date": "2026-08-15",
+      "file": "311_2026-08-08_2026-08-15.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-10T00:00:00' AND created_date < '2025-02-11T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-08-08T00:00:00' AND created_date < '2026-08-15T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 104,
+      "rows": 74973,
       "status": "Success",
-      "sha256": "03543d0a82fcb0efb59ae905c2de9e45ba587a64bcbe6214adc23d69accf4c34",
-      "downloaded_at": "2026-11-02T20:17:03.030855+00:00",
-      "bytes": 42112
+      "sha256": "c2313fbb1db7b7fcf9ca7524d1d45d6a0e1530b4d1ab28a12c36dabe449255dd",
+      "downloaded_at": "2026-11-03T16:46:19.515099+00:00",
+      "bytes": 69588280
     },
     {
-      "start_date": "2025-02-11",
-      "end_date": "2025-02-12",
-      "file": "311_2025-02-11_2025-02-12.jsonl",
+      "start_date": "2026-08-15",
+      "end_date": "2026-08-22",
+      "file": "311_2026-08-15_2026-08-22.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-11T00:00:00' AND created_date < '2025-02-12T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-08-15T00:00:00' AND created_date < '2026-08-22T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 91,
+      "rows": 73983,
       "status": "Success",
-      "sha256": "5e99551cbbf66f3600fb809e7a83a8bfb6ff4e944084b42f795c803fc1d3d20c",
-      "downloaded_at": "2026-11-02T20:17:08.868200+00:00",
-      "bytes": 36838
+      "sha256": "f913516a36b3b2a1a984a0d97542bacdb372167a82ecf0960444c79c5962a100",
+      "downloaded_at": "2026-11-03T16:47:02.190579+00:00",
+      "bytes": 69083903
     },
     {
-      "start_date": "2025-02-12",
-      "end_date": "2025-02-13",
-      "file": "311_2025-02-12_2025-02-13.jsonl",
+      "start_date": "2026-08-22",
+      "end_date": "2026-08-29",
+      "file": "311_2026-08-22_2026-08-29.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-12T00:00:00' AND created_date < '2025-02-13T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-08-22T00:00:00' AND created_date < '2026-08-29T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 90,
+      "rows": 74885,
       "status": "Success",
-      "sha256": "2c830df4aba3a6c8576ba9e8352ed05190d732665038076b32c245935622a462",
-      "downloaded_at": "2026-11-02T20:17:13.724110+00:00",
-      "bytes": 36555
+      "sha256": "f8097096483951db5543b4e7bc8ce4d93bae949f660fc9fdd82a2ca424b3ff22",
+      "downloaded_at": "2026-11-03T16:47:32.856555+00:00",
+      "bytes": 70402499
     },
     {
-      "start_date": "2025-02-13",
-      "end_date": "2025-02-14",
-      "file": "311_2025-02-13_2025-02-14.jsonl",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-05",
+      "file": "311_2026-08-29_2026-09-05.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-13T00:00:00' AND created_date < '2025-02-14T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-08-29T00:00:00' AND created_date < '2026-09-05T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 95,
+      "rows": 72745,
       "status": "Success",
-      "sha256": "83b1606da04f4e01d8555b0e062cf06f17e2ba3edf85c693eee310e0ece5cded",
-      "downloaded_at": "2026-11-02T20:17:14.185483+00:00",
-      "bytes": 38667
+      "sha256": "b673047771d32a339b0aa02d48a0a5e1809a940781f821edd8e8fa6ac9cfc5e1",
+      "downloaded_at": "2026-11-03T16:48:24.481510+00:00",
+      "bytes": 68484031
     },
     {
-      "start_date": "2025-02-14",
-      "end_date": "2025-02-15",
-      "file": "311_2025-02-14_2025-02-15.jsonl",
+      "start_date": "2026-09-05",
+      "end_date": "2026-09-12",
+      "file": "311_2026-09-05_2026-09-12.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-14T00:00:00' AND created_date < '2025-02-15T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-09-05T00:00:00' AND created_date < '2026-09-12T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 91,
+      "rows": 75560,
       "status": "Success",
-      "sha256": "82bfc9726b4ae6aa60bf9b02c1ecbfd7247278c719dd67273bfadd0dd7c19072",
-      "downloaded_at": "2026-11-02T20:17:23.477635+00:00",
-      "bytes": 37058
+      "sha256": "c9238bd427d2e2533ea98631ad152cfff0017f79af6c0b78b815159a9eedf5a6",
+      "downloaded_at": "2026-11-03T16:49:16.146594+00:00",
+      "bytes": 72486814
     },
     {
-      "start_date": "2025-02-15",
-      "end_date": "2025-02-16",
-      "file": "311_2025-02-15_2025-02-16.jsonl",
+      "start_date": "2026-09-12",
+      "end_date": "2026-09-19",
+      "file": "311_2026-09-12_2026-09-19.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-15T00:00:00' AND created_date < '2025-02-16T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-09-12T00:00:00' AND created_date < '2026-09-19T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 78,
+      "rows": 78434,
       "status": "Success",
-      "sha256": "6187c60cc20d887cdb14fc409a0febfcb1ced931930e6b07d58306ff92633d58",
-      "downloaded_at": "2026-11-02T20:17:23.910902+00:00",
-      "bytes": 31788
+      "sha256": "fc9f039bacfd86268c0a5c9d0a33cf303b2df2bfec754930e5a01fbdac7df331",
+      "downloaded_at": "2026-11-03T16:49:48.757373+00:00",
+      "bytes": 73579489
     },
     {
-      "start_date": "2025-02-16",
-      "end_date": "2025-02-17",
-      "file": "311_2025-02-16_2025-02-17.jsonl",
+      "start_date": "2026-09-19",
+      "end_date": "2026-09-26",
+      "file": "311_2026-09-19_2026-09-26.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-16T00:00:00' AND created_date < '2025-02-17T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-09-19T00:00:00' AND created_date < '2026-09-26T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 74,
+      "rows": 74392,
       "status": "Success",
-      "sha256": "81bf87ea3ec0da4036e843817ecf436f2199676bd55fb047ea0f2971c5229996",
-      "downloaded_at": "2026-11-02T20:17:24.241852+00:00",
-      "bytes": 30089
+      "sha256": "79659c077515b9c6fae400d1efe347797431d09366c2a04df613150729b8aa4e",
+      "downloaded_at": "2026-11-03T16:50:19.261494+00:00",
+      "bytes": 70038001
     },
     {
-      "start_date": "2025-02-17",
-      "end_date": "2025-02-18",
-      "file": "311_2025-02-17_2025-02-18.jsonl",
+      "start_date": "2026-09-26",
+      "end_date": "2026-10-03",
+      "file": "311_2026-09-26_2026-10-03.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-17T00:00:00' AND created_date < '2025-02-18T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-09-26T00:00:00' AND created_date < '2026-10-03T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 91,
+      "rows": 77599,
       "status": "Success",
-      "sha256": "a7d79fbf9f6843dccd30864c2809ec53bda8a7ac84c8ea7a3349d3938b2512da",
-      "downloaded_at": "2026-11-02T20:17:31.905896+00:00",
-      "bytes": 36714
+      "sha256": "5a76b6415cceb5fc13063da1af48099bfc88cced8c3df67e513631c927aeac13",
+      "downloaded_at": "2026-11-03T16:50:56.483117+00:00",
+      "bytes": 72801848
     },
     {
-      "start_date": "2025-02-18",
-      "end_date": "2025-02-19",
-      "file": "311_2025-02-18_2025-02-19.jsonl",
+      "start_date": "2026-10-03",
+      "end_date": "2026-10-10",
+      "file": "311_2026-10-03_2026-10-10.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-18T00:00:00' AND created_date < '2025-02-19T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-10-03T00:00:00' AND created_date < '2026-10-10T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 107,
+      "rows": 77087,
       "status": "Success",
-      "sha256": "53447115122ae4535816905795ed475748336daaad6dd58578d13b2c00f58b5b",
-      "downloaded_at": "2026-11-02T20:17:32.611218+00:00",
-      "bytes": 43357
+      "sha256": "8dc47c83b6b2c2e6b7940dca275d60d87cd6809f16b2583ab0cc306fa67f7725",
+      "downloaded_at": "2026-11-03T16:51:34.832347+00:00",
+      "bytes": 73027572
     },
     {
-      "start_date": "2025-02-19",
-      "end_date": "2025-02-20",
-      "file": "311_2025-02-19_2025-02-20.jsonl",
+      "start_date": "2026-10-10",
+      "end_date": "2026-10-17",
+      "file": "311_2026-10-10_2026-10-17.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-19T00:00:00' AND created_date < '2025-02-20T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-10-10T00:00:00' AND created_date < '2026-10-17T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 115,
+      "rows": 72212,
       "status": "Success",
-      "sha256": "4631c3154690abe0f0aa29e2c57fbfa024ddc16c65f8ceb2a0a6aea913e32ab1",
-      "downloaded_at": "2026-11-02T20:17:38.628996+00:00",
-      "bytes": 46841
+      "sha256": "60f388ff296ceafe93246e23fcdb2385b6fb660f2a48a8b28932805a9d992f62",
+      "downloaded_at": "2026-11-03T16:51:57.332804+00:00",
+      "bytes": 68176623
     },
     {
-      "start_date": "2025-02-20",
-      "end_date": "2025-02-21",
-      "file": "311_2025-02-20_2025-02-21.jsonl",
+      "start_date": "2026-10-17",
+      "end_date": "2026-10-24",
+      "file": "311_2026-10-17_2026-10-24.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-20T00:00:00' AND created_date < '2025-02-21T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-10-17T00:00:00' AND created_date < '2026-10-24T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 96,
+      "rows": 83153,
       "status": "Success",
-      "sha256": "1af7a2e96535c37ea436566c9e5193a5f9f1d6639bb7484ec003bbeb18f1d8cc",
-      "downloaded_at": "2026-11-02T20:17:39.235645+00:00",
-      "bytes": 38844
+      "sha256": "1308770087b3bfd185ef4d3376223256001d50904d2510c621c5b29301765080",
+      "downloaded_at": "2026-11-03T16:52:32.771601+00:00",
+      "bytes": 77797011
     },
     {
-      "start_date": "2025-02-21",
-      "end_date": "2025-02-22",
-      "file": "311_2025-02-21_2025-02-22.jsonl",
+      "start_date": "2026-10-24",
+      "end_date": "2026-10-31",
+      "file": "311_2026-10-24_2026-10-31.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-21T00:00:00' AND created_date < '2025-02-22T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-10-24T00:00:00' AND created_date < '2026-10-31T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 94,
+      "rows": 80138,
       "status": "Success",
-      "sha256": "e08aaaf0e1e9d1b9ed39ad810f0a95790adc9a5b243eadcc6a856bc6b32f527d",
-      "downloaded_at": "2026-11-02T20:17:43.691958+00:00",
-      "bytes": 37991
+      "sha256": "4298739d7647587f6bb4442c7cad2ecbcc8d837f0d1ed5424e7ca44ae524f0ca",
+      "downloaded_at": "2026-11-03T16:52:57.136032+00:00",
+      "bytes": 73950367
     },
     {
-      "start_date": "2025-02-22",
-      "end_date": "2025-02-23",
-      "file": "311_2025-02-22_2025-02-23.jsonl",
+      "start_date": "2026-10-31",
+      "end_date": "2026-11-01",
+      "file": "311_2026-10-31_2026-11-01.jsonl",
       "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-22T00:00:00' AND created_date < '2025-02-23T00:00:00' AND unique_key like '%17'",
+        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude,resolution_description,resolution_action_updated_date,due_date,open_data_channel_type,bbl,community_board",
+        "$where": "created_date >= '2026-10-31T00:00:00' AND created_date < '2026-11-01T00:00:00'",
         "$order": "unique_key ASC",
-        "$limit": 1000
+        "$limit": 20000
       },
-      "rows": 89,
+      "rows": 11104,
       "status": "Success",
-      "sha256": "d8dddb7f46a7afed05bcb5b314bbd8766d776bb3b96260010ceadefd1a0e8afb",
-      "downloaded_at": "2026-11-02T20:17:44.018924+00:00",
-      "bytes": 36240
-    },
-    {
-      "start_date": "2025-02-23",
-      "end_date": "2025-02-24",
-      "file": "311_2025-02-23_2025-02-24.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-23T00:00:00' AND created_date < '2025-02-24T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 93,
-      "status": "Success",
-      "sha256": "4ec5ee90b30965829b2396f7a17da5384ed308c0092a1415f522b26633c9f2a4",
-      "downloaded_at": "2026-11-02T20:17:44.442606+00:00",
-      "bytes": 37703
-    },
-    {
-      "start_date": "2025-02-24",
-      "end_date": "2025-02-25",
-      "file": "311_2025-02-24_2025-02-25.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-24T00:00:00' AND created_date < '2025-02-25T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 92,
-      "status": "Success",
-      "sha256": "660f9464089060a5bd8374d3b34cd78c0207c43951602dc87e66540d0d959f70",
-      "downloaded_at": "2026-11-02T20:17:55.471219+00:00",
-      "bytes": 37240
-    },
-    {
-      "start_date": "2025-02-25",
-      "end_date": "2025-02-26",
-      "file": "311_2025-02-25_2025-02-26.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-25T00:00:00' AND created_date < '2025-02-26T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 102,
-      "status": "Success",
-      "sha256": "3e47c1af423ba44dd52345660e12750a5c69c838dfd3e2aca96de42db75575e3",
-      "downloaded_at": "2026-11-02T20:18:00.916833+00:00",
-      "bytes": 41419
-    },
-    {
-      "start_date": "2025-02-26",
-      "end_date": "2025-02-27",
-      "file": "311_2025-02-26_2025-02-27.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-26T00:00:00' AND created_date < '2025-02-27T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 89,
-      "status": "Success",
-      "sha256": "24c9a42a0f4e91c3829a75786a87c7ba0edc6bc2befd179099d6712523c08ad5",
-      "downloaded_at": "2026-11-02T20:18:01.523776+00:00",
-      "bytes": 36265
-    },
-    {
-      "start_date": "2025-02-27",
-      "end_date": "2025-02-28",
-      "file": "311_2025-02-27_2025-02-28.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-27T00:00:00' AND created_date < '2025-02-28T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 90,
-      "status": "Success",
-      "sha256": "0178d7d95c1e38a959e5d16ac18ff2757eaeed30f554da0a297ea651d54156cc",
-      "downloaded_at": "2026-11-02T20:18:09.082721+00:00",
-      "bytes": 36756
-    },
-    {
-      "start_date": "2025-02-28",
-      "end_date": "2025-03-01",
-      "file": "311_2025-02-28_2025-03-01.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-02-28T00:00:00' AND created_date < '2025-03-01T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 86,
-      "status": "Success",
-      "sha256": "cd0c370ff10eea406428e166ec9341a3049ad5514bf694f7258160727f5f4a65",
-      "downloaded_at": "2026-11-02T20:18:15.214869+00:00",
-      "bytes": 34593
-    },
-    {
-      "start_date": "2025-03-01",
-      "end_date": "2025-03-02",
-      "file": "311_2025-03-01_2025-03-02.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-01T00:00:00' AND created_date < '2025-03-02T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 83,
-      "status": "Success",
-      "sha256": "46ca2e918e71a9a518714c9592fa53f6b8573d08937a801fd2677ed411448c54",
-      "downloaded_at": "2026-11-02T20:18:15.657009+00:00",
-      "bytes": 33943
-    },
-    {
-      "start_date": "2025-03-02",
-      "end_date": "2025-03-03",
-      "file": "311_2025-03-02_2025-03-03.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-02T00:00:00' AND created_date < '2025-03-03T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 88,
-      "status": "Success",
-      "sha256": "db26616339df6d6a02337908dbcaec012f3903557641c733c1ca5ef3bc707bb4",
-      "downloaded_at": "2026-11-02T20:18:16.047529+00:00",
-      "bytes": 35803
-    },
-    {
-      "start_date": "2025-03-03",
-      "end_date": "2025-03-04",
-      "file": "311_2025-03-03_2025-03-04.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-03T00:00:00' AND created_date < '2025-03-04T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 95,
-      "status": "Success",
-      "sha256": "927fbada7d256666a6569dca248f30fe6ba4971559c3084b77ffea5a8ae1e499",
-      "downloaded_at": "2026-11-02T20:18:30.875323+00:00",
-      "bytes": 38450
-    },
-    {
-      "start_date": "2025-03-04",
-      "end_date": "2025-03-05",
-      "file": "311_2025-03-04_2025-03-05.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-04T00:00:00' AND created_date < '2025-03-05T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 91,
-      "status": "Success",
-      "sha256": "6b1d306199feb9d9d64bedf4a2f2daa40dd3d6f31d26a50de934d0229349e152",
-      "downloaded_at": "2026-11-02T20:18:31.442769+00:00",
-      "bytes": 36898
-    },
-    {
-      "start_date": "2025-03-05",
-      "end_date": "2025-03-06",
-      "file": "311_2025-03-05_2025-03-06.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-05T00:00:00' AND created_date < '2025-03-06T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 94,
-      "status": "Success",
-      "sha256": "bff551d4d363a5d6bb18011f3b76a5a3be154ab47f8f676f2ed6203990f7de15",
-      "downloaded_at": "2026-11-02T20:18:44.281395+00:00",
-      "bytes": 38099
-    },
-    {
-      "start_date": "2025-03-06",
-      "end_date": "2025-03-07",
-      "file": "311_2025-03-06_2025-03-07.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-06T00:00:00' AND created_date < '2025-03-07T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 99,
-      "status": "Success",
-      "sha256": "d1b59864de21a4429241beef392205a25a314e0034200b1e516ce463dbce0a89",
-      "downloaded_at": "2026-11-02T20:18:44.614005+00:00",
-      "bytes": 40488
-    },
-    {
-      "start_date": "2025-03-07",
-      "end_date": "2025-03-08",
-      "file": "311_2025-03-07_2025-03-08.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-07T00:00:00' AND created_date < '2025-03-08T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 95,
-      "status": "Success",
-      "sha256": "91f0173b09be0a5cb9a2de13e71568ccb340a58d68c6f919ba0b739df3227cc4",
-      "downloaded_at": "2026-11-02T20:18:44.901316+00:00",
-      "bytes": 38822
-    },
-    {
-      "start_date": "2025-03-08",
-      "end_date": "2025-03-09",
-      "file": "311_2025-03-08_2025-03-09.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-08T00:00:00' AND created_date < '2025-03-09T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 94,
-      "status": "Success",
-      "sha256": "480110ca0cf0ab207e9afda731387192f8d8b2d0e4ceacca35869f5a13b2d584",
-      "downloaded_at": "2026-11-02T20:18:55.771850+00:00",
-      "bytes": 38295
-    },
-    {
-      "start_date": "2025-03-09",
-      "end_date": "2025-03-10",
-      "file": "311_2025-03-09_2025-03-10.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-09T00:00:00' AND created_date < '2025-03-10T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 72,
-      "status": "Success",
-      "sha256": "6eca2663c0dcee7a8ceb13a3f0b97ff82ec16df734cda6ca0a7e393a1d01a541",
-      "downloaded_at": "2026-11-02T20:19:00.859792+00:00",
-      "bytes": 29202
-    },
-    {
-      "start_date": "2025-03-10",
-      "end_date": "2025-03-11",
-      "file": "311_2025-03-10_2025-03-11.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-10T00:00:00' AND created_date < '2025-03-11T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 92,
-      "status": "Success",
-      "sha256": "6fc3013010425d8865679e73d2eb43a129ef3ee49a7842dd2b9428f77f6f7d35",
-      "downloaded_at": "2026-11-02T20:19:07.968125+00:00",
-      "bytes": 37381
-    },
-    {
-      "start_date": "2025-03-11",
-      "end_date": "2025-03-12",
-      "file": "311_2025-03-11_2025-03-12.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-11T00:00:00' AND created_date < '2025-03-12T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 100,
-      "status": "Success",
-      "sha256": "d5352ee2ac2b82891547781fc0f2ea619dbd2d587f3089e17724639b40230452",
-      "downloaded_at": "2026-11-02T20:19:10.142357+00:00",
-      "bytes": 40643
-    },
-    {
-      "start_date": "2025-03-12",
-      "end_date": "2025-03-13",
-      "file": "311_2025-03-12_2025-03-13.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-12T00:00:00' AND created_date < '2025-03-13T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 93,
-      "status": "Success",
-      "sha256": "c96fe81cf80429998f4d0458156e190f5876e288ebc088b0cf1103b5672bec37",
-      "downloaded_at": "2026-11-02T20:19:15.435804+00:00",
-      "bytes": 37747
-    },
-    {
-      "start_date": "2025-03-13",
-      "end_date": "2025-03-14",
-      "file": "311_2025-03-13_2025-03-14.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-13T00:00:00' AND created_date < '2025-03-14T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 94,
-      "status": "Success",
-      "sha256": "ea1028ca549ad4ee3fad7bbdf00ac49c492471c699b155b478e74f65e03cbc62",
-      "downloaded_at": "2026-11-02T20:19:16.097457+00:00",
-      "bytes": 38090
-    },
-    {
-      "start_date": "2025-03-14",
-      "end_date": "2025-03-15",
-      "file": "311_2025-03-14_2025-03-15.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-14T00:00:00' AND created_date < '2025-03-15T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 94,
-      "status": "Success",
-      "sha256": "641a498bdef0e4667c8d9bdcff722f8c92b42e8b59161a663c9e7985c76dbec5",
-      "downloaded_at": "2026-11-02T20:19:23.166590+00:00",
-      "bytes": 38336
-    },
-    {
-      "start_date": "2025-03-15",
-      "end_date": "2025-03-16",
-      "file": "311_2025-03-15_2025-03-16.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-15T00:00:00' AND created_date < '2025-03-16T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 79,
-      "status": "Success",
-      "sha256": "917192e635a89ec38f1984fa526a705451168a6aad0ee0ea1078978bc4dfb3a4",
-      "downloaded_at": "2026-11-02T20:19:27.577330+00:00",
-      "bytes": 32150
-    },
-    {
-      "start_date": "2025-03-16",
-      "end_date": "2025-03-17",
-      "file": "311_2025-03-16_2025-03-17.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-16T00:00:00' AND created_date < '2025-03-17T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 76,
-      "status": "Success",
-      "sha256": "ff08e0c2735a7cca27aafb287b77b953bfe010977318854fdabf1b99fa8ea6e5",
-      "downloaded_at": "2026-11-02T20:19:29.027408+00:00",
-      "bytes": 31117
-    },
-    {
-      "start_date": "2025-03-17",
-      "end_date": "2025-03-18",
-      "file": "311_2025-03-17_2025-03-18.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-17T00:00:00' AND created_date < '2025-03-18T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 97,
-      "status": "Success",
-      "sha256": "1e5b6ee711dda9441627f98b949a3caab3d58cb43e11e22d058bb3bc59a55440",
-      "downloaded_at": "2026-11-02T20:19:29.530493+00:00",
-      "bytes": 39341
-    },
-    {
-      "start_date": "2025-03-18",
-      "end_date": "2025-03-19",
-      "file": "311_2025-03-18_2025-03-19.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-18T00:00:00' AND created_date < '2025-03-19T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 101,
-      "status": "Success",
-      "sha256": "71eae38c97db40e3c73d4ef8cb92eda684e95aab2a806a45e9bd307e48388f97",
-      "downloaded_at": "2026-11-02T20:19:35.809880+00:00",
-      "bytes": 40987
-    },
-    {
-      "start_date": "2025-03-19",
-      "end_date": "2025-03-20",
-      "file": "311_2025-03-19_2025-03-20.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-19T00:00:00' AND created_date < '2025-03-20T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 95,
-      "status": "Success",
-      "sha256": "3baebf678fbe1ffbfd8eb53f94a4bb3403c7950ec5dd2dc08d866468d2cb8d77",
-      "downloaded_at": "2026-11-02T20:19:37.091498+00:00",
-      "bytes": 38561
-    },
-    {
-      "start_date": "2025-03-20",
-      "end_date": "2025-03-21",
-      "file": "311_2025-03-20_2025-03-21.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-20T00:00:00' AND created_date < '2025-03-21T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 88,
-      "status": "Success",
-      "sha256": "be18a3b17a2c03eb24057fbd4986e9d420525ced482c4df0c75caf04fd273a68",
-      "downloaded_at": "2026-11-02T20:19:42.312031+00:00",
-      "bytes": 35481
-    },
-    {
-      "start_date": "2025-03-21",
-      "end_date": "2025-03-22",
-      "file": "311_2025-03-21_2025-03-22.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-21T00:00:00' AND created_date < '2025-03-22T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 86,
-      "status": "Success",
-      "sha256": "ce2c2f8256d4d2591e99b9eee9262dfa61eebf9780900021ad270fb6b710c747",
-      "downloaded_at": "2026-11-02T20:19:44.212446+00:00",
-      "bytes": 35196
-    },
-    {
-      "start_date": "2025-03-22",
-      "end_date": "2025-03-23",
-      "file": "311_2025-03-22_2025-03-23.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-22T00:00:00' AND created_date < '2025-03-23T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 85,
-      "status": "Success",
-      "sha256": "43a104f0124ba933e005447bba6f68ba1026e869f0a704ef6d1f2b6da59071fc",
-      "downloaded_at": "2026-11-02T20:19:45.176983+00:00",
-      "bytes": 34735
-    },
-    {
-      "start_date": "2025-03-23",
-      "end_date": "2025-03-24",
-      "file": "311_2025-03-23_2025-03-24.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-23T00:00:00' AND created_date < '2025-03-24T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 85,
-      "status": "Success",
-      "sha256": "e5820145ff23397e8a0d5ce1ae85e490da9930fb533a2201f493353aa5e99ee1",
-      "downloaded_at": "2026-11-02T20:19:46.204693+00:00",
-      "bytes": 34352
-    },
-    {
-      "start_date": "2025-03-24",
-      "end_date": "2025-03-25",
-      "file": "311_2025-03-24_2025-03-25.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-24T00:00:00' AND created_date < '2025-03-25T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 90,
-      "status": "Success",
-      "sha256": "9c1c9f5d8eda1023191742098e8ee400925eda3c945e9f79eae1d30a89e8509b",
-      "downloaded_at": "2026-11-02T20:19:47.081263+00:00",
-      "bytes": 36674
-    },
-    {
-      "start_date": "2025-03-25",
-      "end_date": "2025-03-26",
-      "file": "311_2025-03-25_2025-03-26.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-25T00:00:00' AND created_date < '2025-03-26T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 95,
-      "status": "Success",
-      "sha256": "87d3ab3938cc85afb46aae7d23109912ddf151fa98f67f9b8ab6a177c5fd5800",
-      "downloaded_at": "2026-11-02T20:19:47.971504+00:00",
-      "bytes": 38450
-    },
-    {
-      "start_date": "2025-03-26",
-      "end_date": "2025-03-27",
-      "file": "311_2025-03-26_2025-03-27.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-26T00:00:00' AND created_date < '2025-03-27T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 94,
-      "status": "Success",
-      "sha256": "c8809cc13055faba55705993fd03f56742dc98151273eb562ef0ad3019416047",
-      "downloaded_at": "2026-11-02T20:19:49.248027+00:00",
-      "bytes": 38086
-    },
-    {
-      "start_date": "2025-03-27",
-      "end_date": "2025-03-28",
-      "file": "311_2025-03-27_2025-03-28.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-27T00:00:00' AND created_date < '2025-03-28T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 91,
-      "status": "Success",
-      "sha256": "e93c5d5efd470fb9488593295008b11b0b883f1deb9286e169ec179ce7858657",
-      "downloaded_at": "2026-11-02T20:19:50.083120+00:00",
-      "bytes": 36677
-    },
-    {
-      "start_date": "2025-03-28",
-      "end_date": "2025-03-29",
-      "file": "311_2025-03-28_2025-03-29.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-28T00:00:00' AND created_date < '2025-03-29T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 96,
-      "status": "Success",
-      "sha256": "a1ef1daabd54350b48c32c56bba230daeb6dfc72f6efb09b18bf7027821261d7",
-      "downloaded_at": "2026-11-02T20:19:51.174960+00:00",
-      "bytes": 39060
-    },
-    {
-      "start_date": "2025-03-29",
-      "end_date": "2025-03-30",
-      "file": "311_2025-03-29_2025-03-30.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-29T00:00:00' AND created_date < '2025-03-30T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 83,
-      "status": "Success",
-      "sha256": "eda7ad106d3049e73c94bba78a870a02a02d578f0dc19dc410953e26f0be35f7",
-      "downloaded_at": "2026-11-02T20:19:51.826829+00:00",
-      "bytes": 33952
-    },
-    {
-      "start_date": "2025-03-30",
-      "end_date": "2025-03-31",
-      "file": "311_2025-03-30_2025-03-31.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-30T00:00:00' AND created_date < '2025-03-31T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 86,
-      "status": "Success",
-      "sha256": "242a3ecdaae48a6ff8e2e9b90e902b174f9e9f68156dff0436e48360dbdbc426",
-      "downloaded_at": "2026-11-02T20:19:52.644906+00:00",
-      "bytes": 34845
-    },
-    {
-      "start_date": "2025-03-31",
-      "end_date": "2025-04-01",
-      "file": "311_2025-03-31_2025-04-01.jsonl",
-      "request": {
-        "$select": "unique_key,created_date,closed_date,agency,complaint_type,descriptor,borough,status,incident_zip,latitude,longitude",
-        "$where": "created_date >= '2025-03-31T00:00:00' AND created_date < '2025-04-01T00:00:00' AND unique_key like '%17'",
-        "$order": "unique_key ASC",
-        "$limit": 1000
-      },
-      "rows": 83,
-      "status": "Success",
-      "sha256": "1fe5bdf91d63628cc5da06e6c2234c01bb9ab6fe7953fe955ec166b5269358cd",
-      "downloaded_at": "2026-11-02T20:19:58.828194+00:00",
-      "bytes": 33451
+      "sha256": "d0189db47eb9c45d5d091917d65e81c723e91c5a69d8e3539078a4f300acc032",
+      "downloaded_at": "2026-11-03T16:52:59.933714+00:00",
+      "bytes": 10348451
     }
   ],
+  "coverage": {
+    "requested_windows": 53,
+    "successful_windows": 53,
+    "complete_date_windows": true
+  },
   "schema": {
     "dataset_id": "erm2-nwe9",
     "metadata_url": "https://data.cityofnewyork.us/api/views/erm2-nwe9.json",
-    "verified_at": "2026-11-02T20:26:18.728624+00:00",
+    "verified_at": "2026-11-03T16:25:25.639603+00:00",
     "columns": {
       "unique_key": "text",
       "created_date": "calendar_date",
@@ -1524,18 +937,19 @@
       "status",
       "incident_zip",
       "latitude",
-      "longitude"
+      "longitude",
+      "resolution_description",
+      "resolution_action_updated_date",
+      "due_date",
+      "open_data_channel_type",
+      "bbl",
+      "community_board"
     ],
     "problem_api_field": "complaint_type"
   },
-  "rows": 8822,
+  "rows": 3974773,
   "status": "Success",
-  "updated_at": "2026-11-02T20:26:18.826504+00:00",
-  "token_used": false,
-  "elapsed_seconds": 0.8654082919965731,
-  "coverage": {
-    "requested_windows": 90,
-    "successful_windows": 90,
-    "complete_date_windows": true
-  }
+  "updated_at": "2026-11-03T16:52:59.934364+00:00",
+  "token_used": true,
+  "elapsed_seconds": 1655.0602998752147
 }

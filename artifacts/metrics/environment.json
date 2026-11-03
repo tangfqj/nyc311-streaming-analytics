@@ -1,23 +1,23 @@
 {
-  "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.4.2)]",
-  "python_executable": "/Users/guerqian77/Documents/ChatGPT/bigdata/.venv/bin/python",
-  "platform": "macOS-15.6-arm64-arm-64bit",
+  "python": "3.11.18 (main, Oct 25 2026, 19:41:29) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "python_executable": "/Users/qjfeng/Code/nyc311-streaming-analytics/.venv/bin/python",
+  "platform": "macOS-14.6.1-arm64-arm-64bit",
   "machine": "arm64",
-  "logical_cpu_count": 10,
+  "logical_cpu_count": 8,
   "ram_bytes": 17179869184,
-  "available_ram_bytes": 2861744128,
-  "disk_free_bytes": 11306487808,
+  "available_ram_bytes": 3965272064,
+  "disk_free_bytes": 196419395584,
   "java": {
     "status": "Passed",
     "returncode": 0,
-    "output": "openjdk version \"17.0.13\" 2024-10-15\nOpenJDK Runtime Environment Temurin-17.0.13+11 (build 17.0.13+11)\nOpenJDK 64-Bit Server VM Temurin-17.0.13+11 (build 17.0.13+11, mixed mode, sharing)"
+    "output": "java version \"17.0.12\" 2024-07-16 LTS\nJava(TM) SE Runtime Environment (build 17.0.12+8-LTS-286)\nJava HotSpot(TM) 64-Bit Server VM (build 17.0.12+8-LTS-286, mixed mode, sharing)"
   },
   "docker": {
-    "status": "Passed",
-    "returncode": 0,
-    "output": "27.3.1 CPU=8 RAM=4109737984"
+    "status": "Failed",
+    "returncode": 1,
+    "output": "CPU=0 RAM=0\nCannot connect to the Docker daemon at unix:///Users/qjfeng/.docker/run/docker.sock. Is the docker daemon running?"
   },
-  "optional_app_token_present": false,
+  "optional_app_token_present": true,
   "database_url_configured": true,
   "network": {
     "status": "Passed",
@@ -32,5 +32,5 @@
       "borough"
     ]
   },
-  "mode": "local Spark + PostgreSQL; Docker standalone optional"
+  "mode": "local Spark; PostgreSQL requires running service"
 }

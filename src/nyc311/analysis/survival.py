@@ -102,6 +102,25 @@ def finite_number(value):
     return float(value) if value is not None and np.isfinite(value) else None
 
 
+CURVE_GRID_STEP_DAYS = 0.25
+CURVE_GRID_MAX_DAYS = 365.0
+
+
+def resample_curve(km, step=CURVE_GRID_STEP_DAYS, maximum=CURVE_GRID_MAX_DAYS):
+    """Thin a KM step function onto a fixed day grid.
+
+    Writing one row per distinct event time makes the persisted curve file grow
+    with the number of tickets; at full population that is hundreds of megabytes
+    the dashboard must load. Forward fill is exact for a step function, so the
+    grid loses no information between grid points.
+    """
+    frame = km.survival_function_.join(km.confidence_interval_)
+    upper = min(float(frame.index.max()), maximum)
+    grid = np.round(np.arange(0.0, upper + step, step), 6)
+    aligned = frame.reindex(frame.index.union(grid)).ffill().bfill()
+    return aligned.reindex(grid).reset_index()
+
+
 def km_summary(frame):
     km = KaplanMeierFitter().fit(frame["duration_days"], frame["event_observed"])
     median = finite_number(km.median_survival_time_)
@@ -158,7 +177,7 @@ def _run_survival(silver_path=None, output_dir=None, config=None, allow_fixture=
             subset = labels.loc[values.eq(group)]
             km, summary = km_summary(subset)
             rows.append({"group_by": column, "group": group, "as_of": metrics["as_of"], **summary})
-            curve = km.survival_function_.join(km.confidence_interval_).reset_index()
+            curve = resample_curve(km)
             curve.columns = ["duration_days", "survival_probability", "lower_95", "upper_95"]
             curve["group_by"] = column
             curve["group"] = group

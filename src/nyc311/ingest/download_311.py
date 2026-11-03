@@ -3,7 +3,7 @@
 The optional numeric ID suffix is a deterministic systematic sample, not a
 random or population-complete sample. It spans the requested dates without
 taking only the first chronological records. Never interpret sampled daily
-counts as citywide arrivals. No addresses are requested.
+counts as citywide arrivals. No street-address fields are requested; bbl identifies a tax lot.
 """
 from __future__ import annotations
 
@@ -22,7 +22,9 @@ from nyc311.config import log_event, write_json
 API_URL = "https://data.cityofnewyork.us/resource/erm2-nwe9.json"
 METADATA_URL = "https://data.cityofnewyork.us/api/views/erm2-nwe9.json"
 FIELDS = ["unique_key", "created_date", "closed_date", "agency", "complaint_type",
-          "descriptor", "borough", "status", "incident_zip", "latitude", "longitude"]
+          "descriptor", "borough", "status", "incident_zip", "latitude", "longitude",
+          "resolution_description", "resolution_action_updated_date", "due_date",
+          "open_data_channel_type", "bbl", "community_board"]
 REQUIRED_FIELDS = {"unique_key", "created_date", "closed_date", "agency", "complaint_type", "borough"}
 
 

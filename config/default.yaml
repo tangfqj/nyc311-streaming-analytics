@@ -1,26 +1,26 @@
 seed: 311
 source_timezone: America/New_York
-spark_master: local[2]
+spark_master: local[6]
 ingest:
-  start: '2025-01-01'
-  end: '2025-04-01'
+  start: '2025-11-01'
+  end: '2026-11-01'
   window_days: 7
-  page_size: 1000
-  max_rows: 50000
+  page_size: 20000
+  max_rows: null
   timeout_seconds: 45
   retries: 4
   rate_delay_seconds: 0.25
 analysis:
-  as_of: '2025-07-01T00:00:00Z'
-  train_end: '2025-03-01T00:00:00Z'
-  train_as_of: '2025-03-01T00:00:00Z'
-  test_end: '2025-04-01T00:00:00Z'
-  test_as_of: '2025-07-01T00:00:00Z'
-  max_model_rows: 30000
+  as_of: '2026-11-03T00:00:00Z'
+  train_end: '2026-08-01T00:00:00Z'
+  train_as_of: '2026-08-01T00:00:00Z'
+  test_end: '2026-11-01T00:00:00Z'
+  test_as_of: '2026-11-03T00:00:00Z'
+  max_model_rows: 300000
   top_categories: 15
   penalizer: 0.1
 capacity:
-  min_group_n: 100
+  min_group_n: 2000
   top_n: 5
   calibration_ratio_min: 0.5
   calibration_ratio_max: 2.0
@@ -37,4 +37,4 @@ benchmark:
   base_rows: 1000
   partitions: 8
 seasonality:
-  coverage_manifest: data/raw/nyc311_2025q1_suffix17/manifest.json
+  coverage_manifest: data/raw/nyc311_12mo_full/manifest.json

@@ -32,9 +32,9 @@ The PostgreSQL demo is bound to **127.0.0.1:55432**, database/user `nyc311`, loc
 ## Run the bounded real workflow
 
 ```bash
-make fetch-sample       # 2025-01-01 <= created < 2025-04-01, ID suffix17
-make etl                # data/raw/nyc311_2025q1_suffix17 -> data/silver
-make fetch-weather      # optional actual Open-Meteo ERA5 Jan1–Mar31
+make fetch-sample       # 2025-11-01 <= created < 2026-11-01, full population
+make etl                # data/raw/nyc311_12mo_full -> data/silver
+make fetch-weather      # optional actual Open-Meteo ERA5 Nov 2025–Nov 2026
 make analyze            # KM, temporal Cox/KM baseline, seasonality, capacity
 make stream-demo        # saved Cox prediction on actual reconstructed events
 make bench              # local[2] data scale 1x/10x/100x, 3 repetitions each
@@ -93,7 +93,7 @@ The earlier “no configuration with 3 successful repetitions” images were cau
 ```bash
 source scripts/env.sh
 BENCH_BASE_ROWS=1000 BENCH_REPETITIONS=3 bash scripts/cluster_bench.sh \
-  data/raw/nyc311_2025q1_suffix17 artifacts/benchmark/workers
+  data/raw/nyc311_12mo_full artifacts/benchmark/workers
 ```
 
 The script cleans up its own JVMs on exit. `BENCH_WORKERS='1 2'` limits configurations; changing configuration yields new explicit records. Full run details and failed denominators remain in `runs.csv` and per-run JSON. Only comparable complete repetitions enter scaling summaries. Review available memory/disk before increasing sample size. Invalid/OOM/unavailable configurations are Failed/Not Run with actual reasons, never estimated runtimes. The benchmark does not measure database streaming throughput.
@@ -117,7 +117,7 @@ The four Dashboard pages use a consistent theme, summary cards, interactive char
 
 ### Explore dates and interpret the charts
 
-The **Overview**, **Survival & Prediction** and **Seasonality & Capacity** pages calculate linked cohorts from the official silver Parquet. The current download covers **2025-01-01 through 2025-03-31**; the year selector offers downloaded years only. Selecting a date does not fetch additional history. Calendar filters use **America/New_York** creation dates with an inclusive end date. Follow-up remains fixed at **2025-07-01T00:00:00Z**, including after filtering.
+The **Overview**, **Survival & Prediction** and **Seasonality & Capacity** pages calculate linked cohorts from the official silver Parquet. The current download covers **2025-11-01 through 2026-10-31**; the year selector offers downloaded years only. Selecting a date does not fetch additional history. Calendar filters use **America/New_York** creation dates with an inclusive end date. Follow-up remains fixed at **2026-11-03T00:00:00Z**, including after filtering.
 
 1. Choose an available year, a date range or **On or before date**, and daily/weekly/monthly aggregation. Adjust the moving-average window for the detail chart.
 2. Expand **Refine the cohort** to select agencies, boroughs and complaint types. Uncheck the corresponding **All** option first. An empty selection intentionally produces zero requests.

@@ -27,7 +27,7 @@ def spark_session(app="nyc311", master=None):
     from pyspark.sql import SparkSession
     builder = (SparkSession.builder.master(master or os.getenv("SPARK_MASTER", "local[2]"))
         .appName(app).config("spark.sql.session.timeZone", "UTC")
-        .config("spark.sql.shuffle.partitions", "4")
+        .config("spark.sql.shuffle.partitions", "32")
         .config("spark.ui.enabled", "false")
         .config("spark.driver.bindAddress", "127.0.0.1"))
     spark = builder.getOrCreate()

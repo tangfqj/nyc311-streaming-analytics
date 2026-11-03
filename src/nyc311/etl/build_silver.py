@@ -69,7 +69,9 @@ def build_silver(input_path, output_path, metrics_path, spark=None):
         order = Window.partitionBy("unique_key").orderBy(F.col("observed_at").desc(), F.col("_content_hash").desc())
         silver = (valid.withColumn("_row_number", F.row_number().over(order)).filter("_row_number = 1")
                   .select("unique_key", "created_date", "closed_date", "agency", "complaint_type", "descriptor",
-                          "borough", "status", "incident_zip", "latitude", "longitude", "source_kind", "observed_at")
+                          "borough", "status", "incident_zip", "latitude", "longitude",
+                          "resolution_description", "resolution_action_updated_date", "due_date",
+                          "open_data_channel_type", "bbl", "community_board", "source_kind", "observed_at")
                   .withColumn("created_year", F.year(F.from_utc_timestamp("created_date", "America/New_York")))
                   .withColumn("created_month", F.month(F.from_utc_timestamp("created_date", "America/New_York"))).cache())
         metrics["accepted_rows"] = silver.count()
